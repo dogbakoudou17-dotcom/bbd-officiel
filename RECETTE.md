@@ -57,3 +57,13 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Constat : logos d’en-tête de 1,1 Mo et 437 Ko chargés sur chaque page, fond crème opaque visible derrière le logo.
 - Correction : copies web recadrées à fond transparent (16 et 23 Ko) et signature en JPEG 800 px (28 Ko) ; originaux conservés. Poids des logos par page : environ 1,5 Mo → 40 Ko.
 - Après correction : 24 pages vérifiées à 320, 375 et 1440 px, sans débordement horizontal, image cassée ni erreur JavaScript ; un H1 par page.
+
+## BB Bed et affichage HT / TTC — 11 octobre 2026
+
+- 25 pages et 797 liens/ressources internes vérifiés ; `check.mjs` contrôle désormais pour chaque offre le prix unitaire et le lot, en HT et en TTC, ainsi que la présence du sélecteur.
+- BB Bed, mode HT : lot de 3 = 35 € HT / unité (42 € TTC), 105 € HT le lot (126 € TTC) ; lot de 10 = 31,50 € HT / unité (37,80 € TTC), 315 € HT le lot (378 € TTC), mention « 10 pour le prix de 9 ».
+- BB Bed, mode TTC : 2 lots de 10 = 20 unités · 756 € TTC · 630 € HT. Vignette « Double patte noir et rose » : grande photo, légende et champ coloris mis à jour. Devis prérempli : objet, famille Accessoires, quantité 20, « Formule souhaitée : Lot de 10 » et « Coloris souhaité : Double patte noir et rose ».
+- Mode TTC mémorisé et appliqué à la fiche parka : 2 lots avec logo = 8 pièces · 758,40 € TTC · 632 € HT (632 € HT conforme à la recette initiale).
+- Mobile 375 px : vignettes en rangées défilantes par motif, champ coloris pleine largeur, aucun contenu coupé.
+- Build de production bloqué comme attendu : taux de TVA à confirmer (`vatRateConfirmed`) et base HT/TTC du BB Bed à préciser.
+- À confirmer par BBD Officiel : base HT ou TTC des tarifs BB Bed, régime et taux de TVA, possibilité de mélanger les coloris dans un lot, composition et délais.

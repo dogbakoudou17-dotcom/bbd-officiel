@@ -14,8 +14,10 @@ if(form){
  form.querySelector('[data-preview-submit]')?.removeAttribute('disabled');
  const set=(key,value)=>{const field=form.elements.namedItem(key);if(field&&value)field.value=value.slice(0,160);};
  set('profil',params.get('profil'));set('objet',params.get('objet'));set('famille',params.get('famille'));set('produit',params.get('produit'));set('campagne',campaign);
- set('quantite',params.get('quantite'));set('version',params.get('version'));
- if(params.get('version'))set('message','Version souhaitée : '+params.get('version'));
+ set('quantite',params.get('quantite'));set('version',params.get('version'));set('coloris',params.get('coloris'));
+ const choice=(params.get('choix')||'Version').replace(/[^\p{L} -]/gu,'').slice(0,30);
+ const lines=[params.get('version')&&choice+' souhaitée : '+params.get('version'),params.get('coloris')&&'Coloris souhaité : '+params.get('coloris')].filter(Boolean);
+ if(lines.length)form.elements.message.value=lines.join('\n').slice(0,400);
  const source=params.get('source')||'devis';set('provenance',source.replace(/[^a-zA-Z0-9_/-]/g,'').slice(0,100));
  const sync=()=>{const event=form.elements.profil.value==='evenements',textile=form.elements.famille.value==='textiles',pack=form.elements.famille.value==='packs';for(const [id,show]of [['event-fields',event],['textile-fields',textile],['pack-fields',pack]]){const group=document.getElementById(id);group.hidden=!show;group.querySelectorAll('input,textarea').forEach(input=>input.disabled=!show);}};
  sync();form.elements.profil.addEventListener('change',sync);form.elements.famille.addEventListener('change',sync);
@@ -28,14 +30,29 @@ if(form){
   catch{status.textContent='Votre demande n’a pas pu être envoyée. Vos champs sont conservés sur cette page. Vérifiez votre connexion, puis réessayez ou utilisez le contact indiqué.';status.focus();button.disabled=false;button.textContent='Envoyer ma demande →';}
  });
 }
+// Prix HT (professionnels) ou TTC (particuliers) : choix mémorisé sur cet appareil uniquement.
+const taxButtons=document.querySelectorAll('.tax-switch [data-prix]');
+let updateTotal=()=>{};
+const applyTax=mode=>{if(mode==='ttc')document.documentElement.dataset.prix='ttc';else delete document.documentElement.dataset.prix;taxButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.prix===(mode==='ttc'?'ttc':'ht'))));updateTotal();};
+taxButtons.forEach(b=>b.addEventListener('click',()=>{try{localStorage.setItem('bbd-prix',b.dataset.prix);}catch{}applyTax(b.dataset.prix);}));
+if(taxButtons.length)applyTax(document.documentElement.dataset.prix);
 const productConfig=document.querySelector('.product-config');
 if(productConfig){
- const version=document.querySelector('#product-version'),lots=document.querySelector('#product-lots'),total=document.querySelector('#product-total'),quote=document.querySelector('#product-quote');
- const update=()=>{const count=Number(lots.value);if(!Number.isInteger(count)||count<1||count>10000){total.textContent='Indiquez un nombre entier de lots, de 1 à 10 000.';quote.setAttribute('aria-disabled','true');return;}
- quote.removeAttribute('aria-disabled');const quantity=count*Number(productConfig.dataset.pack),price=Number(version.value==='avec'?productConfig.dataset.logo:productConfig.dataset.plain);total.textContent=quantity+' pièces · '+new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(quantity*price)+' HT';
- const url=new URL(quote.href);url.searchParams.set('quantite',quantity);url.searchParams.set('version',version.value==='avec'?'Avec votre logo':'Sans logo');quote.href=url.pathname+url.search;
+ const version=document.querySelector('#product-version'),lots=document.querySelector('#product-lots'),coloris=document.querySelector('#product-coloris'),total=document.querySelector('#product-total'),quote=document.querySelector('#product-quote');
+ const {rate,one,many}=productConfig.dataset;
+ const money=n=>new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',minimumFractionDigits:Number.isInteger(n)?0:2,maximumFractionDigits:2}).format(n);
+ const update=updateTotal=()=>{const count=Number(lots.value);if(!Number.isInteger(count)||count<1||count>10000){total.textContent='Indiquez un nombre entier de lots, de 1 à 10 000.';quote.setAttribute('aria-disabled','true');return;}
+ quote.removeAttribute('aria-disabled');const option=version.selectedOptions[0],quantity=count*Number(option.dataset.pack),ht=quantity*Number(option.dataset.unit),withTax=Math.round(ht*(100+Number(rate)))/100;
+ const parts=[money(ht)+' HT',money(withTax)+' TTC'];if(document.documentElement.dataset.prix==='ttc')parts.reverse();
+ total.textContent=quantity+' '+(quantity>1?many:one)+' · '+parts.join(' · ');
+ const url=new URL(quote.href);url.searchParams.set('quantite',quantity);url.searchParams.set('version',option.dataset.label);if(coloris?.value)url.searchParams.set('coloris',coloris.value);else url.searchParams.delete('coloris');quote.href=url.pathname+url.search;
  const shortcut=document.querySelector('.mobile-cta .btn');if(shortcut)shortcut.href=quote.href;};
  version.addEventListener('change',update);lots.addEventListener('input',update);quote.addEventListener('click',e=>{if(quote.getAttribute('aria-disabled')==='true'){e.preventDefault();lots.focus();}});window.addEventListener('pageshow',()=>requestAnimationFrame(update));update();
+ // Coloris : la vignette choisie remplace la grande photo et renseigne le coloris du devis, et inversement.
+ const main=document.querySelector('#swatch-main'),caption=document.querySelector('#swatch-caption'),swatches=[...document.querySelectorAll('.swatch')];
+ const show=swatch=>{main.src=swatch.dataset.image;main.alt=swatch.dataset.alt;caption.textContent=swatch.dataset.label;swatches.forEach(s=>s===swatch?s.setAttribute('aria-current','true'):s.removeAttribute('aria-current'));};
+ swatches.forEach(s=>s.addEventListener('click',e=>{e.preventDefault();show(s);if(coloris&&s.dataset.coloris){coloris.value=s.dataset.coloris;update();}}));
+ coloris?.addEventListener('change',()=>{const match=swatches.find(s=>s.dataset.coloris===coloris.value);if(match)show(match);update();});
 }
 
 // Progressive enhancement: all content remains visible without JavaScript.

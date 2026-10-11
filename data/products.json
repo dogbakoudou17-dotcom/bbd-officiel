@@ -163,5 +163,213 @@
     "unitPlain": 39,
     "unitLogo": 49,
     "packSize": 4
+  },
+  {
+    "id": "bb-bed-100x150",
+    "name": "BB Bed Confort & Bien-être",
+    "family": "accessoires",
+    "description": "Offrez à votre compagnon un espace douillet et confortable. Idéal pour les chiens et les chats, le BB Bed 100 × 150 cm apporte chaleur et confort au quotidien, tout en restant pratique à utiliser et à entretenir.",
+    "confirmed": true,
+    "image": "/assets/bb-bed-gamme-tetris.jpg",
+    "alt": "Plusieurs BB Bed motif Tetris empilés en différents coloris, photo fournie par BBD Officiel",
+    "imageSize": [
+      1000,
+      750
+    ],
+    "dimensions": "100 × 150 cm",
+    "unitLabel": [
+      "unité",
+      "unités"
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-3",
+        "label": "Lot de 3",
+        "unit": 35,
+        "pack": 3
+      },
+      {
+        "id": "lot-10",
+        "label": "Lot de 10",
+        "unit": 31.5,
+        "pack": 10,
+        "note": "10 pour le prix de 9 : le 10ᵉ est offert."
+      }
+    ],
+    "price": "35 € HT / unité par lot de 3 · 31,50 € HT / unité par lot de 10",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Commande par lot de 3 ou de 10",
+    "highlights": [
+      "Doux et confortable pour votre animal",
+      "Idéal pour le couchage, la caisse de transport ou le panier",
+      "Conserve la chaleur et protège du froid",
+      "Matière conçue pour laisser circuler l’humidité",
+      "Facile à nettoyer et à entretenir",
+      "Peut être découpé selon les dimensions souhaitées",
+      "Convient aux chiens comme aux chats"
+    ],
+    "usage": "Le BB Bed peut être utilisé à la maison, dans un panier, une cage, une caisse de transport ou lors des déplacements. Sa texture douce offre à votre animal un espace agréable pour se reposer.",
+    "care": [
+      "Lavable en machine",
+      "Séchage à l’air libre conseillé",
+      "Entretien facile pour une utilisation quotidienne"
+    ],
+    "details": "Dimensions : 100 × 150 cm. Trois motifs photographiés : Camou, Double patte et Tetris. Possibilité d’associer plusieurs coloris dans un même lot, composition, disponibilités, transport et délais à préciser dans le devis.",
+    "personalization": null,
+    "swatches": [
+      {
+        "motif": "Camou",
+        "label": "Gamme Camou",
+        "image": "/assets/bb-bed-gamme-camou.jpg",
+        "thumb": "/assets/bb-bed-gamme-camou-mini.jpg",
+        "alt": "Plusieurs BB Bed motif Camou empilés en différents coloris, photo fournie par BBD Officiel",
+        "range": true
+      },
+      {
+        "motif": "Camou",
+        "label": "Camou bleu",
+        "image": "/assets/bb-bed-camou-bleu.jpg",
+        "thumb": "/assets/bb-bed-camou-bleu-mini.jpg",
+        "alt": "BB Bed motif Camou, coloris bleu, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Camou",
+        "label": "Camou gris",
+        "image": "/assets/bb-bed-camou-gris.jpg",
+        "thumb": "/assets/bb-bed-camou-gris-mini.jpg",
+        "alt": "BB Bed motif Camou, coloris gris, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Camou",
+        "label": "Camou marron",
+        "image": "/assets/bb-bed-camou-marron.jpg",
+        "thumb": "/assets/bb-bed-camou-marron-mini.jpg",
+        "alt": "BB Bed motif Camou, coloris marron, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Camou",
+        "label": "Camou violet",
+        "image": "/assets/bb-bed-camou-violet.jpg",
+        "thumb": "/assets/bb-bed-camou-violet-mini.jpg",
+        "alt": "BB Bed motif Camou, coloris violet, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte bleu",
+        "image": "/assets/bb-bed-double-patte-bleu.jpg",
+        "thumb": "/assets/bb-bed-double-patte-bleu-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris bleu, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte fuchsia",
+        "image": "/assets/bb-bed-double-patte-fuchsia.jpg",
+        "thumb": "/assets/bb-bed-double-patte-fuchsia-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris fuchsia, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte marron",
+        "image": "/assets/bb-bed-double-patte-marron.jpg",
+        "thumb": "/assets/bb-bed-double-patte-marron-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris marron, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte noir et bleu",
+        "image": "/assets/bb-bed-double-patte-noir-bleu.jpg",
+        "thumb": "/assets/bb-bed-double-patte-noir-bleu-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris noir et bleu, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte noir et rose",
+        "image": "/assets/bb-bed-double-patte-noir-rose.jpg",
+        "thumb": "/assets/bb-bed-double-patte-noir-rose-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris noir et rose, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte orange",
+        "image": "/assets/bb-bed-double-patte-orange.jpg",
+        "thumb": "/assets/bb-bed-double-patte-orange-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris orange, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Double patte",
+        "label": "Double patte vert",
+        "image": "/assets/bb-bed-double-patte-vert.jpg",
+        "thumb": "/assets/bb-bed-double-patte-vert-mini.jpg",
+        "alt": "BB Bed motif Double patte, coloris vert, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Tetris",
+        "label": "Gamme Tetris",
+        "image": "/assets/bb-bed-gamme-tetris.jpg",
+        "thumb": "/assets/bb-bed-gamme-tetris-mini.jpg",
+        "alt": "Plusieurs BB Bed motif Tetris empilés en différents coloris, photo fournie par BBD Officiel",
+        "range": true
+      },
+      {
+        "motif": "Tetris",
+        "label": "Tetris bleu",
+        "image": "/assets/bb-bed-tetris-bleu.jpg",
+        "thumb": "/assets/bb-bed-tetris-bleu-mini.jpg",
+        "alt": "BB Bed motif Tetris, coloris bleu, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Tetris",
+        "label": "Tetris orange",
+        "image": "/assets/bb-bed-tetris-orange.jpg",
+        "thumb": "/assets/bb-bed-tetris-orange-mini.jpg",
+        "alt": "BB Bed motif Tetris, coloris orange, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Tetris",
+        "label": "Tetris rose",
+        "image": "/assets/bb-bed-tetris-rose.jpg",
+        "thumb": "/assets/bb-bed-tetris-rose-mini.jpg",
+        "alt": "BB Bed motif Tetris, coloris rose, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Tetris",
+        "label": "Tetris rouge",
+        "image": "/assets/bb-bed-tetris-rouge.jpg",
+        "thumb": "/assets/bb-bed-tetris-rouge-mini.jpg",
+        "alt": "BB Bed motif Tetris, coloris rouge, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Tetris",
+        "label": "Tetris vert",
+        "image": "/assets/bb-bed-tetris-vert.jpg",
+        "thumb": "/assets/bb-bed-tetris-vert-mini.jpg",
+        "alt": "BB Bed motif Tetris, coloris vert, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      },
+      {
+        "motif": "Tetris",
+        "label": "Tetris violet",
+        "image": "/assets/bb-bed-tetris-violet.jpg",
+        "thumb": "/assets/bb-bed-tetris-violet-mini.jpg",
+        "alt": "BB Bed motif Tetris, coloris violet, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+        "range": false
+      }
+    ]
   }
 ]

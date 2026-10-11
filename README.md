@@ -20,7 +20,7 @@ L’adresse locale fonctionne sur l’ordinateur qui exécute le serveur. Ce n�
 - Accueil, trois univers distincts (éleveurs, clubs, événements).
 - Solutions avec filtres de familles, quatre pages de familles.
 - Trois compositions fictives : Signature Élevage, Esprit Club, Temps Fort.
-- Première référence fournie : parka molletonnée et photo du client.
+- Première référence fournie : parka molletonnée et photo du client. Catalogue actuel : sept textiles et le BB Bed (accessoires) ; voir les sections d’ajout ci-dessous.
 - Prix confirmés par le client : 69 € **HT** par pièce sans logo, 79 € **HT** avec logo. Lots de quatre : 276 € HT ou 316 € HT. Calculateur de lots, sans paiement.
 - Personnalisation, à propos, formulaire de devis, confirmation, page 404 et brouillons légaux.
 - Logos originaux fournis par le client : version horizontale sombre, claire et signature. Les fichiers PNG originaux sont conservés sans retouche. Le site affiche des copies web dérivées : `logo-bbd-web.png` et `logo-bbd-clair-web.png` (mot-symbole recadré, fond transparent, 16 et 23 Ko) et `logo-signature-web.jpg` (800 px, 28 Ko).
@@ -94,3 +94,15 @@ Ces images sont identifiées sur le site comme des **mises en scène illustrativ
 L’accueil comporte désormais une narration photographique, un rail tactile de six produits, des apparitions progressives au défilement et un effet de profondeur léger sur les visuels. Tout le contenu reste accessible sans JavaScript. Les mouvements sont désactivés lorsque le navigateur indique une préférence de réduction des animations.
 
 Prompts finaux : photographie éditoriale premium lors d’un événement canin, avec vêtements conformes aux références, puis scène verticale de préparation d’un chien par deux membres d’un club. Palette ivoire, noir, bleu marine et vert sauge ; sans texte, sans filigrane et sans faux logo dans l’image.
+
+## BB Bed et prix HT / TTC
+
+Huitième référence, première de la famille **Accessoires & objets** : BB Bed Confort & Bien-être 100 × 150 cm. Textes (description, « Les + produit », utilisation, entretien) repris du descriptif fourni. Tarifs : lot de 3 à 35 € par unité (105 €), lot de 10 à 31,50 € par unité (315 €, « 10 pour le prix de 9 »). Pas de version avec logo communiquée : aucune personnalisation n’est annoncée.
+
+- **Photos** : 19 photos reçues (3 motifs : Camou, Double patte, Tetris ; 17 coloris et 2 vues de gamme). Originaux conservés dans `sources/bb-bed/` (non publiés), copies web 1000 × 750 (≈ 170 Ko) et miniatures 240 × 180 (≈ 12 Ko) dans `assets/bb-bed-*.jpg`. Le fichier reçu « TETRIX BLEU » est traité comme Tetris bleu, « FUSHIA » comme fuchsia.
+- **Fiche** : galerie par motif ; la vignette choisie remplace la grande photo et renseigne le champ « Motif et coloris », transmis au devis (champ caché `coloris`). Le mélange de coloris dans un lot reste « à préciser dans le devis ».
+- **Prix HT / TTC sur toutes les fiches** : sélecteur « HT · professionnels / TTC · particuliers ». Le prix choisi est mis en avant, l’autre reste affiché juste en dessous ; le calculateur suit le même ordre. Choix mémorisé sur l’appareil du visiteur (`localStorage`, appliqué avant affichage par `assets/prix.js`). Sans JavaScript : HT en avant et « soit … TTC ».
+- **TVA** : taux dans `data/site.json` (`vatRate`, 20 %). Le build de production reste bloqué tant que `vatRateConfirmed` n’est pas `true` : à confirmer selon le régime de BBD Officiel (une franchise en base de TVA changerait l’affichage).
+- **Base des tarifs BB Bed** : le descriptif ne précise pas HT ou TTC. Les montants sont traités comme HT, comme le reste du catalogue ; `taxStatus` signale ce point à préciser et bloque la production. S’ils sont TTC, modifier les montants dans `offers`.
+- Calculs partagés par `build.mjs` et `check.mjs` dans `pricing.mjs`. Les offres d’un produit sont soit déclarées (`offers`), soit déduites de `unitPlain` / `unitLogo` / `packSize`.
+- Le rail « Le vestiaire BBD » de l’accueil ne présente que les textiles.

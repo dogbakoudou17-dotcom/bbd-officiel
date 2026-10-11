@@ -9,6 +9,8 @@
   "director": "",
   "legalStatus": "",
   "vat": "",
+  "vatRate": 20,
+  "vatRateConfirmed": false,
   "privacyContact": "",
   "retention": "",
   "legalBasis": "",
