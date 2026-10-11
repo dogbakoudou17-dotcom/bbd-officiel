@@ -42,7 +42,7 @@ if(productConfig){
  const {rate,one,many}=productConfig.dataset;
  const money=n=>new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',minimumFractionDigits:Number.isInteger(n)?0:2,maximumFractionDigits:2}).format(n);
  const update=updateTotal=()=>{const count=Number(lots.value);if(!Number.isInteger(count)||count<1||count>10000){total.textContent='Indiquez un nombre entier de lots, de 1 à 10 000.';quote.setAttribute('aria-disabled','true');return;}
- quote.removeAttribute('aria-disabled');const option=version.selectedOptions[0],quantity=count*Number(option.dataset.pack),ht=quantity*Number(option.dataset.unit),withTax=Math.round(ht*(100+Number(rate)))/100;
+ quote.removeAttribute('aria-disabled');const option=version.selectedOptions[0],quantity=count*Number(option.dataset.pack),ht=Math.round(quantity*Number(option.dataset.unit)*100)/100,withTax=Math.round(ht*(100+Number(rate)))/100;
  const parts=[money(ht)+' HT',money(withTax)+' TTC'];if(document.documentElement.dataset.prix==='ttc')parts.reverse();
  total.textContent=quantity+' '+(quantity>1?many:one)+' · '+parts.join(' · ');
  const url=new URL(quote.href);url.searchParams.set('quantite',quantity);url.searchParams.set('version',option.dataset.label);if(coloris?.value)url.searchParams.set('coloris',coloris.value);else url.searchParams.delete('coloris');quote.href=url.pathname+url.search;

@@ -102,3 +102,14 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Tarif : lot de 100 pièces à 100 €, traité comme HT (1 € HT / pièce, 1,20 € TTC) ; base HT ou TTC à préciser — `taxStatus` bloque la production. Aucune personnalisation annoncée.
 - Test : 2 lots = 200 pièces · 200 € HT · 240 € TTC ; devis prérempli (famille récompenses, quantité 200, « Formule souhaitée : Lot de 100 »). Mobile 320/375 px sans débordement.
 - 26 pages, 861 liens/ressources vérifiés.
+
+## Friandises : oreilles de bœuf, trachée, pattes de poulet — 11 octobre 2026
+
+- Cinq fiches ajoutées dans **Friandises & récompenses**, textes repris des descriptifs, photos 900 × 900 (37–52 Ko), originaux dans `sources/<id>/` :
+  - Oreille de bœuf naturelle et Oreille de bœuf avec poils : lot de 50 à 90 € (1,80 € HT / pièce, 2,16 € TTC) ;
+  - Trachée de bœuf naturelle, Pattes de poulet soufflées, Pattes de poulet naturelles : **vente au kilo**, 20 € HT / kg (24 € TTC).
+- Vente au poids : unité « kg », champ « Quantité en kilos », pas de ligne « le lot de 1 » (`lotsLabel`, `pack: 1`). `check.mjs` ignore la ligne de lot quand le lot vaut 1.
+- Arrondi au centime des montants calculés (navigateur et `pricing.mjs`) : 100 × 1,80 € affiche 180 € et non 180,00 €.
+- Les photos des pattes de poulet n'étaient pas jointes aux messages : utilisées depuis `Téléchargements` (`PATTE DE POULET SOUFFLEE.jpeg`, `PATTE DE POULET NATURE.jpeg`), contrôlées visuellement.
+- Tests : oreille de bœuf 2 lots = 100 pièces · 180 € HT · 216 € TTC ; trachée 3 kg = 60 € HT · 72 € TTC ; pattes soufflées 5 kg = 100 € HT · 120 € TTC. Base HT ou TTC de tous les tarifs de friandises à préciser (production bloquée).
+- 31 pages, 1021 liens/ressources vérifiés.

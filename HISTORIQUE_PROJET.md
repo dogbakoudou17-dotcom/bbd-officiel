@@ -44,6 +44,9 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 7. **Sweat zippé Bourget noir** : mêmes tarifs et caractéristiques que le bleu.
 8. **BB Bed Confort & Bien-être 100 × 150 cm** (accessoires) : lot de 3 à 35 € l'unité, lot de 10 à 31,50 € l'unité (10 pour le prix de 9) ; 3 motifs, 17 coloris. Base HT ou TTC à confirmer.
 9. **Oreille de porc naturelle** (friandises & récompenses) : lot de 100 pièces à 100 €, soit 1 € la pièce. Base HT ou TTC à confirmer.
+10. **Oreille de bœuf naturelle** et 11. **Oreille de bœuf avec poils** : lot de 50 pièces à 90 €, soit 1,80 € la pièce.
+12. **Trachée de bœuf naturelle**, 13. **Pattes de poulet soufflées** et 14. **Pattes de poulet naturelles** : vendues au kilo, 20 € le kilo.
+Base HT ou TTC de toutes les friandises à confirmer.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
 

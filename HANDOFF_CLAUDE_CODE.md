@@ -42,6 +42,11 @@ Le rendu actuel comprend :
 | Sweat zippé Bourget noir | 39 € HT/pièce | 49 € HT/pièce | lot de 4 |
 | BB Bed Confort & Bien-être 100 × 150 | 35 € HT/unité (lot de 3) | 31,50 € HT/unité (lot de 10) | base HT/TTC à confirmer |
 | Oreille de porc naturelle | 1 € HT/pièce (lot de 100) | — | base HT/TTC à confirmer |
+| Oreille de bœuf naturelle | 1,80 € HT/pièce (lot de 50) | — | base HT/TTC à confirmer |
+| Oreille de bœuf avec poils | 1,80 € HT/pièce (lot de 50) | — | base HT/TTC à confirmer |
+| Trachée de bœuf naturelle | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
+| Pattes de poulet soufflées | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
+| Pattes de poulet naturelles | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
 
 Les données exécutables font foi dans `data/products.json`.
 

@@ -775,5 +775,311 @@
     ],
     "personalization": null,
     "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "oreille-de-boeuf",
+    "name": "Oreille de bœuf naturelle",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise savoureuse et résistante, idéale pour les chiens qui aiment mâcher. Sa texture ferme lui offre un moment de mastication et d’occupation, tout en satisfaisant son besoin naturel de mâcher.",
+    "confirmed": true,
+    "image": "/assets/oreille-de-boeuf.jpg",
+    "alt": "Oreille de bœuf séchée pour chien, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-50",
+        "label": "Lot de 50",
+        "unit": 1.8,
+        "pack": 50
+      }
+    ],
+    "price": "90 € HT le lot de 50 pièces, soit 1,80 € HT / pièce",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Commande par lot de 50 pièces",
+    "sections": [
+      {
+        "title": "Pourquoi choisir l’oreille de bœuf ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéale pour les chiens amateurs de mastication",
+          "Favorise une mastication prolongée",
+          "Texture ferme et résistante",
+          "Naturellement savoureuse",
+          "Sans colorants ni arômes artificiels",
+          "Idéale comme friandise d’occupation"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez l’oreille de bœuf à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Choisissez une taille adaptée à la morphologie et à la puissance de mastication de votre chien.",
+          "Retirez la friandise lorsqu’elle devient suffisamment petite pour être avalée.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "oreille-de-boeuf-avec-poils",
+    "name": "Oreille de bœuf avec poils",
+    "family": "recompenses",
+    "description": "Offrez à votre compagnon une friandise naturelle et savoureuse. Naturellement résistante, l’oreille de bœuf avec poils offre un bon moment de mastication et d’occupation ; avec ses poils naturels, elle constitue une friandise authentique et peu transformée, particulièrement appréciée des chiens amateurs de mastication.",
+    "confirmed": true,
+    "image": "/assets/oreille-de-boeuf-avec-poils.jpg",
+    "alt": "Deux oreilles de bœuf séchées avec leurs poils, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-50",
+        "label": "Lot de 50",
+        "unit": 1.8,
+        "pack": 50
+      }
+    ],
+    "price": "90 € HT le lot de 50 pièces, soit 1,80 € HT / pièce",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Commande par lot de 50 pièces",
+    "sections": [
+      {
+        "title": "Pourquoi choisir l’oreille de bœuf avec poils ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéale pour les chiens amateurs de mastication",
+          "Favorise une activité de mastication prolongée",
+          "Texture résistante",
+          "Avec ses poils naturels",
+          "Naturellement savoureuse",
+          "Idéale comme friandise d’occupation",
+          "Sans colorants ni arômes artificiels"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez l’oreille de bœuf à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Choisissez une taille adaptée à la morphologie et à la puissance de mastication de votre chien.",
+          "Retirez la friandise lorsqu’elle devient suffisamment petite pour être avalée.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "trachee-de-boeuf",
+    "name": "Trachée de bœuf naturelle",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise savoureuse et croustillante qui ravira les chiens amateurs de mastication. Naturellement riche en goût, la trachée de bœuf offre un moment de mastication gourmand et d’occupation ; elle peut être proposée nature ou garnie d’une préparation adaptée aux chiens pour prolonger le plaisir.",
+    "confirmed": true,
+    "image": "/assets/trachee-de-boeuf.jpg",
+    "alt": "Morceaux de trachée de bœuf séchée pour chien, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 20,
+        "pack": 1
+      }
+    ],
+    "price": "20 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir la trachée de bœuf ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéale pour occuper votre compagnon",
+          "Favorise la mastication",
+          "Une friandise savoureuse et appétissante",
+          "Une texture intéressante à mâcher",
+          "Sans colorants ni arômes artificiels",
+          "Convient aux chiens amateurs de mastication"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez la trachée de bœuf à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Choisissez une taille adaptée à la morphologie de votre chien et à sa puissance de mastication.",
+          "Retirez la friandise si elle devient suffisamment petite pour être avalée en une seule fois.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendue au kilo. Taille des morceaux, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "pattes-de-poulet-soufflees",
+    "name": "Pattes de poulet soufflées",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise légère, croustillante et naturellement savoureuse. Grâce au procédé de soufflage, les pattes de poulet offrent une texture particulièrement légère et croustillante, idéale pour les chiens qui apprécient les petites friandises faciles à mâcher.",
+    "confirmed": true,
+    "image": "/assets/pattes-de-poulet-soufflees.jpg",
+    "alt": "Pattes de poulet soufflées pour chien, en tas sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 20,
+        "pack": 1
+      }
+    ],
+    "price": "20 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir les pattes de poulet soufflées ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéales comme récompense",
+          "Naturellement savoureuses",
+          "Texture légère et croustillante",
+          "Faciles à mâcher",
+          "Sans colorants ni arômes artificiels",
+          "Pratiques à distribuer au quotidien"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez les pattes de poulet soufflées à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Adaptez la quantité à la taille, à l’âge et au niveau d’activité de votre chien.",
+          "Pour les chiens gloutons, veillez à ce qu’ils prennent le temps de mâcher correctement.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la texture croustillante et la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "pattes-de-poulet-naturelles",
+    "name": "Pattes de poulet naturelles",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une petite friandise croustillante et savoureuse, idéale pour les chiens gourmands. Naturelles et faciles à donner, les pattes de poulet offrent un moment de mastication croustillant tout en permettant de varier les plaisirs de votre chien.",
+    "confirmed": true,
+    "image": "/assets/pattes-de-poulet-naturelles.jpg",
+    "alt": "Pattes de poulet séchées naturelles pour chien, en tas sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 20,
+        "pack": 1
+      }
+    ],
+    "price": "20 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir les pattes de poulet ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéales comme récompense",
+          "Naturellement savoureuses",
+          "Texture croustillante appréciée des chiens",
+          "Sans colorants ni arômes artificiels",
+          "Format pratique à distribuer",
+          "Parfaites pour varier les friandises"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez les pattes de poulet à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Adaptez la quantité à la taille, à l’âge et au niveau d’activité de votre chien.",
+          "Pour les chiens gloutons ou peu habitués à ce type de friandise, surveillez attentivement leur consommation.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]

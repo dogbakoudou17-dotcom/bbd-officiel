@@ -25,7 +25,7 @@ for(const p of JSON.parse(fs.readFileSync('data/products.json','utf8'))){
  const product=fs.readFileSync(path.join(root,'produits',p.id,'index.html'),'utf8');
  for(const o of offersOf(p)){
   assert(Number.isFinite(o.unit)&&Number.isInteger(o.pack)&&o.pack>0,'Offre invalide : '+p.id+' '+o.label);
-  for(const price of [euro(o.unit)+' <small>HT',euro(ttc(o.unit,rate))+' <small>TTC',euro(o.unit*o.pack)+' HT',euro(ttc(o.unit*o.pack,rate))+' TTC'])assert(product.includes(price),'Prix absent : '+p.id+' '+price);
+  for(const price of [euro(o.unit)+' <small>HT',euro(ttc(o.unit,rate))+' <small>TTC',...(o.pack>1?[euro(o.unit*o.pack)+' HT',euro(ttc(o.unit*o.pack,rate))+' TTC']:[])])assert(product.includes(price),'Prix absent : '+p.id+' '+price);
  }
  assert(product.includes('data-product="'+p.id+'"'),'Contexte produit absent');
  assert(product.includes('class="tax-switch"'),'Sélecteur HT/TTC absent : '+p.id);
