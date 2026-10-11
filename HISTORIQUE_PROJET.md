@@ -35,7 +35,7 @@ Le parcours principal défini est : découvrir, comprendre, demander un devis, �
 
 Les produits ont été ajoutés progressivement avec leurs photographies et tarifs confirmés en euros HT :
 
-1. **Parka molletonnée** : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre.
+1. **Parka Élysée** (d'abord nommée « Parka molletonnée ») : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre ; noir, bleu et kaki, S à XXL, intérieur aspect polaire, 6 visuels de détail. Renommée le 11 octobre 2026.
 2. **Parka Matignon** (d'abord nommée « Parka imperméable ») : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre ; noir et bleu, S à XXL, coupe longue. Renommée le 11 octobre 2026 d'après le descriptif du propriétaire, qui ne mentionne pas d'imperméabilité.
 3. **Doudoune sans manches rétro** (d'abord nommée « rétro-réfléchissante ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Nom et tarif (initialement 49/59 € HT) corrigés par le propriétaire le 11 octobre 2026, même photo ; coupe slim, taille petit, S à XXL.
 4. **Doudoune sans manches capuche garde bleu** (d'abord nommée « à capuche amovible ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Le tarif initial de 49/59 € HT a été corrigé par le propriétaire le 11 octobre 2026 ; tailles S à XXL, composition et entretien ajoutés.

@@ -88,3 +88,10 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - `parkamatignon.zip` : « BLEU » identique à `parka-impermeable.jpg`, « NOIR » identique à `parka-impermeable-vue-2.jpg` (écart 0,2/255) ; tarifs 69/79 € HT identiques. La fiche « Parka imperméable » devient « Parka Matignon » (adresse conservée), galerie de 2 coloris (noir par défaut, bleu), miniatures créées ; rubriques Taille & coupe et Composition. Le descriptif ne parle pas d'imperméabilité : la mention est retirée.
 - Test : vignette bleu → photo et coloris « Matignon bleu » ; version avec logo, 1 lot = 4 pièces · 316 € HT · 379,20 € TTC ; devis avec `coloris=Matignon bleu`.
 - 25 pages, 812 liens/ressources vérifiés.
+
+## Parka Élysée — 11 octobre 2026
+
+- `parkaelysee.zip` : « KAKI » identique à `parka-molletonnee.jpg` (écart 0,1/255), tarifs 69/79 € HT identiques : la fiche « Parka molletonnée » devient « Parka Élysée » (adresse conservée). Photos noir et bleu nouvelles ; 6 visuels de détail WebP (capuche, intérieur, zip, zip de poche, doublure de poche, poche arrière) convertis en JPEG ≤ 100 Ko. Originaux dans `sources/parka-elysee/`.
+- Galerie : rangée « Coloris » (noir par défaut, bleu, kaki) qui renseigne le devis, rangée « Détails » qui n'affiche que le gros plan (le coloris choisi est conservé). Le menu Coloris ne liste que les trois coloris.
+- Encart de l'accueil : « La parka Élysée, avec ou sans votre logo », photo noire.
+- Test : kaki puis détail capuche → grande photo du détail, coloris « Élysée kaki » conservé et transmis au devis. 25 pages, 830 liens/ressources vérifiés.

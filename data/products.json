@@ -1,12 +1,12 @@
 [
   {
     "id": "parka-molletonnee",
-    "name": "Parka molletonnée",
+    "name": "Parka Élysée",
     "family": "textiles",
-    "description": "Une parka pour équiper votre collectif, avec ou sans votre logo. Proposée par lot de 4 pièces.",
+    "description": "Une parka à capuche, intérieur doux aspect polaire, pour équiper votre collectif avec ou sans votre logo. Proposée par lot de 4 pièces, du S au XXL, en noir, bleu ou kaki.",
     "confirmed": true,
-    "image": "/assets/parka-molletonnee.jpg",
-    "alt": "Parka longue sombre à capuche et doublure claire, portée par un mannequin, photo fournie par BBD Officiel",
+    "image": "/assets/parka-elysee-noir.jpg",
+    "alt": "Parka Élysée noire à capuche, intérieur clair aspect polaire, portée par un mannequin, photo fournie par BBD Officiel",
     "variants": [
       "Sans logo : 69 € HT par pièce, soit 276 € HT le lot de 4",
       "Avec votre logo : 79 € HT par pièce, soit 316 € HT le lot de 4"
@@ -15,10 +15,129 @@
     "minimum": "Commande par lot de 4 pièces",
     "price": "69 € HT / pièce sans logo · 79 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Tailles, coloris, composition, caractéristiques techniques, transport et délais à confirmer. Aucun niveau d’imperméabilité ou de protection n’est présumé à partir de la photo.",
+    "details": "Coloris : noir, bleu et kaki. Tailles du S au XXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 69,
     "unitLogo": 79,
-    "packSize": 4
+    "packSize": 4,
+    "imageSize": [
+      800,
+      1208
+    ],
+    "thumbSize": [
+      180,
+      240
+    ],
+    "swatchLabel": "Coloris",
+    "swatches": [
+      {
+        "motif": "Coloris",
+        "label": "Élysée noir",
+        "short": "noir",
+        "image": "/assets/parka-elysee-noir.jpg",
+        "thumb": "/assets/parka-elysee-noir-mini.jpg",
+        "alt": "Parka Élysée noir à capuche, intérieur clair aspect polaire, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Coloris",
+        "label": "Élysée bleu",
+        "short": "bleu",
+        "image": "/assets/parka-elysee-bleu.jpg",
+        "thumb": "/assets/parka-elysee-bleu-mini.jpg",
+        "alt": "Parka Élysée bleu à capuche, intérieur clair aspect polaire, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Coloris",
+        "label": "Élysée kaki",
+        "short": "kaki",
+        "image": "/assets/parka-elysee-kaki.jpg",
+        "thumb": "/assets/parka-elysee-kaki-mini.jpg",
+        "alt": "Parka Élysée kaki à capuche, intérieur clair aspect polaire, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Détails",
+        "label": "Détail : capuche",
+        "short": "capuche",
+        "image": "/assets/parka-elysee-detail-capuche.jpg",
+        "thumb": "/assets/parka-elysee-detail-capuche-mini.jpg",
+        "range": true,
+        "alt": "Visuel de détail de la parka Élysée : doublure effet mouton à l’intérieur de la capuche, fourni par BBD Officiel"
+      },
+      {
+        "motif": "Détails",
+        "label": "Détail : intérieur",
+        "short": "intérieur",
+        "image": "/assets/parka-elysee-detail-interieur.jpg",
+        "thumb": "/assets/parka-elysee-detail-interieur-mini.jpg",
+        "range": true,
+        "alt": "Visuel de détail de la parka Élysée : doublure intérieure douce aspect polaire, fourni par BBD Officiel"
+      },
+      {
+        "motif": "Détails",
+        "label": "Détail : zip",
+        "short": "zip",
+        "image": "/assets/parka-elysee-detail-zip.jpg",
+        "thumb": "/assets/parka-elysee-detail-zip-mini.jpg",
+        "range": true,
+        "alt": "Visuel de détail de la parka Élysée : fermeture zippée contrastée, fourni par BBD Officiel"
+      },
+      {
+        "motif": "Détails",
+        "label": "Détail : zip de poche",
+        "short": "zip de poche",
+        "image": "/assets/parka-elysee-detail-zip-poche.jpg",
+        "thumb": "/assets/parka-elysee-detail-zip-poche-mini.jpg",
+        "range": true,
+        "alt": "Visuel de détail de la parka Élysée : zip contrasté d’une poche latérale, fourni par BBD Officiel"
+      },
+      {
+        "motif": "Détails",
+        "label": "Détail : doublure poche",
+        "short": "doublure poche",
+        "image": "/assets/parka-elysee-detail-doublure-poche.jpg",
+        "thumb": "/assets/parka-elysee-detail-doublure-poche-mini.jpg",
+        "range": true,
+        "alt": "Visuel de détail de la parka Élysée : doublure lisse à l’intérieur de la poche, fourni par BBD Officiel"
+      },
+      {
+        "motif": "Détails",
+        "label": "Détail : poche arrière",
+        "short": "poche arrière",
+        "image": "/assets/parka-elysee-detail-poche-arriere.jpg",
+        "thumb": "/assets/parka-elysee-detail-poche-arriere-mini.jpg",
+        "range": true,
+        "alt": "Visuel de détail de la parka Élysée : poche arrière zippée, fourni par BBD Officiel"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Détails du produit",
+        "open": true,
+        "items": [
+          "Capuche avec cordon de serrage",
+          "Fermeture par zip métallique",
+          "Poches latérales zippées",
+          "Poignets élastiqués",
+          "Poche intérieure",
+          "Intérieur doux aspect polaire"
+        ]
+      },
+      {
+        "title": "Taille & coupe",
+        "items": [
+          "Tailles : du S au XXL",
+          "Coupe classique",
+          "Ce produit taille normalement : prenez votre taille habituelle",
+          "Le mannequin mesure 1,81 m et porte une taille M"
+        ]
+      },
+      {
+        "title": "Composition & entretien",
+        "items": [
+          "Composition : 100 % polyester",
+          "Lavable en machine à 30 °C"
+        ]
+      }
+    ]
   },
   {
     "id": "parka-impermeable",
