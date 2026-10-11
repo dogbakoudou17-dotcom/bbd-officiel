@@ -1327,5 +1327,68 @@
     ],
     "personalization": null,
     "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "tendon-de-boeuf",
+    "name": "Tendon de bœuf naturel",
+    "family": "recompenses",
+    "description": "Offrez à votre compagnon une friandise naturelle et savoureuse. Grâce à sa texture ferme et résistante, le tendon de bœuf est particulièrement apprécié des chiens qui aiment mâcher et prendre leur temps : une excellente friandise d’occupation pour satisfaire leur besoin naturel de mastication.",
+    "confirmed": true,
+    "image": "/assets/tendon-de-boeuf.jpg",
+    "alt": "Morceaux de tendon de bœuf séché pour chien, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 25,
+        "pack": 1
+      }
+    ],
+    "price": "25 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir le tendon de bœuf ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéal pour les chiens amateurs de mastication",
+          "Favorise une activité de mastication prolongée",
+          "Texture ferme et résistante",
+          "Naturellement savoureux",
+          "Sans colorants ni arômes artificiels",
+          "Idéal comme friandise ou récompense"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez le tendon de bœuf à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Choisissez une taille adaptée à la morphologie et à la puissance de mastication de votre chien.",
+          "Retirez le produit lorsqu’il devient suffisamment petit pour être avalé.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendu au kilo. Taille des morceaux, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]

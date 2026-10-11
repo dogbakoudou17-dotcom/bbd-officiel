@@ -134,3 +134,8 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 
 - Lot de 100 pièces à 45 € : **0,45 € HT / pièce** (0,54 € TTC), 45 € HT le lot ; textes repris du descriptif (mode d'emploi et conservation à la lettre) ; photo 900 × 900 (29 Ko), original dans `sources/sabot-de-veau/`.
 - Test : 3 lots = 300 pièces · 135 € HT · 162 € TTC ; 320 et 1440 px sans débordement. 35 pages, 1149 liens/ressources vérifiés.
+
+## Tendon de bœuf naturel — 11 octobre 2026
+
+- Vente au kilo, **25 € HT / kg** (30 € TTC) ; textes repris du descriptif ; photo 900 × 900 (83 Ko), original dans `sources/tendon-de-boeuf/`.
+- Test : 2 kg = 50 € HT · 60 € TTC ; 320 et 1440 px sans débordement. 36 pages, 1181 liens/ressources vérifiés.

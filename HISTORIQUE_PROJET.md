@@ -50,6 +50,7 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 16. **Sprat séché naturel** : vendu au kilo, 45 € le kilo.
 17. **Cou de poulet naturel** : vendu au kilo, 20 € le kilo.
 18. **Sabot de veau naturel** : lot de 100 pièces à 45 €, soit 0,45 € la pièce.
+19. **Tendon de bœuf naturel** : vendu au kilo, 25 € le kilo.
 Base HT ou TTC de toutes les friandises à confirmer.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
