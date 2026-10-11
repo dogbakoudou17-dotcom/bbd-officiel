@@ -23,7 +23,7 @@ L’adresse locale fonctionne sur l’ordinateur qui exécute le serveur. Ce n�
 - Première référence fournie : parka molletonnée et photo du client.
 - Prix confirmés par le client : 69 € **HT** par pièce sans logo, 79 € **HT** avec logo. Lots de quatre : 276 € HT ou 316 € HT. Calculateur de lots, sans paiement.
 - Personnalisation, à propos, formulaire de devis, confirmation, page 404 et brouillons légaux.
-- Logos originaux fournis par le client : version horizontale sombre, claire et signature. Les fichiers PNG originaux sont conservés sans retouche. Leur cadrage est réalisé en CSS.
+- Logos originaux fournis par le client : version horizontale sombre, claire et signature. Les fichiers PNG originaux sont conservés sans retouche. Le site affiche des copies web dérivées : `logo-bbd-web.png` et `logo-bbd-clair-web.png` (mot-symbole recadré, fond transparent, 16 et 23 Ko) et `logo-signature-web.jpg` (800 px, 28 Ko).
 - Illustration canine originale de principe, distincte des photographies réelles.
 
 Le formulaire d’aperçu **n’envoie aucune donnée**, et ne prétend pas confirmer une réception. Le bouton permet de vérifier les champs et le parcours. La sélection de la parka (version et quantité) est préremplie dans le formulaire. Un paramètre `campagne` est transmis de page en page uniquement par l’URL, sans stockage local ni cookie publicitaire.
@@ -71,7 +71,7 @@ Le QR devra pointer vers l’URL publique définitive, par exemple `https://VOTR
 
 `npm run check` contrôle les liens internes, ressources, titres uniques, H1 et les prix du produit. Voir `RECETTE.md` pour les contrôles effectués et les limites de cette livraison.
 
-Les objectifs WCAG 2.2 AA et Core Web Vitals sont des cibles de recette, pas des certifications acquises. Les logos PNG originaux devront idéalement être remplacés par des exports web légers ou SVG fournis par la marque avant mise en ligne.
+Les objectifs WCAG 2.2 AA et Core Web Vitals sont des cibles de recette, pas des certifications acquises. Des copies web légères des logos sont en place ; un export SVG fourni par la marque resterait préférable avant mise en ligne.
 
 ## Ajout des textiles
 Le catalogue compte maintenant quatre références et 21 pages. Ajouts : parka imperméable (69/79 EUR HT), doudoune rétro-réfléchissante (49/59 EUR HT), doudoune sans manches à capuche amovible (49/59 EUR HT). Prix par pièce, sans/avec logo, lots de quatre. Correspondance des quatre nouvelles photos proposée au client et à confirmer. Les deux photos IMG_0726 et IMG_0727 sont associées provisoirement à la parka ; le gilet gris à la doudoune rétro-réfléchissante et le bleu à la capuche amovible.

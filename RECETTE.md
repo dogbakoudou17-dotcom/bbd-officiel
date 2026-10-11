@@ -27,7 +27,7 @@
 - Audit d’accessibilité complet (contrastes, lecteur d’écran, parcours clavier) ; l’implémentation ne constitue pas une certification WCAG.
 - Recette Safari, Firefox, Edge et téléphones physiques.
 - Mesure LCP, INP et CLS sur le site déployé. Aucune mesure de performance de production n’a été annoncée.
-- Exports web optimisés des logos d’origine, et validation de l’URL publique avant génération du QR code à imprimer.
+- Validation de l’URL publique avant génération du QR code à imprimer.
 
 Les captures d’aperçu remises à côté du dossier source illustrent le rendu local de cette version.
 
@@ -49,3 +49,11 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Effet de profondeur limité au pointeur et neutralisé avec `prefers-reduced-motion`.
 - Images de campagne converties en JPEG : environ 165 Ko pour le panorama et 247 Ko pour le portrait.
 - Après intégration : 24 pages et 721 liens/ressources internes vérifiés, JavaScript syntaxiquement valide.
+
+## Reprise Claude Code et logos web — 11 octobre 2026
+
+- Dépôt recloné depuis GitHub ; build, contrôle des liens et syntaxe JavaScript conformes à la référence (24 pages, 721 liens et ressources).
+- Contrôle visuel : accueil à 1440 px, menu mobile (Échap et retour du focus), catalogue textile, fiche sweat zippé bleu (2 lots avec logo = 8 pièces, 392 € HT), préremplissage du devis, « Photo à venir » et mentions « Mise en scène illustrative ».
+- Constat : logos d’en-tête de 1,1 Mo et 437 Ko chargés sur chaque page, fond crème opaque visible derrière le logo.
+- Correction : copies web recadrées à fond transparent (16 et 23 Ko) et signature en JPEG 800 px (28 Ko) ; originaux conservés. Poids des logos par page : environ 1,5 Mo → 40 Ko.
+- Après correction : 24 pages vérifiées à 320, 375 et 1440 px, sans débordement horizontal, image cassée ni erreur JavaScript ; un H1 par page.
