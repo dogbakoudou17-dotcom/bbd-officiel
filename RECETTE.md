@@ -139,3 +139,8 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 
 - Vente au kilo, **25 € HT / kg** (30 € TTC) ; textes repris du descriptif ; photo 900 × 900 (83 Ko), original dans `sources/tendon-de-boeuf/`.
 - Test : 2 kg = 50 € HT · 60 € TTC ; 320 et 1440 px sans débordement. 36 pages, 1181 liens/ressources vérifiés.
+
+## Aile de poulet naturelle — 11 octobre 2026
+
+- Vente au kilo, **15 € HT / kg** (18 € TTC) ; textes repris du descriptif (émojis retirés) ; photo 900 × 900 (76 Ko), original dans `sources/aile-de-poulet/`.
+- Test : 3 kg = 45 € HT · 54 € TTC ; 320 et 1440 px sans débordement. 37 pages, 1213 liens/ressources vérifiés.

@@ -1390,5 +1390,68 @@
     ],
     "personalization": null,
     "details": "Vendu au kilo. Taille des morceaux, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "aile-de-poulet",
+    "name": "Aile de poulet naturelle",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise savoureuse et croustillante qui ravira les chiens gourmands. Les ailes de poulet offrent une texture croustillante et appétissante, idéale pour proposer à votre chien une friandise naturelle et varier les plaisirs au quotidien.",
+    "confirmed": true,
+    "image": "/assets/aile-de-poulet.jpg",
+    "alt": "Ailes de poulet séchées pour chien, en tas sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 15,
+        "pack": 1
+      }
+    ],
+    "price": "15 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir les ailes de poulet ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéale comme récompense",
+          "Naturellement savoureuse",
+          "Texture croustillante appréciée des chiens",
+          "Sans colorants ni arômes artificiels",
+          "Parfaites pour les chiens amateurs de produits naturels",
+          "Une friandise simple et gourmande"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez une aile de poulet à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Adaptez la quantité à la taille, à l’âge et au niveau d’activité de votre chien.",
+          "Pour les chiens gloutons ou peu habitués à ce type de friandise, surveillez attentivement leur consommation.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]

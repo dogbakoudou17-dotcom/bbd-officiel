@@ -52,6 +52,7 @@ Le rendu actuel comprend :
 | Cou de poulet naturel | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
 | Sabot de veau naturel | 0,45 € HT/pièce (lot de 100) | — | base HT/TTC à confirmer |
 | Tendon de bœuf naturel | 25 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
+| Aile de poulet naturelle | 15 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
 
 Les données exécutables font foi dans `data/products.json`.
 
