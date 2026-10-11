@@ -168,4 +168,5 @@ Ce qui change :
 - **Fiches** : étiquette du catalogue, fil d'Ariane complet, bouton de devis pleine largeur, 3 réassurances sous le bouton, section « Dans la même famille ».
 - **Devis** : étapes à pictos dans l'encadré, « Aucun paiement à cette étape ».
 - **Système** : jeu unique de pictogrammes SVG (trait 1,7 px), boutons ≥ 52 px de haut (58 px pour les principaux), feuille `assets/ui.css` chargée après les styles existants, sélecteur HT/TTC disponible sur toutes les pages (`prix.js` chargé partout), apparitions déclenchées seulement si l'onglet est visible au chargement.
+- TVA : taux de **20 % pour tous les produits** confirmé par le propriétaire le 11 octobre 2026 (`vatRateConfirmed: true`) ; la mention « taux à confirmer » disparaît des fiches et du catalogue, et ce point ne bloque plus le build de production.
 - Les engagements affichés reprennent uniquement des faits déjà établis : demande sans engagement et sans paiement en ligne, prix HT et TTC, version avec logo sur les textiles. Aucun délai, avis ou certification n'a été ajouté.

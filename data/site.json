@@ -10,7 +10,7 @@
   "legalStatus": "",
   "vat": "",
   "vatRate": 20,
-  "vatRateConfirmed": false,
+  "vatRateConfirmed": true,
   "privacyContact": "",
   "retention": "",
   "legalBasis": "",
