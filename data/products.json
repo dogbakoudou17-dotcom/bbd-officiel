@@ -144,16 +144,16 @@
   },
   {
     "id": "sweat-zippe-bleu",
-    "name": "Sweat zippé Bourget bleu",
+    "name": "Sweat zippé Bourget bleu marine",
     "family": "textiles",
-    "description": "Un sweat zippé à capuche bleu, coupe ample et tendance, pour équiper votre collectif avec ou sans votre logo. Proposé par lot de 4 pièces, du XS au XXXL.",
+    "description": "Un sweat zippé à capuche bleu marine, coupe ample et tendance, pour équiper votre collectif avec ou sans votre logo. Proposé par lot de 4 pièces, du XS au XXXL.",
     "confirmed": true,
-    "image": "/assets/sweat-zippe-bleu.jpg",
-    "alt": "Sweat zippé bleu à capuche porté de face, photo fournie par BBD Officiel",
+    "image": "/assets/sweat-zippe-bleu-vue-2.jpg",
+    "alt": "Sweat zippé Bourget bleu marine à capuche porté de face, photo fournie par BBD Officiel",
     "gallery": [
       {
-        "image": "/assets/sweat-zippe-bleu-vue-2.jpg",
-        "alt": "Seconde présentation du sweat zippé bleu, photo fournie par BBD Officiel"
+        "image": "/assets/sweat-zippe-bleu.jpg",
+        "alt": "Seconde présentation du sweat zippé bleu marine, photo fournie par BBD Officiel"
       }
     ],
     "variants": [
@@ -164,7 +164,7 @@
     "minimum": "Commande par lot de 4 pièces",
     "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Coloris : bleu. Tailles du XS au XXXL. Disponibilités, transport et délais à confirmer.",
+    "details": "Coloris : bleu marine. Tailles du XS au XXXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
     "packSize": 4,
@@ -204,7 +204,7 @@
     "description": "Un sweat zippé à capuche noir, coupe ample et tendance, pour équiper votre collectif avec ou sans votre logo. Proposé par lot de 4 pièces, du XS au XXXL.",
     "confirmed": true,
     "image": "/assets/sweat-zippe-noir.jpg",
-    "alt": "Sweat zippé noir à capuche porté de face, photo fournie par BBD Officiel",
+    "alt": "Sweat zippé Bourget noir à capuche porté de face, photo fournie par BBD Officiel",
     "gallery": [
       {
         "image": "/assets/sweat-zippe-noir-vue-2.jpg",

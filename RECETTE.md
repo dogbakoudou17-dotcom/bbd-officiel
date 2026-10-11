@@ -71,5 +71,6 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 ## Descriptifs doudoune capuche et sweats Bourget — 11 octobre 2026
 
 - Doudoune « capuche garde bleu » : photo reçue identique (même image) à celle de la fiche « à capuche amovible » ; confirmé par le propriétaire comme même produit. Fiche existante renommée, adresse conservée, tarif corrigé de 49/59 à **39/49 € HT** (156 / 196 € HT le lot de 4 ; 46,80 / 58,80 € TTC la pièce). Rubriques Détails, Taille & coupe, Composition & entretien ajoutées.
-- Sweats zippés renommés « Bourget » bleu et noir ; tarifs 39/49 € HT inchangés et conformes au descriptif ; mêmes rubriques ajoutées. La photo jointe au descriptif du sweat était un doublon de la photo de doudoune : non utilisée, les deux photos existantes par coloris sont conservées.
+- Sweats zippés renommés « Bourget » bleu marine et noir ; tarifs 39/49 € HT inchangés et conformes au descriptif ; mêmes rubriques ajoutées. Un premier envoi portait par erreur la photo de la doudoune : annulé à la demande du propriétaire, puis renvoyé avec `sweatzippebourget.zip`.
+- Photos de l'archive : « BLEU MARINE » identique à `sweat-zippe-bleu-vue-2.jpg` et « NOIR » identique à `sweat-zippe-noir.jpg` (écart moyen ≈ 0,05/255). Aucun nouveau fichier ; la photo bleu marine reçue devient la photo principale de la fiche bleue, comme pour le noir.
 - 25 pages, 797 liens/ressources ; prix HT et TTC contrôlés par `check.mjs`.

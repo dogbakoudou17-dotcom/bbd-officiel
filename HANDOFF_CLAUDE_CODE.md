@@ -38,7 +38,7 @@ Le rendu actuel comprend :
 | Doudoune rétro-réfléchissante | 49 € HT/pièce | 59 € HT/pièce | lot de 4 |
 | Doudoune sans manches capuche garde bleu (ex « à capuche amovible ») | 39 € HT/pièce | 49 € HT/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
 | Doudoune sans manches | 25 € HT/pièce | 35 € HT/pièce | lot de 4, photo manquante |
-| Sweat zippé Bourget bleu | 39 € HT/pièce | 49 € HT/pièce | lot de 4 |
+| Sweat zippé Bourget bleu marine | 39 € HT/pièce | 49 € HT/pièce | lot de 4 |
 | Sweat zippé Bourget noir | 39 € HT/pièce | 49 € HT/pièce | lot de 4 |
 | BB Bed Confort & Bien-être 100 × 150 | 35 € HT/unité (lot de 3) | 31,50 € HT/unité (lot de 10) | base HT/TTC à confirmer |
 

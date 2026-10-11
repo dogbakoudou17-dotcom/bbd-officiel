@@ -40,7 +40,7 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 3. **Doudoune rétro-réfléchissante** : 49 € HT sans logo ou 59 € HT avec logo, par lot de quatre.
 4. **Doudoune sans manches capuche garde bleu** (d'abord nommée « à capuche amovible ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Le tarif initial de 49/59 € HT a été corrigé par le propriétaire le 11 octobre 2026 ; tailles S à XXL, composition et entretien ajoutés.
 5. **Doudoune sans manches** : 25 € HT sans logo ou 35 € HT avec logo, par lot de quatre. Les deux fichiers reçus n'étaient pas exploitables ; la fiche affiche donc « Photo à venir ».
-6. **Sweat zippé Bourget bleu** : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre ; tailles XS à XXXL, 70 % coton / 30 % polyester.
+6. **Sweat zippé Bourget bleu marine** : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre ; tailles XS à XXXL, 70 % coton / 30 % polyester.
 7. **Sweat zippé Bourget noir** : mêmes tarifs et caractéristiques que le bleu.
 8. **BB Bed Confort & Bien-être 100 × 150 cm** (accessoires) : lot de 3 à 35 € l'unité, lot de 10 à 31,50 € l'unité (10 pour le prix de 9) ; 3 motifs, 17 coloris. Base HT ou TTC à confirmer.
 
