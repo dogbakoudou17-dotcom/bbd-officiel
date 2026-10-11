@@ -1,0 +1,5 @@
+[
+  {"id":"signature-elevage","name":"Signature Élevage","profile":"eleveurs","audience":"Éleveurs","description":"Votre identité, du premier contact au départ d’un chiot.","items":["Une tenue aux couleurs de l’élevage","Une attention pour les adoptants","Des accessoires à votre image"],"confirmed":false},
+  {"id":"esprit-club","name":"Esprit Club","profile":"clubs","audience":"Clubs & équipes","description":"Une sélection commune pour celles et ceux qui font vivre votre club.","items":["Des tenues pour votre collectif","Des objets pour les adhérents","Une sélection pour vos rassemblements"],"confirmed":false},
+  {"id":"temps-fort","name":"Temps Fort","profile":"evenements","audience":"Événements","description":"Un ensemble pensé autour des personnes et des moments de votre événement.","items":["Des tenues pour les bénévoles","Des attentions pour les participants","Des dotations et récompenses"],"confirmed":false}
+]

@@ -94,4 +94,3 @@ Ces images sont identifiées sur le site comme des **mises en scène illustrativ
 L’accueil comporte désormais une narration photographique, un rail tactile de six produits, des apparitions progressives au défilement et un effet de profondeur léger sur les visuels. Tout le contenu reste accessible sans JavaScript. Les mouvements sont désactivés lorsque le navigateur indique une préférence de réduction des animations.
 
 Prompts finaux : photographie éditoriale premium lors d’un événement canin, avec vêtements conformes aux références, puis scène verticale de préparation d’un chien par deux membres d’un club. Palette ivoire, noir, bleu marine et vert sauge ; sans texte, sans filigrane et sans faux logo dans l’image.
-

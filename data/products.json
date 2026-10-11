@@ -1,0 +1,167 @@
+[
+  {
+    "id": "parka-molletonnee",
+    "name": "Parka molletonnée",
+    "family": "textiles",
+    "description": "Une parka pour équiper votre collectif, avec ou sans votre logo. Proposée par lot de 4 pièces.",
+    "confirmed": true,
+    "image": "/assets/parka-molletonnee.jpg",
+    "alt": "Parka longue sombre à capuche et doublure claire, portée par un mannequin, photo fournie par BBD Officiel",
+    "variants": [
+      "Sans logo : 69 € HT par pièce, soit 276 € HT le lot de 4",
+      "Avec votre logo : 79 € HT par pièce, soit 316 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo disponible au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "69 € HT / pièce sans logo · 79 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Tailles, coloris, composition, caractéristiques techniques, transport et délais à confirmer. Aucun niveau d’imperméabilité ou de protection n’est présumé à partir de la photo.",
+    "unitPlain": 69,
+    "unitLogo": 79,
+    "packSize": 4
+  },
+  {
+    "id": "parka-impermeable",
+    "name": "Parka imperméable",
+    "family": "textiles",
+    "description": "Une parka imperméable pour votre collectif, disponible avec ou sans votre logo, par lot de 4 pièces.",
+    "confirmed": true,
+    "image": "/assets/parka-impermeable.jpg",
+    "alt": "Parka sombre à capuche portée de face, photo fournie par BBD Officiel",
+    "variants": [
+      "Sans logo : 69 € HT par pièce, soit 276 € HT le lot de 4",
+      "Avec votre logo : 79 € HT par pièce, soit 316 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "69 € HT / pièce sans logo · 79 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Niveau d’imperméabilité et caractéristiques techniques à préciser.",
+    "unitPlain": 69,
+    "unitLogo": 79,
+    "packSize": 4,
+    "gallery": [
+      {
+        "image": "/assets/parka-impermeable-vue-2.jpg",
+        "alt": "Seconde photo de parka sombre à capuche fournie par BBD Officiel"
+      }
+    ]
+  },
+  {
+    "id": "doudoune-retro-reflechissante",
+    "name": "Doudoune rétro-réfléchissante",
+    "family": "textiles",
+    "description": "Une doudoune rétro-réfléchissante pour votre équipe, avec ou sans votre logo, par lot de 4 pièces.",
+    "confirmed": true,
+    "image": "/assets/doudoune-retro-reflechissante.jpg",
+    "alt": "Doudoune grise sans manches portée par un mannequin, photo fournie par BBD Officiel",
+    "variants": [
+      "Sans logo : 49 € HT par pièce, soit 196 € HT le lot de 4",
+      "Avec votre logo : 59 € HT par pièce, soit 236 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "49 € HT / pièce sans logo · 59 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Caractéristiques de rétro-réflexion à préciser. Aucune certification de haute visibilité ou qualification d’équipement de protection n’est annoncée.",
+    "unitPlain": 49,
+    "unitLogo": 59,
+    "packSize": 4
+  },
+  {
+    "id": "doudoune-sans-manches-capuche-amovible",
+    "name": "Doudoune sans manches à capuche amovible",
+    "family": "textiles",
+    "description": "Une doudoune sans manches à capuche amovible pour équiper votre collectif, avec ou sans votre logo. Proposée par lot de 4 pièces.",
+    "confirmed": true,
+    "image": "/assets/doudoune-sans-manches-capuche-amovible.jpg",
+    "alt": "Doudoune bleu foncé sans manches avec capuche, portée par un mannequin, photo fournie par BBD Officiel",
+    "variants": [
+      "Sans logo : 49 € HT par pièce, soit 196 € HT le lot de 4",
+      "Avec votre logo : 59 € HT par pièce, soit 236 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "49 € HT / pièce sans logo · 59 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Modalités de personnalisation à préciser.",
+    "unitPlain": 49,
+    "unitLogo": 59,
+    "packSize": 4
+  },
+  {
+    "id": "doudoune-sans-manches",
+    "name": "Doudoune sans manches",
+    "family": "textiles",
+    "description": "Une doudoune sans manches pour votre collectif, avec ou sans votre logo. Proposée par lot de 4 pièces.",
+    "confirmed": true,
+    "image": null,
+    "alt": "",
+    "variants": [
+      "Sans logo : 25 € HT par pièce, soit 100 € HT le lot de 4",
+      "Avec votre logo : 35 € HT par pièce, soit 140 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "25 € HT / pièce sans logo · 35 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Photographies à ajouter dès réception de fichiers exploitables.",
+    "unitPlain": 25,
+    "unitLogo": 35,
+    "packSize": 4
+  },
+  {
+    "id": "sweat-zippe-bleu",
+    "name": "Sweat zippé bleu",
+    "family": "textiles",
+    "description": "Un sweat zippé bleu à capuche pour équiper votre collectif, avec ou sans votre logo. Proposé par lot de 4 pièces.",
+    "confirmed": true,
+    "image": "/assets/sweat-zippe-bleu.jpg",
+    "alt": "Sweat zippé bleu à capuche porté de face, photo fournie par BBD Officiel",
+    "gallery": [
+      {
+        "image": "/assets/sweat-zippe-bleu-vue-2.jpg",
+        "alt": "Seconde présentation du sweat zippé bleu, photo fournie par BBD Officiel"
+      }
+    ],
+    "variants": [
+      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
+      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Coloris : bleu. Tailles, composition, disponibilité, transport et délais à confirmer.",
+    "unitPlain": 39,
+    "unitLogo": 49,
+    "packSize": 4
+  },
+  {
+    "id": "sweat-zippe-noir",
+    "name": "Sweat zippé noir",
+    "family": "textiles",
+    "description": "Un sweat zippé noir à capuche pour équiper votre collectif, avec ou sans votre logo. Proposé par lot de 4 pièces.",
+    "confirmed": true,
+    "image": "/assets/sweat-zippe-noir.jpg",
+    "alt": "Sweat zippé noir à capuche porté de face, photo fournie par BBD Officiel",
+    "gallery": [
+      {
+        "image": "/assets/sweat-zippe-noir-vue-2.jpg",
+        "alt": "Seconde présentation du sweat zippé noir, photo fournie par BBD Officiel"
+      }
+    ],
+    "variants": [
+      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
+      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
+    ],
+    "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
+    "minimum": "Commande par lot de 4 pièces",
+    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
+    "taxStatus": "HT",
+    "details": "Coloris : noir. Tailles, composition, disponibilité, transport et délais à confirmer.",
+    "unitPlain": 39,
+    "unitLogo": 49,
+    "packSize": 4
+  }
+]
