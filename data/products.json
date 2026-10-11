@@ -7,14 +7,9 @@
     "confirmed": true,
     "image": "/assets/parka-elysee-noir.jpg",
     "alt": "Parka Élysée noire à capuche, intérieur clair aspect polaire, portée par un mannequin, photo fournie par BBD Officiel",
-    "variants": [
-      "Sans logo : 69 € HT par pièce, soit 276 € HT le lot de 4",
-      "Avec votre logo : 79 € HT par pièce, soit 316 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo disponible au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "69 € HT / pièce sans logo · 79 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Coloris : noir, bleu et kaki. Tailles du S au XXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 69,
     "unitLogo": 79,
@@ -147,14 +142,9 @@
     "confirmed": true,
     "image": "/assets/parka-impermeable-vue-2.jpg",
     "alt": "Parka Matignon noire à capuche, coupe longue, portée par un mannequin, photo fournie par BBD Officiel",
-    "variants": [
-      "Sans logo : 69 € HT par pièce, soit 276 € HT le lot de 4",
-      "Avec votre logo : 79 € HT par pièce, soit 316 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "69 € HT / pièce sans logo · 79 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Coloris : noir et bleu. Tailles du S au XXL. Entretien, disponibilités, transport et délais à confirmer.",
     "unitPlain": 69,
     "unitLogo": 79,
@@ -210,14 +200,9 @@
     "confirmed": true,
     "image": "/assets/doudoune-retro-reflechissante.jpg",
     "alt": "Doudoune sans manches grise à capuche, portée par un mannequin, photo fournie par BBD Officiel",
-    "variants": [
-      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
-      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Tailles du S au XXL. Coloris, disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
@@ -262,14 +247,9 @@
     "confirmed": true,
     "image": "/assets/doudoune-sans-manches-capuche-amovible.jpg",
     "alt": "Doudoune sans manches bleu foncé à capuche, portée par un mannequin, photo fournie par BBD Officiel",
-    "variants": [
-      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
-      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Coloris : bleu. Tailles du S au XXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
@@ -315,14 +295,9 @@
     "confirmed": true,
     "image": "/assets/doudoune-sans-manches-bac-noir.jpg",
     "alt": "Doudoune sans manches Bac noire à col montant, portée par un mannequin, photo fournie par BBD Officiel",
-    "variants": [
-      "Sans logo : 25 € HT par pièce, soit 100 € HT le lot de 4",
-      "Avec votre logo : 35 € HT par pièce, soit 140 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "25 € HT / pièce sans logo · 35 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Coloris : noir, gris, beige et bleu. Tailles du S au XXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 25,
     "unitLogo": 35,
@@ -414,14 +389,9 @@
         "alt": "Seconde présentation du sweat zippé bleu marine, photo fournie par BBD Officiel"
       }
     ],
-    "variants": [
-      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
-      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Coloris : bleu marine. Tailles du XS au XXXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
@@ -469,14 +439,9 @@
         "alt": "Seconde présentation du sweat zippé noir, photo fournie par BBD Officiel"
       }
     ],
-    "variants": [
-      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
-      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
-    ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
-    "taxStatus": "HT",
+    "taxStatus": "TTC",
     "details": "Coloris : noir. Tailles du XS au XXXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
@@ -543,8 +508,7 @@
         "note": "10 pour le prix de 9 : le 10ᵉ est offert."
       }
     ],
-    "price": "35 € HT / unité par lot de 3 · 31,50 € HT / unité par lot de 10",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Commande par lot de 3 ou de 10",
     "highlights": [
       "Doux et confortable pour votre animal",
@@ -739,8 +703,7 @@
         "pack": 100
       }
     ],
-    "price": "100 € HT le lot de 100 pièces, soit 1 € HT / pièce",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Commande par lot de 100 pièces",
     "sections": [
       {
@@ -797,8 +760,7 @@
         "pack": 50
       }
     ],
-    "price": "90 € HT le lot de 50 pièces, soit 1,80 € HT / pièce",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Commande par lot de 50 pièces",
     "sections": [
       {
@@ -855,8 +817,7 @@
         "pack": 50
       }
     ],
-    "price": "90 € HT le lot de 50 pièces, soit 1,80 € HT / pièce",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Commande par lot de 50 pièces",
     "sections": [
       {
@@ -919,8 +880,7 @@
         "pack": 1
       }
     ],
-    "price": "20 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -982,8 +942,7 @@
         "pack": 1
       }
     ],
-    "price": "20 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1045,8 +1004,7 @@
         "pack": 1
       }
     ],
-    "price": "20 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1108,8 +1066,7 @@
         "pack": 1
       }
     ],
-    "price": "35 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1171,8 +1128,7 @@
         "pack": 1
       }
     ],
-    "price": "45 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1234,8 +1190,7 @@
         "pack": 1
       }
     ],
-    "price": "20 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1292,8 +1247,7 @@
         "pack": 100
       }
     ],
-    "price": "45 € HT le lot de 100 pièces, soit 0,45 € HT / pièce",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Commande par lot de 100 pièces",
     "sections": [
       {
@@ -1354,8 +1308,7 @@
         "pack": 1
       }
     ],
-    "price": "25 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1417,8 +1370,7 @@
         "pack": 1
       }
     ],
-    "price": "15 € HT le kilo",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Vente au kilo",
     "sections": [
       {
@@ -1475,8 +1427,7 @@
         "pack": 50
       }
     ],
-    "price": "35 € HT le lot de 50 pièces, soit 0,70 € HT / pièce",
-    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "taxStatus": "TTC",
     "minimum": "Commande par lot de 50 pièces",
     "sections": [
       {

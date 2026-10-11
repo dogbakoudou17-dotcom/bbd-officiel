@@ -33,29 +33,29 @@ Le rendu actuel comprend :
 
 | Produit | Sans logo | Avec logo | Condition |
 | --- | ---: | ---: | --- |
-| Parka Élysée (ex « Parka molletonnée ») | 69 € HT/pièce | 79 € HT/pièce | lot de 4, noir, bleu et kaki |
-| Parka Matignon (ex « Parka imperméable ») | 69 € HT/pièce | 79 € HT/pièce | lot de 4, noir et bleu |
-| Doudoune sans manches rétro (ex « rétro-réfléchissante ») | 39 € HT/pièce | 49 € HT/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
-| Doudoune sans manches capuche garde bleu (ex « à capuche amovible ») | 39 € HT/pièce | 49 € HT/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
-| Doudoune sans manches Bac | 25 € HT/pièce | 35 € HT/pièce | lot de 4, 4 coloris photographiés |
-| Sweat zippé Bourget bleu marine | 39 € HT/pièce | 49 € HT/pièce | lot de 4 |
-| Sweat zippé Bourget noir | 39 € HT/pièce | 49 € HT/pièce | lot de 4 |
-| BB Bed Confort & Bien-être 100 × 150 | 35 € HT/unité (lot de 3) | 31,50 € HT/unité (lot de 10) | base HT/TTC à confirmer |
-| Oreille de porc naturelle | 1 € HT/pièce (lot de 100) | — | base HT/TTC à confirmer |
-| Oreille de bœuf naturelle | 1,80 € HT/pièce (lot de 50) | — | base HT/TTC à confirmer |
-| Oreille de bœuf avec poils | 1,80 € HT/pièce (lot de 50) | — | base HT/TTC à confirmer |
-| Trachée de bœuf naturelle | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Pattes de poulet soufflées | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Pattes de poulet naturelles | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Oreille de lapin avec poils | 35 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Sprat séché naturel | 45 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Cou de poulet naturel | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Sabot de veau naturel | 0,45 € HT/pièce (lot de 100) | — | base HT/TTC à confirmer |
-| Tendon de bœuf naturel | 25 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Aile de poulet naturelle | 15 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
-| Sabot de bœuf naturel | 0,70 € HT/pièce (lot de 50) | — | base HT/TTC à confirmer |
+| Parka Élysée (ex « Parka molletonnée ») | 69 € TTC/pièce | 79 € TTC/pièce | lot de 4, noir, bleu et kaki |
+| Parka Matignon (ex « Parka imperméable ») | 69 € TTC/pièce | 79 € TTC/pièce | lot de 4, noir et bleu |
+| Doudoune sans manches rétro (ex « rétro-réfléchissante ») | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
+| Doudoune sans manches capuche garde bleu (ex « à capuche amovible ») | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
+| Doudoune sans manches Bac | 25 € TTC/pièce | 35 € TTC/pièce | lot de 4, 4 coloris photographiés |
+| Sweat zippé Bourget bleu marine | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 |
+| Sweat zippé Bourget noir | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 |
+| BB Bed Confort & Bien-être 100 × 150 | 35 € TTC/unité (lot de 3) | 31,50 € TTC/unité (lot de 10) | |
+| Oreille de porc naturelle | 1 € TTC/pièce (lot de 100) | — | |
+| Oreille de bœuf naturelle | 1,80 € TTC/pièce (lot de 50) | — | |
+| Oreille de bœuf avec poils | 1,80 € TTC/pièce (lot de 50) | — | |
+| Trachée de bœuf naturelle | 20 € TTC/kg | — | vente au kilo |
+| Pattes de poulet soufflées | 20 € TTC/kg | — | vente au kilo |
+| Pattes de poulet naturelles | 20 € TTC/kg | — | vente au kilo |
+| Oreille de lapin avec poils | 35 € TTC/kg | — | vente au kilo |
+| Sprat séché naturel | 45 € TTC/kg | — | vente au kilo |
+| Cou de poulet naturel | 20 € TTC/kg | — | vente au kilo |
+| Sabot de veau naturel | 0,45 € TTC/pièce (lot de 100) | — | |
+| Tendon de bœuf naturel | 25 € TTC/kg | — | vente au kilo |
+| Aile de poulet naturelle | 15 € TTC/kg | — | vente au kilo |
+| Sabot de bœuf naturel | 0,70 € TTC/pièce (lot de 50) | — | |
 
-Les données exécutables font foi dans `data/products.json`.
+Montants **TTC**, tels que transmis (règle du 11/10/2026) ; le HT affiché sur le site est calculé. Les données exécutables font foi dans `data/products.json`.
 
 ## Décisions de conception déjà prises
 
@@ -101,7 +101,7 @@ Le formulaire local sert uniquement à la recette. Pour Netlify :
 - un H1 par page et titres uniques ;
 - syntaxe JavaScript ;
 - préremplissage produit/version/quantité du devis ;
-- calculs des lots et tarifs HT ;
+- calculs des lots et tarifs HT/TTC ;
 - formulaire d’aperçu sans transmission ;
 - contrôles visuels desktop et mobile lors des étapes de développement ;
 - blocage attendu du build de production tant que les données finales manquent.

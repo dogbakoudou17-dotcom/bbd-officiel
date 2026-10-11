@@ -149,3 +149,10 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 
 - Lot de 50 pièces à 35 € : **0,70 € HT / pièce** (0,84 € TTC), 35 € HT le lot ; textes repris du descriptif ; photo 900 × 900 (38 Ko), original dans `sources/sabot-de-boeuf/`. Photo distincte de celle du sabot de veau (écart 17, dû au fond blanc commun ; les doublons mesurés étaient < 1).
 - Test : 2 lots = 100 pièces · 70 € HT · 84 € TTC ; 320 et 1440 px sans débordement. 38 pages, 1245 liens/ressources vérifiés.
+
+## Règle des prix : transmis TTC — 11 octobre 2026
+
+- Consigne du propriétaire : **tous les prix transmis sont TTC**. Les données (`unitPlain`, `unitLogo`, `offers[].unit`) sont désormais lues comme TTC, sans modification des montants saisis ; `pricing.mjs` calcule le HT (`htFromTtc`, arrondi au centime, TVA de `site.json`). Les TTC affichés sont donc exactement ceux transmis. `taxStatus` passe à « TTC » pour toutes les références ; les chaînes figées `price` et `variants` sont supprimées (lignes de prix générées depuis les offres).
+- Ce qui précède dans ce journal mentionne des montants « HT » : ils correspondent en réalité aux TTC transmis.
+- Contrôles : parka sans logo 69 € TTC → 57,50 € HT ; avec logo 79 € TTC → 65,83 € HT ; 2 lots avec logo = 8 pièces · 526,67 € HT · 632 € TTC. BB Bed lot de 10 = 262,50 € HT · 315 € TTC. Oreille de porc lot de 100 = 83,33 € HT · 100 € TTC. Trachée 3 kg = 50 € HT · 60 € TTC. `check.mjs` vérifie HT calculés et TTC transmis pour chaque offre.
+- Le build de production reste bloqué tant que le taux de TVA (`vatRateConfirmed`) n'est pas confirmé.

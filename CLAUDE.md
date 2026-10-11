@@ -34,7 +34,7 @@ Après toute modification, exécuter `npm run build`, `npm run check` et `node -
 - Le parcours principal est : découvrir → comprendre → demander un devis → échanger → valider.
 - Aucun paiement en ligne au lancement.
 - Ne jamais inventer un produit, un tarif, une taille, un délai, une certification, une livraison, un témoignage ou une réalisation.
-- Les tarifs actuellement confirmés sont hors taxes et enregistrés dans `data/products.json`.
+- **Règle des prix (propriétaire, 11/10/2026) : tous les prix transmis sont TTC.** Ils sont enregistrés tels quels (TTC) dans `data/products.json` ; le HT est calculé par `pricing.mjs` avec le taux de `data/site.json`. Ne jamais saisir un HT dans les données.
 - Les trois formules sont fictives et doivent rester clairement présentées comme des exemples tant qu’elles ne sont pas validées.
 - Les deux images `campagne-*.jpg` sont des mises en scène générées à partir des produits. Conserver la mention visible « Mise en scène illustrative » ; ne pas les présenter comme des réalisations client.
 - Préserver les logos et photographies fournis. Ne pas remplacer silencieusement un fichier original.

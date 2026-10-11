@@ -60,7 +60,7 @@ Lorsque plusieurs fichiers sont indépendants, traite-les de manière autonome e
 - Conserver les logos, les photographies fournies, la palette ivoire/noir/vert sauge et la direction éditoriale actuelle.
 - Maintenir une expérience mobile rapide, accessible au clavier et compatible avec `prefers-reduced-motion`.
 - Ne jamais inventer de prix, délai, taille, stock, coloris, matière, certification, livraison, témoignage ou réalisation.
-- Tous les tarifs confirmés sont en euros HT et les minimums actuels sont gérés par lots de quatre.
+- Tous les prix transmis par le propriétaire sont TTC : les enregistrer en TTC dans `data/products.json`, le HT est calculé. Les minimums dépendent de chaque référence (lots ou vente au kilo).
 - Les trois formules restent fictives et clairement identifiées comme exemples jusqu'à validation.
 - Les campagnes générées restent signalées comme mises en scène illustratives.
 - Une fiche conserve « Photo à venir » tant qu'une photo exploitable et clairement associée n'est pas fournie (la doudoune sans manches Bac a reçu ses photos le 11/10/2026).

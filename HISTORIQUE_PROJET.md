@@ -33,17 +33,17 @@ Le parcours principal défini est : découvrir, comprendre, demander un devis, �
 
 ## Produits transmis et intégrés
 
-Les produits ont été ajoutés progressivement avec leurs photographies et tarifs confirmés en euros HT :
+Les produits ont été ajoutés progressivement avec leurs photographies et tarifs. **Règle fixée le 11 octobre 2026 : tous les prix transmis sont TTC** ; les montants ci-dessous sont donc TTC, le site calcule et affiche aussi le HT :
 
-1. **Parka Élysée** (d'abord nommée « Parka molletonnée ») : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre ; noir, bleu et kaki, S à XXL, intérieur aspect polaire, 6 visuels de détail. Renommée le 11 octobre 2026.
-2. **Parka Matignon** (d'abord nommée « Parka imperméable ») : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre ; noir et bleu, S à XXL, coupe longue. Renommée le 11 octobre 2026 d'après le descriptif du propriétaire, qui ne mentionne pas d'imperméabilité.
-3. **Doudoune sans manches rétro** (d'abord nommée « rétro-réfléchissante ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Nom et tarif (initialement 49/59 € HT) corrigés par le propriétaire le 11 octobre 2026, même photo ; coupe slim, taille petit, S à XXL.
-4. **Doudoune sans manches capuche garde bleu** (d'abord nommée « à capuche amovible ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Le tarif initial de 49/59 € HT a été corrigé par le propriétaire le 11 octobre 2026 ; tailles S à XXL, composition et entretien ajoutés.
-5. **Doudoune sans manches Bac** : 25 € HT sans logo ou 35 € HT avec logo, par lot de quatre. Les premiers fichiers reçus n'étaient pas exploitables ; quatre photos (noir, gris, beige, bleu) reçues le 11 octobre 2026, S à XXL.
-6. **Sweat zippé Bourget bleu marine** : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre ; tailles XS à XXXL, 70 % coton / 30 % polyester.
+1. **Parka Élysée** (d'abord nommée « Parka molletonnée ») : 69 € TTC sans logo ou 79 € TTC avec logo, par lot de quatre ; noir, bleu et kaki, S à XXL, intérieur aspect polaire, 6 visuels de détail. Renommée le 11 octobre 2026.
+2. **Parka Matignon** (d'abord nommée « Parka imperméable ») : 69 € TTC sans logo ou 79 € TTC avec logo, par lot de quatre ; noir et bleu, S à XXL, coupe longue. Renommée le 11 octobre 2026 d'après le descriptif du propriétaire, qui ne mentionne pas d'imperméabilité.
+3. **Doudoune sans manches rétro** (d'abord nommée « rétro-réfléchissante ») : 39 € TTC sans logo ou 49 € TTC avec logo, par lot de quatre. Nom et tarif (initialement 49/59 € TTC) corrigés par le propriétaire le 11 octobre 2026, même photo ; coupe slim, taille petit, S à XXL.
+4. **Doudoune sans manches capuche garde bleu** (d'abord nommée « à capuche amovible ») : 39 € TTC sans logo ou 49 € TTC avec logo, par lot de quatre. Le tarif initial de 49/59 € TTC a été corrigé par le propriétaire le 11 octobre 2026 ; tailles S à XXL, composition et entretien ajoutés.
+5. **Doudoune sans manches Bac** : 25 € TTC sans logo ou 35 € TTC avec logo, par lot de quatre. Les premiers fichiers reçus n'étaient pas exploitables ; quatre photos (noir, gris, beige, bleu) reçues le 11 octobre 2026, S à XXL.
+6. **Sweat zippé Bourget bleu marine** : 39 € TTC sans logo ou 49 € TTC avec logo, par lot de quatre ; tailles XS à XXXL, 70 % coton / 30 % polyester.
 7. **Sweat zippé Bourget noir** : mêmes tarifs et caractéristiques que le bleu.
-8. **BB Bed Confort & Bien-être 100 × 150 cm** (accessoires) : lot de 3 à 35 € l'unité, lot de 10 à 31,50 € l'unité (10 pour le prix de 9) ; 3 motifs, 17 coloris. Base HT ou TTC à confirmer.
-9. **Oreille de porc naturelle** (friandises & récompenses) : lot de 100 pièces à 100 €, soit 1 € la pièce. Base HT ou TTC à confirmer.
+8. **BB Bed Confort & Bien-être 100 × 150 cm** (accessoires) : lot de 3 à 35 € l'unité, lot de 10 à 31,50 € l'unité (10 pour le prix de 9) ; 3 motifs, 17 coloris.
+9. **Oreille de porc naturelle** (friandises & récompenses) : lot de 100 pièces à 100 €, soit 1 € la pièce.
 10. **Oreille de bœuf naturelle** et 11. **Oreille de bœuf avec poils** : lot de 50 pièces à 90 €, soit 1,80 € la pièce.
 12. **Trachée de bœuf naturelle**, 13. **Pattes de poulet soufflées** et 14. **Pattes de poulet naturelles** : vendues au kilo, 20 € le kilo.
 15. **Oreille de lapin avec poils** : vendue au kilo, 35 € le kilo (le titre de tarif reçu mentionnait par erreur la trachée).
@@ -53,7 +53,7 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 19. **Tendon de bœuf naturel** : vendu au kilo, 25 € le kilo.
 20. **Aile de poulet naturelle** : vendue au kilo, 15 € le kilo.
 21. **Sabot de bœuf naturel** : lot de 50 pièces à 35 €, soit 0,70 € la pièce.
-Base HT ou TTC de toutes les friandises à confirmer.
+Tous ces montants sont TTC.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
 
