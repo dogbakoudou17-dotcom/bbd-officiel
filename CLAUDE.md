@@ -38,8 +38,8 @@ Après toute modification, exécuter `npm run build`, `npm run check` et `node -
 - Les trois formules sont fictives et doivent rester clairement présentées comme des exemples tant qu’elles ne sont pas validées.
 - Les deux images `campagne-*.jpg` sont des mises en scène générées à partir des produits. Conserver la mention visible « Mise en scène illustrative » ; ne pas les présenter comme des réalisations client.
 - Préserver les logos et photographies fournis. Ne pas remplacer silencieusement un fichier original.
-- La doudoune sans manches n’a toujours pas de photographie exploitable : sa fiche affiche « Photo à venir ».
-- Ne pas annoncer que la doudoune dite rétro-réfléchissante est un équipement de protection ou certifiée sans preuve fournisseur.
+- Une fiche sans photo exploitable affiche « Photo à venir ». La doudoune sans manches Bac a reçu ses photos le 11/10/2026.
+- La doudoune d'abord nommée « rétro-réfléchissante » s'appelle désormais « Doudoune sans manches rétro » selon le propriétaire : ne lui attribuer aucune propriété réfléchissante, de protection ou de certification sans preuve fournisseur.
 
 ## Formulaire et données
 

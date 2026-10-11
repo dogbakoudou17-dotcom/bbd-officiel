@@ -63,8 +63,8 @@ Lorsque plusieurs fichiers sont indépendants, traite-les de manière autonome e
 - Tous les tarifs confirmés sont en euros HT et les minimums actuels sont gérés par lots de quatre.
 - Les trois formules restent fictives et clairement identifiées comme exemples jusqu'à validation.
 - Les campagnes générées restent signalées comme mises en scène illustratives.
-- La doudoune sans manches conserve « Photo à venir » tant qu'une photo exploitable et clairement associée n'est pas fournie.
-- Ne pas présenter la doudoune rétro-réfléchissante comme un équipement de protection ou un produit certifié sans justificatif.
+- Une fiche conserve « Photo à venir » tant qu'une photo exploitable et clairement associée n'est pas fournie (la doudoune sans manches Bac a reçu ses photos le 11/10/2026).
+- Ne pas attribuer à la « Doudoune sans manches rétro » (ex « rétro-réfléchissante ») de propriété réfléchissante, de protection ou de certification sans justificatif.
 - Ne stocker aucun mot de passe, jeton, accès Netlify ou donnée client dans Git.
 
 ## 5. Publication et formulaire

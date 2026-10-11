@@ -37,16 +37,16 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 
 1. **Parka molletonnée** : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre.
 2. **Parka imperméable** : 69 € HT sans logo ou 79 € HT avec logo, par lot de quatre.
-3. **Doudoune rétro-réfléchissante** : 49 € HT sans logo ou 59 € HT avec logo, par lot de quatre.
+3. **Doudoune sans manches rétro** (d'abord nommée « rétro-réfléchissante ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Nom et tarif (initialement 49/59 € HT) corrigés par le propriétaire le 11 octobre 2026, même photo ; coupe slim, taille petit, S à XXL.
 4. **Doudoune sans manches capuche garde bleu** (d'abord nommée « à capuche amovible ») : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre. Le tarif initial de 49/59 € HT a été corrigé par le propriétaire le 11 octobre 2026 ; tailles S à XXL, composition et entretien ajoutés.
-5. **Doudoune sans manches** : 25 € HT sans logo ou 35 € HT avec logo, par lot de quatre. Les deux fichiers reçus n'étaient pas exploitables ; la fiche affiche donc « Photo à venir ».
+5. **Doudoune sans manches Bac** : 25 € HT sans logo ou 35 € HT avec logo, par lot de quatre. Les premiers fichiers reçus n'étaient pas exploitables ; quatre photos (noir, gris, beige, bleu) reçues le 11 octobre 2026, S à XXL.
 6. **Sweat zippé Bourget bleu marine** : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre ; tailles XS à XXXL, 70 % coton / 30 % polyester.
 7. **Sweat zippé Bourget noir** : mêmes tarifs et caractéristiques que le bleu.
 8. **BB Bed Confort & Bien-être 100 × 150 cm** (accessoires) : lot de 3 à 35 € l'unité, lot de 10 à 31,50 € l'unité (10 pour le prix de 9) ; 3 motifs, 17 coloris. Base HT ou TTC à confirmer.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
 
-Le terme rétro-réfléchissant vient du nom communiqué par le propriétaire. Aucune certification ni fonction d'équipement de protection ne doit être déduite sans document fournisseur.
+Le terme rétro-réfléchissant venait du premier nom communiqué ; le propriétaire nomme désormais ce modèle « Doudoune sans manches rétro ». Aucune propriété réfléchissante, certification ni fonction d'équipement de protection ne doit être déduite sans document fournisseur.
 
 ## Enrichissement visuel
 

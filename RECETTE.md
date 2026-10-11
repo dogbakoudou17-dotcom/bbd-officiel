@@ -74,3 +74,11 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Sweats zippés renommés « Bourget » bleu marine et noir ; tarifs 39/49 € HT inchangés et conformes au descriptif ; mêmes rubriques ajoutées. Un premier envoi portait par erreur la photo de la doudoune : annulé à la demande du propriétaire, puis renvoyé avec `sweatzippebourget.zip`.
 - Photos de l'archive : « BLEU MARINE » identique à `sweat-zippe-bleu-vue-2.jpg` et « NOIR » identique à `sweat-zippe-noir.jpg` (écart moyen ≈ 0,05/255). Aucun nouveau fichier ; la photo bleu marine reçue devient la photo principale de la fiche bleue, comme pour le noir.
 - 25 pages, 797 liens/ressources ; prix HT et TTC contrôlés par `check.mjs`.
+
+## Doudounes Bac et rétro — 11 octobre 2026
+
+- Doudoune sans manches **Bac** (`doudounesansmanchesbac.zip`, 4 photos nouvelles) associée à la fiche « Doudoune sans manches » : mêmes tarifs 25/35 € HT, modèle à col montant sans capuche, fiche qui attendait ses photos. « Photo à venir » remplacé par une galerie de 4 coloris (noir par défaut, gris, beige, bleu). Originaux dans `sources/doudoune-sans-manches-bac/`, copies 800 × 1200 (49–63 Ko) et miniatures 180 × 240 (≈ 5 Ko).
+- Test : vignette beige → grande photo et coloris « Bac beige » ; 3 lots sans logo = 12 pièces · 300 € HT · 360 € TTC ; devis avec `coloris=Bac beige`. Mobile 375 px sans débordement.
+- Doudoune **rétro** : photo reçue identique à celle de la fiche « rétro-réfléchissante » (écart 0,31/255). Même logique que la doudoune capuche garde : fiche renommée « Doudoune sans manches rétro », adresse conservée, tarif corrigé de 49/59 à 39/49 € HT, rubriques ajoutées ; plus aucune mention « réfléchissante ».
+- La galerie de coloris accepte désormais des photos verticales (`thumbSize`, `swatchLabel`, `short`). Le rail de l'accueil affiche les sept textiles.
+- 25 pages, 809 liens/ressources vérifiés.

@@ -49,24 +49,55 @@
   },
   {
     "id": "doudoune-retro-reflechissante",
-    "name": "Doudoune rétro-réfléchissante",
+    "name": "Doudoune sans manches rétro",
     "family": "textiles",
-    "description": "Une doudoune rétro-réfléchissante pour votre équipe, avec ou sans votre logo, par lot de 4 pièces.",
+    "description": "Une doudoune sans manches chaude et tendance, avec capuche, pour équiper votre collectif avec ou sans votre logo. Proposée par lot de 4 pièces, du S au XXL.",
     "confirmed": true,
     "image": "/assets/doudoune-retro-reflechissante.jpg",
-    "alt": "Doudoune grise sans manches portée par un mannequin, photo fournie par BBD Officiel",
+    "alt": "Doudoune sans manches grise à capuche, portée par un mannequin, photo fournie par BBD Officiel",
     "variants": [
-      "Sans logo : 49 € HT par pièce, soit 196 € HT le lot de 4",
-      "Avec votre logo : 59 € HT par pièce, soit 236 € HT le lot de 4"
+      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
+      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
     ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "49 € HT / pièce sans logo · 59 € HT / pièce avec votre logo",
+    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Caractéristiques de rétro-réflexion à préciser. Aucune certification de haute visibilité ou qualification d’équipement de protection n’est annoncée.",
-    "unitPlain": 49,
-    "unitLogo": 59,
-    "packSize": 4
+    "details": "Tailles du S au XXL. Coloris, disponibilités, transport et délais à confirmer.",
+    "unitPlain": 39,
+    "unitLogo": 49,
+    "packSize": 4,
+    "sections": [
+      {
+        "title": "Détails du produit",
+        "open": true,
+        "items": [
+          "Doudoune sans manches chaude et tendance avec capuche",
+          "Fermeture par zip métallique",
+          "Col montant",
+          "Poches latérales zippées"
+        ]
+      },
+      {
+        "title": "Taille & coupe",
+        "items": [
+          "Tailles : du S au XXL",
+          "Coupe slim",
+          "Ce produit taille petit : nous vous conseillons de prendre une taille au-dessus de votre taille habituelle",
+          "Le mannequin mesure 1,80 m et porte une taille L"
+        ]
+      },
+      {
+        "title": "Composition & entretien",
+        "items": [
+          "Composition : 100 % polyester",
+          "Lavage à la main conseillé à 30 °C",
+          "Ne pas laver en machine",
+          "Laisser sécher à l’air libre",
+          "Ne pas repasser"
+        ]
+      }
+    ]
   },
   {
     "id": "doudoune-sans-manches-capuche-amovible",
@@ -123,12 +154,12 @@
   },
   {
     "id": "doudoune-sans-manches",
-    "name": "Doudoune sans manches",
+    "name": "Doudoune sans manches Bac",
     "family": "textiles",
-    "description": "Une doudoune sans manches pour votre collectif, avec ou sans votre logo. Proposée par lot de 4 pièces.",
+    "description": "Une doudoune sans manches chaude et tendance, à col montant, pour équiper votre collectif avec ou sans votre logo. Proposée par lot de 4 pièces, du S au XXL, en noir, gris, beige ou bleu.",
     "confirmed": true,
-    "image": null,
-    "alt": "",
+    "image": "/assets/doudoune-sans-manches-bac-noir.jpg",
+    "alt": "Doudoune sans manches Bac noire à col montant, portée par un mannequin, photo fournie par BBD Officiel",
     "variants": [
       "Sans logo : 25 € HT par pièce, soit 100 € HT le lot de 4",
       "Avec votre logo : 35 € HT par pièce, soit 140 € HT le lot de 4"
@@ -137,10 +168,82 @@
     "minimum": "Commande par lot de 4 pièces",
     "price": "25 € HT / pièce sans logo · 35 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Photographies à ajouter dès réception de fichiers exploitables.",
+    "details": "Coloris : noir, gris, beige et bleu. Tailles du S au XXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 25,
     "unitLogo": 35,
-    "packSize": 4
+    "packSize": 4,
+    "imageSize": [
+      800,
+      1200
+    ],
+    "thumbSize": [
+      180,
+      240
+    ],
+    "swatchLabel": "Coloris",
+    "swatches": [
+      {
+        "motif": "Coloris",
+        "label": "Bac noir",
+        "short": "noir",
+        "image": "/assets/doudoune-sans-manches-bac-noir.jpg",
+        "thumb": "/assets/doudoune-sans-manches-bac-noir-mini.jpg",
+        "alt": "Doudoune sans manches Bac noir à col montant, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Coloris",
+        "label": "Bac gris",
+        "short": "gris",
+        "image": "/assets/doudoune-sans-manches-bac-gris.jpg",
+        "thumb": "/assets/doudoune-sans-manches-bac-gris-mini.jpg",
+        "alt": "Doudoune sans manches Bac gris à col montant, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Coloris",
+        "label": "Bac beige",
+        "short": "beige",
+        "image": "/assets/doudoune-sans-manches-bac-beige.jpg",
+        "thumb": "/assets/doudoune-sans-manches-bac-beige-mini.jpg",
+        "alt": "Doudoune sans manches Bac beige à col montant, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Coloris",
+        "label": "Bac bleu",
+        "short": "bleu",
+        "image": "/assets/doudoune-sans-manches-bac-bleu.jpg",
+        "thumb": "/assets/doudoune-sans-manches-bac-bleu-mini.jpg",
+        "alt": "Doudoune sans manches Bac bleu à col montant, portée par un mannequin, photo fournie par BBD Officiel"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Détails du produit",
+        "open": true,
+        "items": [
+          "Doudoune sans manches chaude et tendance",
+          "Fermeture par zip métallique",
+          "Col montant",
+          "Poches latérales zippées"
+        ]
+      },
+      {
+        "title": "Taille & coupe",
+        "items": [
+          "Tailles : du S au XXL",
+          "Coupe classique",
+          "Ce produit taille normalement : prenez votre taille habituelle",
+          "Le mannequin mesure 1,81 m et porte une taille M"
+        ]
+      },
+      {
+        "title": "Composition & entretien",
+        "items": [
+          "Matière principale : 100 % polyester",
+          "Doublure : 100 % polyester",
+          "Lavable en machine à 30 °C"
+        ]
+      }
+    ]
   },
   {
     "id": "sweat-zippe-bleu",
