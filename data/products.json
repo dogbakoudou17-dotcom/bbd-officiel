@@ -1144,5 +1144,68 @@
     ],
     "personalization": null,
     "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "sprat-seche",
+    "name": "Sprat séché naturel",
+    "family": "recompenses",
+    "description": "Faites découvrir à votre compagnon une friandise naturelle au bon goût de la mer. Petits poissons naturellement savoureux, les sprats sont une excellente friandise pour les chiens ; leur format pratique permet de les donner entiers ou en récompense au cours de la journée.",
+    "confirmed": true,
+    "image": "/assets/sprat-seche.jpg",
+    "alt": "Sprats séchés entiers pour chien, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 45,
+        "pack": 1
+      }
+    ],
+    "price": "45 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir le sprat ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéal comme récompense",
+          "Naturellement savoureux et appétissant",
+          "Source naturelle de protéines",
+          "Sans colorants ni arômes artificiels",
+          "Une délicieuse façon de varier les plaisirs",
+          "Convient aux chiens de différentes tailles"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez les sprats à votre chien comme friandise ou récompense, en complément de son alimentation habituelle.",
+          "Adaptez la quantité à la taille, à l’âge et au niveau d’activité de votre chien.",
+          "Toujours donner sous surveillance.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité et le goût des sprats."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendus au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]

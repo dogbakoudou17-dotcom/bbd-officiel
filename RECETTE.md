@@ -119,3 +119,8 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Vente au kilo, **35 € HT / kg** (42 € TTC). Le titre de tarif du descriptif reçu indiquait « TRACHEE DE BOEUF » (copier-coller probable) : le montant 35 €, différent des 20 € de la trachée, est appliqué à l'oreille de lapin ; la trachée reste à 20 €.
 - Photo `OREILLE DE LAPIN POILS.jpeg` (Téléchargements), 900 × 900, 41 Ko ; original dans `sources/oreille-de-lapin-avec-poils/`.
 - Test : 2 kg = 70 € HT · 84 € TTC ; devis prérempli. Mobile 375 px sans débordement. 32 pages, 1053 liens/ressources vérifiés.
+
+## Sprat séché naturel — 11 octobre 2026
+
+- Vente au kilo, **45 € HT / kg** (54 € TTC) ; textes repris du descriptif ; photo 900 × 900 (43 Ko), original dans `sources/sprat-seche/`.
+- Test : 3 kg = 135 € HT · 162 € TTC ; 320 et 1440 px sans débordement. 33 pages, 1085 liens/ressources vérifiés.

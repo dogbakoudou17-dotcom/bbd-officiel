@@ -48,6 +48,7 @@ Le rendu actuel comprend :
 | Pattes de poulet soufflées | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
 | Pattes de poulet naturelles | 20 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
 | Oreille de lapin avec poils | 35 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
+| Sprat séché naturel | 45 € HT/kg | — | vente au kilo, base HT/TTC à confirmer |
 
 Les données exécutables font foi dans `data/products.json`.
 

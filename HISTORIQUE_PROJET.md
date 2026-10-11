@@ -47,6 +47,7 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 10. **Oreille de bœuf naturelle** et 11. **Oreille de bœuf avec poils** : lot de 50 pièces à 90 €, soit 1,80 € la pièce.
 12. **Trachée de bœuf naturelle**, 13. **Pattes de poulet soufflées** et 14. **Pattes de poulet naturelles** : vendues au kilo, 20 € le kilo.
 15. **Oreille de lapin avec poils** : vendue au kilo, 35 € le kilo (le titre de tarif reçu mentionnait par erreur la trachée).
+16. **Sprat séché naturel** : vendu au kilo, 45 € le kilo.
 Base HT ou TTC de toutes les friandises à confirmer.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
