@@ -144,3 +144,8 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 
 - Vente au kilo, **15 € HT / kg** (18 € TTC) ; textes repris du descriptif (émojis retirés) ; photo 900 × 900 (76 Ko), original dans `sources/aile-de-poulet/`.
 - Test : 3 kg = 45 € HT · 54 € TTC ; 320 et 1440 px sans débordement. 37 pages, 1213 liens/ressources vérifiés.
+
+## Sabot de bœuf naturel — 11 octobre 2026
+
+- Lot de 50 pièces à 35 € : **0,70 € HT / pièce** (0,84 € TTC), 35 € HT le lot ; textes repris du descriptif ; photo 900 × 900 (38 Ko), original dans `sources/sabot-de-boeuf/`. Photo distincte de celle du sabot de veau (écart 17, dû au fond blanc commun ; les doublons mesurés étaient < 1).
+- Test : 2 lots = 100 pièces · 70 € HT · 84 € TTC ; 320 et 1440 px sans débordement. 38 pages, 1245 liens/ressources vérifiés.

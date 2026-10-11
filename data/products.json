@@ -1453,5 +1453,62 @@
     ],
     "personalization": null,
     "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "sabot-de-boeuf",
+    "name": "Sabot de bœuf naturel",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise idéale pour les chiens qui aiment mâcher et s’occuper durablement. Grâce à sa texture particulièrement résistante, le sabot de bœuf offre un véritable moment de mastication et permet à votre chien de satisfaire son besoin naturel de mâcher.",
+    "confirmed": true,
+    "image": "/assets/sabot-de-boeuf.jpg",
+    "alt": "Deux sabots de bœuf séchés pour chien, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-50",
+        "label": "Lot de 50",
+        "unit": 0.7,
+        "pack": 50
+      }
+    ],
+    "price": "35 € HT le lot de 50 pièces, soit 0,70 € HT / pièce",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Commande par lot de 50 pièces",
+    "sections": [
+      {
+        "title": "Pourquoi choisir le sabot de bœuf ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Favorise l’activité de mastication",
+          "Idéal pour occuper votre compagnon",
+          "Texture résistante, adaptée aux chiens amateurs de mastication",
+          "Sans colorants ni arômes artificiels",
+          "Convient particulièrement aux chiens ayant un fort besoin de mastication"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez le sabot de bœuf à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Choisissez une taille adaptée à votre chien et à sa puissance de mastication.",
+          "Retirez le produit lorsqu’il devient suffisamment petit pour être avalé.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Refermer soigneusement après ouverture."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]

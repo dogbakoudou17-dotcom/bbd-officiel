@@ -52,6 +52,7 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 18. **Sabot de veau naturel** : lot de 100 pièces à 45 €, soit 0,45 € la pièce.
 19. **Tendon de bœuf naturel** : vendu au kilo, 25 € le kilo.
 20. **Aile de poulet naturelle** : vendue au kilo, 15 € le kilo.
+21. **Sabot de bœuf naturel** : lot de 50 pièces à 35 €, soit 0,70 € la pièce.
 Base HT ou TTC de toutes les friandises à confirmer.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
