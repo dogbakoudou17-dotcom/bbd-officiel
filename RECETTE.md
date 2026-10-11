@@ -129,3 +129,8 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 
 - Vente au kilo, **20 € HT / kg** (24 € TTC) ; textes repris du descriptif ; photo 900 × 900 (108 Ko, image très détaillée), original dans `sources/cou-de-poulet/`.
 - Test : 4 kg = 80 € HT · 96 € TTC ; 320 et 1440 px sans débordement. 34 pages, 1117 liens/ressources vérifiés.
+
+## Sabot de veau naturel — 11 octobre 2026
+
+- Lot de 100 pièces à 45 € : **0,45 € HT / pièce** (0,54 € TTC), 45 € HT le lot ; textes repris du descriptif (mode d'emploi et conservation à la lettre) ; photo 900 × 900 (29 Ko), original dans `sources/sabot-de-veau/`.
+- Test : 3 lots = 300 pièces · 135 € HT · 162 € TTC ; 320 et 1440 px sans débordement. 35 pages, 1149 liens/ressources vérifiés.
