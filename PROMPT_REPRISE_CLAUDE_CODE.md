@@ -8,10 +8,11 @@ Lis intégralement, dans cet ordre :
 
 1. `CLAUDE.md` ;
 2. `HANDOFF_CLAUDE_CODE.md` ;
-3. `README.md` ;
-4. `RECETTE.md` ;
-5. `handoff/Cahier_des_charges_BBD_Officiel.md` ;
-6. `data/products.json`, `data/formulas.json` et `data/site.json`.
+3. `HISTORIQUE_PROJET.md` ;
+4. `README.md` ;
+5. `RECETTE.md` ;
+6. `handoff/Cahier_des_charges_BBD_Officiel.md` ;
+7. `data/products.json`, `data/formulas.json` et `data/site.json`.
 
 Les demandes récentes du propriétaire et les données actuellement enregistrées ont priorité sur le cahier des charges initial en cas d'écart.
 

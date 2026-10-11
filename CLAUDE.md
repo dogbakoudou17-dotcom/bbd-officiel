@@ -1,6 +1,6 @@
 # BBD Officiel — Instructions pour Claude Code
 
-Ce dossier est le projet source complet du site BBD Officiel. Reprendre le travail directement ici. Lire d’abord `HANDOFF_CLAUDE_CODE.md`, puis `README.md`, `RECETTE.md` et `handoff/Cahier_des_charges_BBD_Officiel.md`.
+Ce dossier est le projet source complet du site BBD Officiel. Reprendre le travail directement ici. Lire d’abord `HANDOFF_CLAUDE_CODE.md`, `HISTORIQUE_PROJET.md`, puis `README.md`, `RECETTE.md` et `handoff/Cahier_des_charges_BBD_Officiel.md`.
 
 Le dépôt Git local, sa branche `main` et son tag `handoff-2026-10-11` constituent l'état de référence. Vérifier `git status` avant toute modification et conserver cet historique.
 
