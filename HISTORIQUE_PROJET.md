@@ -43,6 +43,7 @@ Les produits ont été ajoutés progressivement avec leurs photographies et tari
 6. **Sweat zippé Bourget bleu marine** : 39 € HT sans logo ou 49 € HT avec logo, par lot de quatre ; tailles XS à XXXL, 70 % coton / 30 % polyester.
 7. **Sweat zippé Bourget noir** : mêmes tarifs et caractéristiques que le bleu.
 8. **BB Bed Confort & Bien-être 100 × 150 cm** (accessoires) : lot de 3 à 35 € l'unité, lot de 10 à 31,50 € l'unité (10 pour le prix de 9) ; 3 motifs, 17 coloris. Base HT ou TTC à confirmer.
+9. **Oreille de porc naturelle** (friandises & récompenses) : lot de 100 pièces à 100 €, soit 1 € la pièce. Base HT ou TTC à confirmer.
 
 `data/products.json` constitue la source exécutable de référence. Les noms normalisés des images intégrées sont dans `assets/`.
 

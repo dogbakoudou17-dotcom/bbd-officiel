@@ -95,3 +95,10 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Galerie : rangée « Coloris » (noir par défaut, bleu, kaki) qui renseigne le devis, rangée « Détails » qui n'affiche que le gros plan (le coloris choisi est conservé). Le menu Coloris ne liste que les trois coloris.
 - Encart de l'accueil : « La parka Élysée, avec ou sans votre logo », photo noire.
 - Test : kaki puis détail capuche → grande photo du détail, coloris « Élysée kaki » conservé et transmis au devis. 25 pages, 830 liens/ressources vérifiés.
+
+## Oreille de porc naturelle — 11 octobre 2026
+
+- Première référence de la famille **Friandises & récompenses** : fiche, textes (avantages, mode d'emploi, conservation) repris du descriptif, photo 900 × 900 (38 Ko), original dans `sources/oreille-de-porc/`.
+- Tarif : lot de 100 pièces à 100 €, traité comme HT (1 € HT / pièce, 1,20 € TTC) ; base HT ou TTC à préciser — `taxStatus` bloque la production. Aucune personnalisation annoncée.
+- Test : 2 lots = 200 pièces · 200 € HT · 240 € TTC ; devis prérempli (famille récompenses, quantité 200, « Formule souhaitée : Lot de 100 »). Mobile 320/375 px sans débordement.
+- 26 pages, 861 liens/ressources vérifiés.

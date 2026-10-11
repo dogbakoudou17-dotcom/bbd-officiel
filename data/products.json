@@ -717,5 +717,63 @@
         "range": false
       }
     ]
+  },
+  {
+    "id": "oreille-de-porc",
+    "name": "Oreille de porc naturelle",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise savoureuse et particulièrement appréciée des chiens amateurs de mastication. Sa texture résistante et naturellement gourmande offre un moment de mastication et d’occupation qui satisfait son besoin naturel de mâcher.",
+    "confirmed": true,
+    "image": "/assets/oreille-de-porc.jpg",
+    "alt": "Oreille de porc séchée pour chien, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-100",
+        "label": "Lot de 100",
+        "unit": 1,
+        "pack": 100
+      }
+    ],
+    "price": "100 € HT le lot de 100 pièces, soit 1 € HT / pièce",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Commande par lot de 100 pièces",
+    "sections": [
+      {
+        "title": "Pourquoi choisir l’oreille de porc ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéale pour les chiens amateurs de mastication",
+          "Favorise une activité de mastication prolongée",
+          "Texture résistante",
+          "Naturellement savoureuse",
+          "Sans colorants ni arômes artificiels",
+          "Idéale comme friandise d’occupation"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez l’oreille de porc à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Choisissez une taille adaptée à la morphologie et à la puissance de mastication de votre chien.",
+          "Retirez la friandise lorsqu’elle devient suffisamment petite pour être avalée.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]
