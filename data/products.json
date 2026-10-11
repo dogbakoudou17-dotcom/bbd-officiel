@@ -70,24 +70,56 @@
   },
   {
     "id": "doudoune-sans-manches-capuche-amovible",
-    "name": "Doudoune sans manches à capuche amovible",
+    "name": "Doudoune sans manches capuche garde bleu",
     "family": "textiles",
-    "description": "Une doudoune sans manches à capuche amovible pour équiper votre collectif, avec ou sans votre logo. Proposée par lot de 4 pièces.",
+    "description": "Une doudoune sans manches chaude et tendance, à capuche amovible, pour équiper votre collectif avec ou sans votre logo. Proposée par lot de 4 pièces, du S au XXL.",
     "confirmed": true,
     "image": "/assets/doudoune-sans-manches-capuche-amovible.jpg",
-    "alt": "Doudoune bleu foncé sans manches avec capuche, portée par un mannequin, photo fournie par BBD Officiel",
+    "alt": "Doudoune sans manches bleu foncé à capuche, portée par un mannequin, photo fournie par BBD Officiel",
     "variants": [
-      "Sans logo : 49 € HT par pièce, soit 196 € HT le lot de 4",
-      "Avec votre logo : 59 € HT par pièce, soit 236 € HT le lot de 4"
+      "Sans logo : 39 € HT par pièce, soit 156 € HT le lot de 4",
+      "Avec votre logo : 49 € HT par pièce, soit 196 € HT le lot de 4"
     ],
     "personalization": "Version avec votre logo au tarif communiqué. Technique, emplacement et conditions du marquage à préciser.",
     "minimum": "Commande par lot de 4 pièces",
-    "price": "49 € HT / pièce sans logo · 59 € HT / pièce avec votre logo",
+    "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Modalités de personnalisation à préciser.",
-    "unitPlain": 49,
-    "unitLogo": 59,
-    "packSize": 4
+    "details": "Coloris : bleu. Tailles du S au XXL. Disponibilités, transport et délais à confirmer.",
+    "unitPlain": 39,
+    "unitLogo": 49,
+    "packSize": 4,
+    "sections": [
+      {
+        "title": "Détails du produit",
+        "open": true,
+        "items": [
+          "Doudoune sans manches chaude et tendance",
+          "Capuche amovible",
+          "Fermeture par zip métallique",
+          "Col montant",
+          "Poches latérales zippées"
+        ]
+      },
+      {
+        "title": "Taille & coupe",
+        "items": [
+          "Tailles : du S au XXL",
+          "Le mannequin mesure 1,80 m et porte une taille L",
+          "Ce produit taille normalement"
+        ]
+      },
+      {
+        "title": "Composition & entretien",
+        "items": [
+          "Extérieur : 100 % polyester",
+          "Doublure : 100 % polyester",
+          "Lavage à la main conseillé à 30 °C",
+          "Ne pas laver en machine",
+          "Laisser sécher à l’air libre",
+          "Ne pas repasser"
+        ]
+      }
+    ]
   },
   {
     "id": "doudoune-sans-manches",
@@ -112,9 +144,9 @@
   },
   {
     "id": "sweat-zippe-bleu",
-    "name": "Sweat zippé bleu",
+    "name": "Sweat zippé Bourget bleu",
     "family": "textiles",
-    "description": "Un sweat zippé bleu à capuche pour équiper votre collectif, avec ou sans votre logo. Proposé par lot de 4 pièces.",
+    "description": "Un sweat zippé à capuche bleu, coupe ample et tendance, pour équiper votre collectif avec ou sans votre logo. Proposé par lot de 4 pièces, du XS au XXXL.",
     "confirmed": true,
     "image": "/assets/sweat-zippe-bleu.jpg",
     "alt": "Sweat zippé bleu à capuche porté de face, photo fournie par BBD Officiel",
@@ -132,16 +164,44 @@
     "minimum": "Commande par lot de 4 pièces",
     "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Coloris : bleu. Tailles, composition, disponibilité, transport et délais à confirmer.",
+    "details": "Coloris : bleu. Tailles du XS au XXXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
-    "packSize": 4
+    "packSize": 4,
+    "sections": [
+      {
+        "title": "Détails du produit",
+        "open": true,
+        "items": [
+          "Sweat à capuche zippé, coupe ample et tendance",
+          "Fermeture par zip métallique",
+          "Taille et poignets élastiqués",
+          "Poches latérales"
+        ]
+      },
+      {
+        "title": "Taille & coupe",
+        "items": [
+          "Tailles : du XS au XXXL",
+          "Coupe classique",
+          "Ce produit taille normalement : prenez votre taille habituelle",
+          "Le mannequin mesure 1,81 m et porte une taille M"
+        ]
+      },
+      {
+        "title": "Composition & entretien",
+        "items": [
+          "Composition : 70 % coton, 30 % polyester",
+          "Lavable en machine à 30 °C"
+        ]
+      }
+    ]
   },
   {
     "id": "sweat-zippe-noir",
-    "name": "Sweat zippé noir",
+    "name": "Sweat zippé Bourget noir",
     "family": "textiles",
-    "description": "Un sweat zippé noir à capuche pour équiper votre collectif, avec ou sans votre logo. Proposé par lot de 4 pièces.",
+    "description": "Un sweat zippé à capuche noir, coupe ample et tendance, pour équiper votre collectif avec ou sans votre logo. Proposé par lot de 4 pièces, du XS au XXXL.",
     "confirmed": true,
     "image": "/assets/sweat-zippe-noir.jpg",
     "alt": "Sweat zippé noir à capuche porté de face, photo fournie par BBD Officiel",
@@ -159,10 +219,38 @@
     "minimum": "Commande par lot de 4 pièces",
     "price": "39 € HT / pièce sans logo · 49 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Coloris : noir. Tailles, composition, disponibilité, transport et délais à confirmer.",
+    "details": "Coloris : noir. Tailles du XS au XXXL. Disponibilités, transport et délais à confirmer.",
     "unitPlain": 39,
     "unitLogo": 49,
-    "packSize": 4
+    "packSize": 4,
+    "sections": [
+      {
+        "title": "Détails du produit",
+        "open": true,
+        "items": [
+          "Sweat à capuche zippé, coupe ample et tendance",
+          "Fermeture par zip métallique",
+          "Taille et poignets élastiqués",
+          "Poches latérales"
+        ]
+      },
+      {
+        "title": "Taille & coupe",
+        "items": [
+          "Tailles : du XS au XXXL",
+          "Coupe classique",
+          "Ce produit taille normalement : prenez votre taille habituelle",
+          "Le mannequin mesure 1,81 m et porte une taille M"
+        ]
+      },
+      {
+        "title": "Composition & entretien",
+        "items": [
+          "Composition : 70 % coton, 30 % polyester",
+          "Lavable en machine à 30 °C"
+        ]
+      }
+    ]
   },
   {
     "id": "bb-bed-100x150",

@@ -67,3 +67,9 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Mobile 375 px : vignettes en rangées défilantes par motif, champ coloris pleine largeur, aucun contenu coupé.
 - Build de production bloqué comme attendu : taux de TVA à confirmer (`vatRateConfirmed`) et base HT/TTC du BB Bed à préciser.
 - À confirmer par BBD Officiel : base HT ou TTC des tarifs BB Bed, régime et taux de TVA, possibilité de mélanger les coloris dans un lot, composition et délais.
+
+## Descriptifs doudoune capuche et sweats Bourget — 11 octobre 2026
+
+- Doudoune « capuche garde bleu » : photo reçue identique (même image) à celle de la fiche « à capuche amovible » ; confirmé par le propriétaire comme même produit. Fiche existante renommée, adresse conservée, tarif corrigé de 49/59 à **39/49 € HT** (156 / 196 € HT le lot de 4 ; 46,80 / 58,80 € TTC la pièce). Rubriques Détails, Taille & coupe, Composition & entretien ajoutées.
+- Sweats zippés renommés « Bourget » bleu et noir ; tarifs 39/49 € HT inchangés et conformes au descriptif ; mêmes rubriques ajoutées. La photo jointe au descriptif du sweat était un doublon de la photo de doudoune : non utilisée, les deux photos existantes par coloris sont conservées.
+- 25 pages, 797 liens/ressources ; prix HT et TTC contrôlés par `check.mjs`.

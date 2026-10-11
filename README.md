@@ -106,3 +106,7 @@ Huitième référence, première de la famille **Accessoires & objets** : BB Bed
 - **Base des tarifs BB Bed** : le descriptif ne précise pas HT ou TTC. Les montants sont traités comme HT, comme le reste du catalogue ; `taxStatus` signale ce point à préciser et bloque la production. S’ils sont TTC, modifier les montants dans `offers`.
 - Calculs partagés par `build.mjs` et `check.mjs` dans `pricing.mjs`. Les offres d’un produit sont soit déclarées (`offers`), soit déduites de `unitPlain` / `unitLogo` / `packSize`.
 - Le rail « Le vestiaire BBD » de l’accueil ne présente que les textiles.
+
+## Rubriques détaillées des fiches
+
+Un produit peut recevoir un tableau `sections` (`title`, `items`, `open` facultatif) affiché en rubriques dépliables : utilisé pour « Détails du produit », « Taille & coupe » et « Composition & entretien » de la doudoune capuche garde bleu (tarif corrigé à 39/49 € HT le 11/10/2026) et des sweats zippés Bourget.
