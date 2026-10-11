@@ -34,7 +34,7 @@ Le rendu actuel comprend :
 | Produit | Sans logo | Avec logo | Condition |
 | --- | ---: | ---: | --- |
 | Parka molletonnée | 69 € HT/pièce | 79 € HT/pièce | lot de 4 |
-| Parka imperméable | 69 € HT/pièce | 79 € HT/pièce | lot de 4 |
+| Parka Matignon (ex « Parka imperméable ») | 69 € HT/pièce | 79 € HT/pièce | lot de 4, noir et bleu |
 | Doudoune sans manches rétro (ex « rétro-réfléchissante ») | 39 € HT/pièce | 49 € HT/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
 | Doudoune sans manches capuche garde bleu (ex « à capuche amovible ») | 39 € HT/pièce | 49 € HT/pièce | lot de 4 — tarif corrigé le 11/10/2026 |
 | Doudoune sans manches Bac | 25 € HT/pièce | 35 € HT/pièce | lot de 4, 4 coloris photographiés |

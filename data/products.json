@@ -22,12 +22,12 @@
   },
   {
     "id": "parka-impermeable",
-    "name": "Parka imperméable",
+    "name": "Parka Matignon",
     "family": "textiles",
-    "description": "Une parka imperméable pour votre collectif, disponible avec ou sans votre logo, par lot de 4 pièces.",
+    "description": "Une parka à capuche, coupe longue, pour équiper votre collectif avec ou sans votre logo. Proposée par lot de 4 pièces, du S au XXL, en noir ou en bleu.",
     "confirmed": true,
-    "image": "/assets/parka-impermeable.jpg",
-    "alt": "Parka sombre à capuche portée de face, photo fournie par BBD Officiel",
+    "image": "/assets/parka-impermeable-vue-2.jpg",
+    "alt": "Parka Matignon noire à capuche, coupe longue, portée par un mannequin, photo fournie par BBD Officiel",
     "variants": [
       "Sans logo : 69 € HT par pièce, soit 276 € HT le lot de 4",
       "Avec votre logo : 79 € HT par pièce, soit 316 € HT le lot de 4"
@@ -36,14 +36,50 @@
     "minimum": "Commande par lot de 4 pièces",
     "price": "69 € HT / pièce sans logo · 79 € HT / pièce avec votre logo",
     "taxStatus": "HT",
-    "details": "Tailles, coloris disponibles, composition, transport et délais à confirmer. Niveau d’imperméabilité et caractéristiques techniques à préciser.",
+    "details": "Coloris : noir et bleu. Tailles du S au XXL. Entretien, disponibilités, transport et délais à confirmer.",
     "unitPlain": 69,
     "unitLogo": 79,
     "packSize": 4,
-    "gallery": [
+    "thumbSize": [
+      180,
+      240
+    ],
+    "swatchLabel": "Coloris",
+    "swatches": [
       {
+        "motif": "Coloris",
+        "label": "Matignon noir",
+        "short": "noir",
         "image": "/assets/parka-impermeable-vue-2.jpg",
-        "alt": "Seconde photo de parka sombre à capuche fournie par BBD Officiel"
+        "thumb": "/assets/parka-matignon-noir-mini.jpg",
+        "alt": "Parka Matignon noir à capuche, coupe longue, portée par un mannequin, photo fournie par BBD Officiel"
+      },
+      {
+        "motif": "Coloris",
+        "label": "Matignon bleu",
+        "short": "bleu",
+        "image": "/assets/parka-impermeable.jpg",
+        "thumb": "/assets/parka-matignon-bleu-mini.jpg",
+        "alt": "Parka Matignon bleu à capuche, coupe longue, portée par un mannequin, photo fournie par BBD Officiel"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Taille & coupe",
+        "open": true,
+        "items": [
+          "Tailles : du S au XXL",
+          "Coupe longue",
+          "Ce produit taille normalement : prenez votre taille habituelle",
+          "Le mannequin mesure 1,81 m et porte une taille M"
+        ]
+      },
+      {
+        "title": "Composition",
+        "items": [
+          "Matière principale : 100 % polyester",
+          "Doublure : 100 % polyester"
+        ]
       }
     ]
   },

@@ -82,3 +82,9 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Doudoune **rétro** : photo reçue identique à celle de la fiche « rétro-réfléchissante » (écart 0,31/255). Même logique que la doudoune capuche garde : fiche renommée « Doudoune sans manches rétro », adresse conservée, tarif corrigé de 49/59 à 39/49 € HT, rubriques ajoutées ; plus aucune mention « réfléchissante ».
 - La galerie de coloris accepte désormais des photos verticales (`thumbSize`, `swatchLabel`, `short`). Le rail de l'accueil affiche les sept textiles.
 - 25 pages, 809 liens/ressources vérifiés.
+
+## Parka Matignon — 11 octobre 2026
+
+- `parkamatignon.zip` : « BLEU » identique à `parka-impermeable.jpg`, « NOIR » identique à `parka-impermeable-vue-2.jpg` (écart 0,2/255) ; tarifs 69/79 € HT identiques. La fiche « Parka imperméable » devient « Parka Matignon » (adresse conservée), galerie de 2 coloris (noir par défaut, bleu), miniatures créées ; rubriques Taille & coupe et Composition. Le descriptif ne parle pas d'imperméabilité : la mention est retirée.
+- Test : vignette bleu → photo et coloris « Matignon bleu » ; version avec logo, 1 lot = 4 pièces · 316 € HT · 379,20 € TTC ; devis avec `coloris=Matignon bleu`.
+- 25 pages, 812 liens/ressources vérifiés.
