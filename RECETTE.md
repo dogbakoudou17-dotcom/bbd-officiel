@@ -112,4 +112,10 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Arrondi au centime des montants calculés (navigateur et `pricing.mjs`) : 100 × 1,80 € affiche 180 € et non 180,00 €.
 - Les photos des pattes de poulet n'étaient pas jointes aux messages : utilisées depuis `Téléchargements` (`PATTE DE POULET SOUFFLEE.jpeg`, `PATTE DE POULET NATURE.jpeg`), contrôlées visuellement.
 - Tests : oreille de bœuf 2 lots = 100 pièces · 180 € HT · 216 € TTC ; trachée 3 kg = 60 € HT · 72 € TTC ; pattes soufflées 5 kg = 100 € HT · 120 € TTC. Base HT ou TTC de tous les tarifs de friandises à préciser (production bloquée).
-- 31 pages, 1021 liens/ressources vérifiés.
+- 31 pages, 1021 liens/ressources vérifiés ; 31 pages contrôlées à 320, 375 et 1440 px (93 contrôles, aucun défaut).
+
+## Oreille de lapin avec poils — 11 octobre 2026
+
+- Vente au kilo, **35 € HT / kg** (42 € TTC). Le titre de tarif du descriptif reçu indiquait « TRACHEE DE BOEUF » (copier-coller probable) : le montant 35 €, différent des 20 € de la trachée, est appliqué à l'oreille de lapin ; la trachée reste à 20 €.
+- Photo `OREILLE DE LAPIN POILS.jpeg` (Téléchargements), 900 × 900, 41 Ko ; original dans `sources/oreille-de-lapin-avec-poils/`.
+- Test : 2 kg = 70 € HT · 84 € TTC ; devis prérempli. Mobile 375 px sans débordement. 32 pages, 1053 liens/ressources vérifiés.

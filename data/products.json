@@ -1081,5 +1081,68 @@
     ],
     "personalization": null,
     "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "oreille-de-lapin-avec-poils",
+    "name": "Oreille de lapin avec poils",
+    "family": "recompenses",
+    "description": "Offrez à votre compagnon une friandise naturelle et savoureuse. Naturelles et peu transformées, les oreilles de lapin avec poils sont appréciées des chiens pour leur texture et leur goût ; elles satisfont leur besoin naturel de mastication tout en leur offrant un moment d’occupation.",
+    "confirmed": true,
+    "image": "/assets/oreille-de-lapin-avec-poils.jpg",
+    "alt": "Oreilles de lapin séchées avec leurs poils, blanches et grises, sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 35,
+        "pack": 1
+      }
+    ],
+    "price": "35 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir l’oreille de lapin avec poils ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéale pour occuper votre compagnon",
+          "Favorise la mastication",
+          "Avec ses poils naturels",
+          "Naturellement savoureuse et appétissante",
+          "Une texture intéressante à mâcher",
+          "Idéale comme friandise ou récompense"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez l’oreille de lapin à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Adaptez la quantité à la taille, à l’âge et aux habitudes alimentaires de votre chien.",
+          "Retirez la friandise si elle devient suffisamment petite pour être avalée en une seule fois.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendues au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]
