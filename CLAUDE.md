@@ -24,6 +24,8 @@ Le projet n’a aucune dépendance npm externe. Node.js suffit. Le site est stat
 - `data/site.json` contient les informations d’entreprise et les validations de lancement.
 - `assets/style.css` contient la structure visuelle générale.
 - `assets/brand.css` contient l’identité BBD, les composants produits et les campagnes.
+- `assets/ui.css` (refonte d’octobre 2026, chargée en dernier) contient le parcours : premier écran, bandeau d’engagements, tuiles catalogues, cartes produits, carrousels, « Comment ça marche », pictogrammes et boutons. Les pictogrammes sont définis une seule fois dans `build.mjs` (objet `I`, fonction `icon`).
+- Les engagements affichés (sans engagement, aucun paiement en ligne, prix HT/TTC, logo sur les textiles) sont des faits établis : n’en ajouter aucun (délai, livraison offerte, avis, garantie) sans confirmation du propriétaire.
 - `assets/app.js` contient les interactions progressives, filtres, devis, calculs et animations.
 - `dist/` est généré par `npm run build`. Ne jamais modifier `dist/` à la main.
 

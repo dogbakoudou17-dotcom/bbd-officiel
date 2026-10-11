@@ -156,3 +156,16 @@ Les captures d’aperçu remises à côté du dossier source illustrent le rendu
 - Ce qui précède dans ce journal mentionne des montants « HT » : ils correspondent en réalité aux TTC transmis.
 - Contrôles : parka sans logo 69 € TTC → 57,50 € HT ; avec logo 79 € TTC → 65,83 € HT ; 2 lots avec logo = 8 pièces · 526,67 € HT · 632 € TTC. BB Bed lot de 10 = 262,50 € HT · 315 € TTC. Oreille de porc lot de 100 = 83,33 € HT · 100 € TTC. Trachée 3 kg = 50 € HT · 60 € TTC. `check.mjs` vérifie HT calculés et TTC transmis pour chaque offre.
 - Le build de production reste bloqué tant que le taux de TVA (`vatRateConfirmed`) n'est pas confirmé.
+
+## Refonte UX/UI — 11 octobre 2026
+
+Audit de départ : l'accueil ne montrait pas l'offre (illustration dessinée, produits au 6e écran), aucun accès direct aux catégories dans le menu, aucune réassurance, aucun pictogramme, repères en capitales numérotés au-dessus de chaque section, pages catalogue sans image, fiches produits sans suite de parcours, formules fictives au cœur de l'accueil.
+
+Ce qui change :
+- **Menu** : Textiles, Friandises, Accessoires, Pour qui ?, Personnalisation et bouton « Demander un devis » toujours visible ; rubrique courante soulignée (fiches incluses).
+- **Accueil** : premier écran avec l'offre, deux boutons (catalogues, devis), trois réassurances et la photo de campagne (mention « Mise en scène illustrative » conservée) ; bandeau de 4 engagements à pictos ; 3 catalogues en photo avec nombre de références ; « Pour qui ? » (éleveurs, clubs, événements, particuliers) ; carrousels textiles et friandises avec flèches, prix HT/TTC et sélecteur ; « Commander, simplement » en 4 étapes + encadré « Bon à savoir » (HT/TTC, lots et kilo, logo) ; formules signalées comme exemples ; FAQ enrichie (HT/TTC, lots, logo, paiement) ; clôture avec deux boutons.
+- **Catalogues** : en-tête illustré avec repères à pictos, grille de cartes produits (étiquettes « Lot de… », « Au kilo », « Logo possible », nombre de coloris ; prix HT/TTC), bandeau d'engagements, renvoi vers les autres catalogues.
+- **Fiches** : étiquette du catalogue, fil d'Ariane complet, bouton de devis pleine largeur, 3 réassurances sous le bouton, section « Dans la même famille ».
+- **Devis** : étapes à pictos dans l'encadré, « Aucun paiement à cette étape ».
+- **Système** : jeu unique de pictogrammes SVG (trait 1,7 px), boutons ≥ 52 px de haut (58 px pour les principaux), feuille `assets/ui.css` chargée après les styles existants, sélecteur HT/TTC disponible sur toutes les pages (`prix.js` chargé partout), apparitions déclenchées seulement si l'onglet est visible au chargement.
+- Les engagements affichés reprennent uniquement des faits déjà établis : demande sans engagement et sans paiement en ligne, prix HT et TTC, version avec logo sur les textiles. Aucun délai, avis ou certification n'a été ajouté.

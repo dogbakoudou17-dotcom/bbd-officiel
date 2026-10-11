@@ -37,7 +37,9 @@ Le formulaire d’aperçu **n’envoie aucune donnée**, et ne prétend pas conf
 | `data/products.json` | Produits, tarifs, visuels et conditions |
 | `build.mjs` | Textes des pages, structure et composants HTML |
 | `assets/style.css` | Mise en page, mobile, formulaires |
-| `assets/brand.css` | Identité graphique, logos, fiche parka |
+| `assets/brand.css` | Identité graphique, logos, fiches produits, galerie de coloris |
+| `assets/ui.css` | Refonte du parcours : premier écran, engagements, catalogues, cartes produits, carrousels, étapes |
+| `pricing.mjs` | Calcul du HT à partir des prix TTC transmis (partagé par le build et les contrôles) |
 | `assets/app.js` | Menu, filtres, champs conditionnels et calculateur |
 
 Après une modification, lancer `npm run build`, puis rafraîchir le navigateur. Les fichiers de `dist/` sont générés : ne pas les modifier directement. Les offres non confirmées (`confirmed: false`) ne sont affichées que dans l’aperçu.
