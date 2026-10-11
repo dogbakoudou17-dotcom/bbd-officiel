@@ -1207,5 +1207,68 @@
     ],
     "personalization": null,
     "details": "Vendus au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+  },
+  {
+    "id": "cou-de-poulet",
+    "name": "Cou de poulet naturel",
+    "family": "recompenses",
+    "description": "Faites plaisir à votre compagnon avec une friandise savoureuse et croustillante. Le cou de poulet offre un moment de mastication gourmand et permet de varier les plaisirs avec une friandise naturellement riche en goût, à donner comme récompense ou en complément de l’alimentation habituelle de votre chien.",
+    "confirmed": true,
+    "image": "/assets/cou-de-poulet.jpg",
+    "alt": "Cous de poulet séchés pour chien, en tas sur fond blanc, photo fournie par BBD Officiel",
+    "imageSize": [
+      900,
+      900
+    ],
+    "unitLabel": [
+      "kg",
+      "kg"
+    ],
+    "choiceLabel": "Formule",
+    "lotsLabel": "Quantité en kilos",
+    "offers": [
+      {
+        "id": "kilo",
+        "label": "Au kilo",
+        "unit": 20,
+        "pack": 1
+      }
+    ],
+    "price": "20 € HT le kilo",
+    "taxStatus": "HT — base HT ou TTC des tarifs à préciser par BBD Officiel",
+    "minimum": "Vente au kilo",
+    "sections": [
+      {
+        "title": "Pourquoi choisir le cou de poulet ?",
+        "open": true,
+        "items": [
+          "Friandise naturelle pour chien",
+          "Idéal comme récompense",
+          "Naturellement savoureux",
+          "Texture croustillante appréciée des chiens",
+          "Sans colorants ni arômes artificiels",
+          "Une friandise adaptée aux chiens amateurs de produits naturels",
+          "Parfait pour varier les plaisirs"
+        ]
+      },
+      {
+        "title": "Mode d’emploi",
+        "items": [
+          "Donnez le cou de poulet à votre chien comme friandise ou récompense, toujours sous surveillance.",
+          "Adaptez la quantité à la taille, à l’âge et au niveau d’activité de votre chien.",
+          "Pour les chiens gloutons ou peu habitués à ce type de friandise, une surveillance attentive est particulièrement recommandée.",
+          "Veillez à ce que votre chien dispose toujours d’eau fraîche."
+        ]
+      },
+      {
+        "title": "Conservation",
+        "items": [
+          "Conserver dans un endroit sec, frais et à l’abri de l’humidité.",
+          "Après ouverture, refermer soigneusement le sachet afin de préserver la qualité du produit."
+        ]
+      }
+    ],
+    "personalization": null,
+    "details": "Vendu au kilo. Origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
   }
 ]
