@@ -252,10 +252,11 @@ a.pchip:hover{background:var(--sage-2)}
 .qsn-meet h2 em{color:#5f7a45}
 .qsn-meet p{margin-top:12px;max-width:58ch;color:var(--muted)}
 
-/* Apparitions : ne concernent que des éléments déjà visibles par défaut (voir app.js) */
-.motion-ready .cat-tile,.motion-ready .who-card,.motion-ready .howto li,.motion-ready .assurance li,.motion-ready .pgrid .pcard{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease) var(--reveal-delay,0ms),transform .6s var(--ease) var(--reveal-delay,0ms),border-color .2s}
-/* Plus spécifique que la règle de masquage ci-dessus, pour que l'élément réapparaisse toujours. */
-.motion-ready :is(.cat-tile,.who-card,.howto li,.assurance li,.pgrid .pcard).is-visible{opacity:1;transform:none}
+/* Apparitions : aucun contenu n'est masqué par défaut. Quand un bloc entre à l'écran, app.js lui ajoute
+   .is-visible et il joue une courte animation d'entrée ; si rien ne se déclenche, il reste simplement affiché. */
+@keyframes bbd-rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.motion-ok .is-visible{animation:bbd-rise .6s var(--ease) var(--reveal-delay,0ms) both}
+@media(prefers-reduced-motion:reduce){.motion-ok .is-visible{animation:none}}
 
 @media(max-width:1050px){
  .navlinks{gap:14px}.navlinks a:not(.btn){font-size:.85rem}

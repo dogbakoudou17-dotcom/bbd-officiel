@@ -205,3 +205,5 @@ Ce qui change :
 - Constat du propriétaire sur la préproduction : cartes produits et bandeau d'engagements toujours vides après le correctif. Cause : le navigateur conservait l'ancienne `ui.css` (Netlify : `Cache-Control: max-age=86400` sur `/assets/*`), alors que le serveur servait bien la version corrigée.
 - Correctif : `build.mjs` ajoute à chaque CSS/JS une empreinte de son contenu (`/assets/ui.css?v=…`). Toute modification change l'adresse : les visiteurs reçoivent la nouvelle version immédiatement, sans Ctrl + F5.
 
+- Apparitions rendues sûres : plus aucun bloc n'est masqué par défaut. `app.js` pose `motion-ok` (au lieu de `motion-ready`, qui masquait) et `ui.css` joue seulement une animation d'entrée (`bbd-rise`) sur `.is-visible` ; sans déclenchement, le contenu reste affiché. Contrôle : cartes produits, bandeau d'engagements, étapes et tuiles catalogues à opacité 1 avec et sans animation.
+

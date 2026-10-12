@@ -65,9 +65,10 @@ document.querySelectorAll('.rail-section').forEach(section=>{
  nav.addEventListener('click',e=>{const b=e.target.closest('[data-rail]');if(b)rail.scrollBy({left:Number(b.dataset.rail)*rail.clientWidth*.9,behavior:reduceMotion?'auto':'smooth'});});
  rail.addEventListener('scroll',sync,{passive:true});addEventListener('resize',sync);sync();
 });
-// Apparitions : uniquement si l'onglet est visible au chargement, pour ne jamais laisser une section masquée.
+// Apparitions : le contenu est toujours visible ; « motion-ok » autorise seulement une animation d'entrée
+// (ui.css) sur les blocs qui arrivent à l'écran. L'ancienne classe « motion-ready », qui masquait, n'est plus posée.
 if(!reduceMotion&&'IntersectionObserver' in window&&document.visibilityState==='visible'){
- document.documentElement.classList.add('motion-ready');
+ document.documentElement.classList.add('motion-ok');
  const reveal=new IntersectionObserver(entries=>entries.forEach(entry=>{
   if(entry.isIntersecting){entry.target.classList.add('is-visible');reveal.unobserve(entry.target);}
  }),{threshold:.12,rootMargin:'0px 0px -45px'});
