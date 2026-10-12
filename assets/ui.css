@@ -82,7 +82,12 @@ p{text-wrap:pretty}
 
 /* Catalogues */
 .cat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.cat-grid--duo{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cat-grid--duo{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
+/* « Découvrez aussi » : tuiles horizontales, photo à gauche, pour ne pas reprendre un écran entier. */
+.cat-grid--duo .cat-tile{flex-direction:row}
+.cat-grid--duo .cat-media{flex:0 0 40%;aspect-ratio:auto;min-height:100%}
+.cat-grid--duo .cat-body{padding:20px}
+.cat-grid--duo .cat-facts{display:none}
 .cat-tile{display:flex;flex-direction:column;border-radius:var(--card);overflow:hidden;background:#fff;border:1px solid var(--line);transition:border-color .2s,transform .3s var(--ease)}
 .cat-tile:hover{border-color:var(--ink);transform:translateY(-4px)}
 .cat-media{aspect-ratio:4/3;overflow:hidden;background:#eeefeb}
@@ -113,7 +118,10 @@ p{text-wrap:pretty}
 .who-card--accent p{color:#d6e2d8}
 
 /* Cartes produits */
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:20px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+/* Titres en vert olive : sur fond vert foncé, ils passent au vert clair pour rester lisibles. */
+.on-dark .section-head h2 em,.on-dark h2 em,.dark-section h2 em{color:var(--lime)}
+.fam-media{position:relative}
 .pcard{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--card);overflow:hidden;transition:border-color .2s,transform .3s var(--ease)}
 .pcard:hover{border-color:var(--ink);transform:translateY(-4px)}
 .pcard:focus-within{outline:3px solid #a15626;outline-offset:2px}
@@ -289,9 +297,30 @@ a.pchip:hover{background:var(--sage-2)}
  .assurance li{flex-direction:column;gap:10px}
  .assurance .ico-badge{width:40px;height:40px;padding:9px}
  .assurance span{font-size:.82rem}
- .cat-grid{grid-template-columns:1fr}
- .who-grid{grid-template-columns:1fr}
- .who-card{padding:20px}
+ /* Tuiles catalogue compactes : photo à gauche, l'essentiel à droite. */
+ .cat-grid,.cat-grid--duo{grid-template-columns:1fr;gap:12px}
+ .cat-tile{flex-direction:row}
+ .cat-media,.cat-grid--duo .cat-media{flex:0 0 36%;aspect-ratio:auto;min-height:100%}
+ .cat-body,.cat-grid--duo .cat-body{padding:14px;gap:8px}
+ .cat-head{gap:10px}.cat-head .ico-badge{width:36px;height:36px;padding:8px}
+ .cat-tile h3{font-size:1.08rem}
+ .cat-tile p{font-size:.84rem;line-height:1.45}
+ .cat-facts,.cat-grid--duo .cat-tile p{display:none}
+ .cat-tile .btn{min-height:44px;padding:10px 14px;font-size:.86rem;width:100%}
+ .club-moment-image{height:360px}
+ .qsn-mosaic{grid-template-rows:220px 160px}
+ .qsn-tile--sig{display:none}
+ .form-aside .aside-steps{display:grid;margin-top:14px;gap:10px}
+ .form-aside .aside-steps li{font-size:.88rem}
+ .price-options strong{font-size:1.55rem}
+ .price-options strong small{display:block;font-size:.72rem;margin-top:4px}
+ .product-config #product-total{font-size:1.2rem}
+ .who-grid{grid-template-columns:1fr 1fr;gap:10px}
+ .who-card{padding:16px;gap:8px}
+ .who-card .ico-badge{width:38px;height:38px;padding:9px}
+ .who-card h3{font-size:1.05rem}
+ .who-card p{font-size:.82rem;line-height:1.45}
+ .who-go{font-size:.8rem}
  .packs-band{grid-template-columns:auto 1fr}
  .packs-band .btn{grid-column:1/-1;justify-self:start}
  .rail-section .section-head{display:block}

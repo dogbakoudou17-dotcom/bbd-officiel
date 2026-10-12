@@ -207,3 +207,10 @@ Ce qui change :
 
 - Apparitions rendues sûres : plus aucun bloc n'est masqué par défaut. `app.js` pose `motion-ok` (au lieu de `motion-ready`, qui masquait) et `ui.css` joue seulement une animation d'entrée (`bbd-rise`) sur `.is-visible` ; sans déclenchement, le contenu reste affiché. Contrôle : cartes produits, bandeau d'engagements, étapes et tuiles catalogues à opacité 1 avec et sans animation.
 
+
+## Repasse complète d'affichage — 12 octobre 2026
+
+- Revue visuelle page par page sur la préproduction, ordinateur (1440 px) et téléphone (375 px).
+- Corrigé : titres « em » illisibles (vert sur vert) dans les sections foncées ; grilles produits à 4 colonnes (plus de lignes à moitié vides) ; « Découvrez aussi » en tuiles horizontales ; photo d'en-tête sur les pages Éleveurs (chiot), Clubs (campagne club), Événements (friandises), Personnalisation (campagne salon) et Formules (campagne club), avec mention « Mise en scène illustrative » sur les campagnes ; pictogrammes sur les cartes « Pour chaque moment ».
+- Mobile : tuiles catalogue compactes (photo à gauche), « Pour qui ? » sur deux colonnes, photo « esprit d'équipe » réduite, logo signature masqué dans la mosaïque Qui sommes-nous, étapes du devis réaffichées, prix des cartes sans retour à la ligne, total du calculateur réduit. Accueil mobile : 12 900 → 11 200 px.
+
