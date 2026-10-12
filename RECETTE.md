@@ -214,3 +214,11 @@ Ce qui change :
 - Corrigé : titres « em » illisibles (vert sur vert) dans les sections foncées ; grilles produits à 4 colonnes (plus de lignes à moitié vides) ; « Découvrez aussi » en tuiles horizontales ; photo d'en-tête sur les pages Éleveurs (chiot), Clubs (campagne club), Événements (friandises), Personnalisation (campagne salon) et Formules (campagne club), avec mention « Mise en scène illustrative » sur les campagnes ; pictogrammes sur les cartes « Pour chaque moment ».
 - Mobile : tuiles catalogue compactes (photo à gauche), « Pour qui ? » sur deux colonnes, photo « esprit d'équipe » réduite, logo signature masqué dans la mosaïque Qui sommes-nous, étapes du devis réaffichées, prix des cartes sans retour à la ligne, total du calculateur réduit. Accueil mobile : 12 900 → 11 200 px.
 
+
+## Page « Pour qui ? » — 12 octobre 2026
+
+- Nouvelle page dédiée `/pour-qui/` ; le bouton « Pour qui ? » du menu y mène (il ne fait plus défiler l'accueil). Les pages Éleveurs, Clubs et Événements la signalent comme rubrique courante ; lien « Tous les profils » dans le pied de page et « Voir tous les profils » dans la section de l'accueil, conservée en aperçu.
+- Illustration : composition des vraies photos (chiot, campagne club, campagne salon, friandises), chaque case menant à son profil ; mention « Mise en scène illustrative » sur les campagnes.
+- Une section par profil (éleveurs, clubs, événements, particuliers) : à qui elle s'adresse, quatre besoins, prix à lire (HT pour les professionnels, TTC pour les particuliers), catalogues utiles, devis prérempli avec le profil, trois suggestions de produits ; FAQ (particuliers, HT/TTC, profil absent, demande mixte).
+- Contrôle : 320, 375, 900 et 1440 px sans débordement, image cassée ni bloc masqué ; 41 pages, 2212 liens vérifiés.
+
