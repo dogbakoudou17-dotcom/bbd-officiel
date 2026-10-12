@@ -41,19 +41,19 @@ Le rendu actuel comprend :
 | Sweat zippé Bourget bleu marine | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 |
 | Sweat zippé Bourget noir | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 |
 | BB Bed Confort & Bien-être 100 × 150 | 35 € TTC/unité (lot de 3) | 31,50 € TTC/unité (lot de 10) | |
-| Oreille de porc naturelle | 1 € TTC/pièce (lot de 100) | — | |
-| Oreille de bœuf naturelle | 1,80 € TTC/pièce (lot de 50) | — | |
-| Oreille de bœuf avec poils | 1,80 € TTC/pièce (lot de 50) | — | |
+| Oreille de porc naturelle | 100 € TTC le lot de 100 pièces | — | |
+| Oreille de bœuf naturelle | 90 € TTC le lot de 50 pièces | — | |
+| Oreille de bœuf avec poils | 90 € TTC le lot de 50 pièces | — | |
 | Trachée de bœuf naturelle | 20 € TTC/kg | — | vente au kilo |
 | Pattes de poulet soufflées | 20 € TTC/kg | — | vente au kilo |
 | Pattes de poulet naturelles | 20 € TTC/kg | — | vente au kilo |
 | Oreille de lapin avec poils | 35 € TTC/kg | — | vente au kilo |
 | Sprat séché naturel | 45 € TTC/kg | — | vente au kilo |
 | Cou de poulet naturel | 20 € TTC/kg | — | vente au kilo |
-| Sabot de veau naturel | 0,45 € TTC/pièce (lot de 100) | — | |
+| Sabot de veau naturel | 45 € TTC le lot de 100 pièces | — | |
 | Tendon de bœuf naturel | 25 € TTC/kg | — | vente au kilo |
 | Aile de poulet naturelle | 15 € TTC/kg | — | vente au kilo |
-| Sabot de bœuf naturel | 0,70 € TTC/pièce (lot de 50) | — | |
+| Sabot de bœuf naturel | 35 € TTC le lot de 50 pièces | — | |
 
 Montants **TTC**, tels que transmis (règle du 11/10/2026) ; le HT affiché sur le site est calculé. Les données exécutables font foi dans `data/products.json`.
 

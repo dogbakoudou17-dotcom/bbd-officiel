@@ -700,7 +700,8 @@
         "id": "lot-100",
         "label": "Lot de 100",
         "unit": 1,
-        "pack": 100
+        "pack": 100,
+        "lot": 100
       }
     ],
     "taxStatus": "TTC",
@@ -737,7 +738,8 @@
       }
     ],
     "personalization": null,
-    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis.",
+    "lotPrice": true
   },
   {
     "id": "oreille-de-boeuf",
@@ -757,7 +759,8 @@
         "id": "lot-50",
         "label": "Lot de 50",
         "unit": 1.8,
-        "pack": 50
+        "pack": 50,
+        "lot": 90
       }
     ],
     "taxStatus": "TTC",
@@ -794,7 +797,8 @@
       }
     ],
     "personalization": null,
-    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis.",
+    "lotPrice": true
   },
   {
     "id": "oreille-de-boeuf-avec-poils",
@@ -814,7 +818,8 @@
         "id": "lot-50",
         "label": "Lot de 50",
         "unit": 1.8,
-        "pack": 50
+        "pack": 50,
+        "lot": 90
       }
     ],
     "taxStatus": "TTC",
@@ -852,7 +857,8 @@
       }
     ],
     "personalization": null,
-    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis.",
+    "lotPrice": true
   },
   {
     "id": "trachee-de-boeuf",
@@ -1244,7 +1250,8 @@
         "id": "lot-100",
         "label": "Lot de 100",
         "unit": 0.45,
-        "pack": 100
+        "pack": 100,
+        "lot": 45
       }
     ],
     "taxStatus": "TTC",
@@ -1280,7 +1287,8 @@
       }
     ],
     "personalization": null,
-    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis.",
+    "lotPrice": true
   },
   {
     "id": "tendon-de-boeuf",
@@ -1424,7 +1432,8 @@
         "id": "lot-50",
         "label": "Lot de 50",
         "unit": 0.7,
-        "pack": 50
+        "pack": 50,
+        "lot": 35
       }
     ],
     "taxStatus": "TTC",
@@ -1460,6 +1469,7 @@
       }
     ],
     "personalization": null,
-    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis."
+    "details": "Taille, poids, origine, conditionnement, disponibilités, transport et délais à préciser dans le devis.",
+    "lotPrice": true
   }
 ]

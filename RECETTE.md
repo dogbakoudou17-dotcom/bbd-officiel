@@ -170,3 +170,10 @@ Ce qui change :
 - **Système** : jeu unique de pictogrammes SVG (trait 1,7 px), boutons ≥ 52 px de haut (58 px pour les principaux), feuille `assets/ui.css` chargée après les styles existants, sélecteur HT/TTC disponible sur toutes les pages (`prix.js` chargé partout), apparitions déclenchées seulement si l'onglet est visible au chargement.
 - TVA : taux de **20 % pour tous les produits** confirmé par le propriétaire le 11 octobre 2026 (`vatRateConfirmed: true`) ; la mention « taux à confirmer » disparaît des fiches et du catalogue, et ce point ne bloque plus le build de production.
 - Les engagements affichés reprennent uniquement des faits déjà établis : demande sans engagement et sans paiement en ligne, prix HT et TTC, version avec logo sur les textiles. Aucun délai, avis ou certification n'a été ajouté.
+
+## Prix de lot des friandises — 12 octobre 2026
+
+- Remarque du propriétaire : pour l'oreille de porc, les oreilles de bœuf (nature et avec poils) et les sabots de veau et de bœuf, le tarif transmis est un **prix de lot** ; le site mettait en avant un prix à la pièce déduit. Corrigé : ces fiches (`lotPrice: true`, prix du lot dans `offers[].lot`) affichent uniquement le prix du lot transmis en TTC et son équivalent HT, sur la fiche, les cartes du catalogue et dans le calculateur (`lotTtc` dans `pricing.mjs`).
+- Oreille de porc : 100 € TTC le lot de 100 → 83,33 € HT. Oreilles de bœuf : 90 € TTC le lot de 50 → 75 € HT. Sabot de veau : 45 € TTC le lot de 100 → 37,50 € HT. Sabot de bœuf : 35 € TTC le lot de 50 → 29,17 € HT.
+- Calculateur : 2 lots d'oreilles de porc = 200 pièces · 166,67 € HT · 200 € TTC ; 2 lots de sabots de bœuf = 100 pièces · 58,33 € HT · 70 € TTC. Textiles, BB Bed et ventes au kilo inchangés (parka : 2 lots sans logo = 460 € HT · 552 € TTC).
+- 38 pages, 1884 liens et ressources vérifiés ; `check.mjs` contrôle le prix du lot HT et TTC pour ces fiches.

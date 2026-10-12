@@ -8,4 +8,6 @@ export const offersOf=p=>p.offers||[
  {id:'sans',label:'Sans logo',unit:p.unitPlain,pack:p.packSize},
  {id:'avec',label:'Avec votre logo',unit:p.unitLogo,pack:p.packSize}
 ];
+// Prix TTC d'un lot : le montant transmis quand l'offre en déclare un (`lot`), sinon prix unitaire × nombre de pièces.
+export const lotTtc=o=>o.lot??Math.round(o.unit*o.pack*100)/100;
 export const unitWords=p=>p.unitLabel||['pièce','pièces'];
