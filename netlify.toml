@@ -1,5 +1,9 @@
+# PHASE ACTUELLE : PRÉPRODUCTION (validée par le propriétaire le 12/10/2026).
+# La branche main publie la version « aperçu » : bandeau de travail, pages non indexées, formulaire sans envoi.
+# MISE EN LIGNE DÉFINITIVE : remplacer la commande par "npm run build:production" et supprimer
+# l'en-tête X-Robots-Tag ci-dessous, une fois data/site.json complété et validé (voir GITHUB_NETLIFY.md).
 [build]
-  command = "npm run build:production"
+  command = "npm run build"
   publish = "dist"
 
 [build.environment]
@@ -14,6 +18,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"

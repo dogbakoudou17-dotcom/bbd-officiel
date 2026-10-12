@@ -14,9 +14,15 @@ git push origin handoff-2026-10-11
 
 Claude Code pourra ensuite cloner le dépôt, lire `CLAUDE.md` et reprendre le rendu ainsi que l'historique exact.
 
-## Déploiement Netlify
+## Phase actuelle : préproduction (12/10/2026)
 
-Connecter Netlify au dépôt GitHub seulement après avoir renseigné et validé les informations réelles dans `data/site.json`.
+Le propriétaire a choisi une préproduction avant la mise en ligne définitive. `netlify.toml` publie donc la version « aperçu » (`npm run build`) : bandeau « Aperçu de travail », balise et en-tête `noindex`, formulaire sans envoi. L'adresse `xxx.netlify.app` peut servir aux tests sur téléphone et à un QR code **de test** uniquement.
+
+Raccordement (fait par le propriétaire, sur son compte) : Netlify → Add new site → Import an existing project → GitHub → `bbd-officiel` → branche `main`. Netlify lit `netlify.toml` : ne rien modifier dans les champs de build.
+
+## Déploiement Netlify définitif
+
+Passer en définitif seulement après avoir renseigné et validé les informations réelles dans `data/site.json`, puis : remettre `command = "npm run build:production"` dans `netlify.toml` et supprimer l'en-tête `X-Robots-Tag`.
 
 - commande de build : `npm run build:production`
 - dossier publié : `dist`
