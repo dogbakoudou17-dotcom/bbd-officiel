@@ -25,6 +25,7 @@ Le projet n’a aucune dépendance npm externe. Node.js suffit. Le site est stat
 - `assets/style.css` contient la structure visuelle générale.
 - `assets/brand.css` contient l’identité BBD, les composants produits et les campagnes.
 - `assets/ui.css` (refonte d’octobre 2026, chargée en dernier) contient le parcours : premier écran, bandeau d’engagements, tuiles catalogues, cartes produits, carrousels, « Comment ça marche », pictogrammes et boutons. Les pictogrammes sont définis une seule fois dans `build.mjs` (objet `I`, fonction `icon`).
+- La page « Qui sommes-nous ? » (`/qui-sommes-nous/`, l'ancienne `/a-propos/` y redirige) reprend le récit et les photos de bbd-officiel.fr/pages/qui-sommes-nous avec l'accord du propriétaire. Ne rien ajouter au parcours de Hamady qui ne figure pas dans un texte transmis. Les produits vendus seulement sur la boutique BBD Paris (sofas, peluches, livraisons Mondial Relay/Chronopost) ne sont pas présentés ici.
 - Les engagements affichés (sans engagement, aucun paiement en ligne, prix HT/TTC, logo sur les textiles) sont des faits établis : n’en ajouter aucun (délai, livraison offerte, avis, garantie) sans confirmation du propriétaire.
 - `assets/app.js` contient les interactions progressives, filtres, devis, calculs et animations.
 - `dist/` est généré par `npm run build`. Ne jamais modifier `dist/` à la main.

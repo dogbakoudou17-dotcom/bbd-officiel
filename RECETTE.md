@@ -184,3 +184,11 @@ Ce qui change :
 
 - Bandeau d'engagements (sous la photo de l'accueil et sur les pages catalogues, univers, solutions et à propos) : il apparaissait comme un grand aplat vert vide sur mobile, conséquence du même défaut. Il affiche désormais un titre « Commandez l'esprit tranquille. » et ses 4 engagements (sans engagement, aucun paiement en ligne, prix clairs HT et TTC, logo sur les textiles), intitulés agrandis. Sur mobile, la mention « Mise en scène illustrative » est placée en haut de la photo pour ne plus passer sous le bouton « 21 références à découvrir ».
 
+
+## Page « Qui sommes-nous ? » — 12 octobre 2026
+
+- Nouvelle page `/qui-sommes-nous/` inspirée de bbd-officiel.fr/pages/qui-sommes-nous (texte et photos du propriétaire, reprise autorisée). L'ancienne page `/a-propos/` est remplacée et redirigée (301). Lien ajouté au menu (« Qui sommes-nous ? ») et au pied de page.
+- Contenu : en-tête avec portrait de Hamady ; « Une histoire en quatre temps » (au contact des chiens, l'élevage du Dogue Argentin, les rencontres, le confort au quotidien) ; mosaïque de photos (BB Bed, chiot au repos, friandises en caisses, signature BBD) ; les trois mots de la signature (histoire, expérience, qualité) ; bandeau d'engagements ; les trois catalogues ; encart « Rencontrés sur un salon ou en exposition ? » ; clôture. Aucun fait ajouté au parcours du fondateur.
+- Photos reprises : portrait de Hamady, friandises en caisses, chiot sur plaid (originaux dans `sources/qui-sommes-nous/`). Non reprises : sofas et peluches (produits non proposés sur ce site) ; informations de livraison de la boutique BBD Paris (sans objet pour une commande sur devis). Les crédits de photographes incrustés dans deux images sont conservés ; droits de publication à confirmer avant la mise en ligne définitive.
+- Menu à six rubriques : menu repliable entre 781 et 980 px (tablettes), menu resserré entre 981 et 1180 px, sans retour à la ligne. `dist/` est désormais vidé à chaque build (plus de page périmée publiée).
+
