@@ -78,12 +78,14 @@ const famTitle=id=>(families.find(f=>f[0]===id)||[])[1]||'';
 const famProducts=id=>published.filter(p=>p.family===id);
 const swatchCount=p=>(p.swatches||[]).filter(s=>!s.range).length;
 const motifCount=p=>new Set((p.swatches||[]).filter(s=>!s.range).map(s=>s.motif)).size;
-const bbBed=products.find(p=>p.id==='bb-bed-100x150');
+// BB Bed : une fiche par motif ; les repères du catalogue additionnent motifs et coloris de la famille.
+const bbBeds=products.filter(p=>p.id.startsWith('bb-bed-'));
+const bbMotifs=new Set(bbBeds.flatMap(p=>(p.swatches||[]).filter(s=>!s.range).map(s=>s.motif))).size,bbColours=bbBeds.reduce((n,p)=>n+swatchCount(p),0);
 // Repères affichés par catalogue : uniquement des faits tirés des fiches.
 const famMeta={
  textiles:{nav:'Textiles',icon:'shirt',cta:'Voir les textiles',img:['/assets/parka-elysee-noir.jpg',800,1208,'Parka Élysée noire portée par un mannequin'],points:[['shirt','Parkas, doudounes et sweats'],['palette','Avec ou sans votre logo'],['box','Commande par lots de 4'],['ruler','Tailles et coloris sur chaque fiche']]},
  recompenses:{nav:'Friandises',icon:'bone',cta:'Voir les friandises',img:['/assets/oreille-de-boeuf.jpg',900,900,'Oreille de bœuf séchée pour chien'],points:[['leaf','Friandises naturelles'],['bone','À mâcher ou à croquer'],['scale','Au kilo ou par lots'],['heart','Pour les pros comme pour les particuliers']]},
- accessoires:{nav:'Accessoires',icon:'bed',cta:'Voir les accessoires',img:['/assets/bb-bed-gamme-tetris.jpg',1000,750,'BB Bed motif Tetris empilés en plusieurs coloris'],points:[['bed','Couchage doux pour chiens et chats'],['palette',bbBed?`${motifCount(bbBed)} motifs, ${swatchCount(bbBed)} coloris`:'Plusieurs coloris'],['box','Lots de 3 ou de 10']]},
+ accessoires:{nav:'Accessoires',icon:'bed',cta:'Voir les accessoires',img:['/assets/bb-bed-gamme-tetris.jpg',1000,750,'BB Bed motif Tetris empilés en plusieurs coloris'],points:[['bed','Couchage doux pour chiens et chats'],['palette',bbBeds.length?`${bbMotifs} motifs, ${bbColours} coloris`:'Plusieurs coloris'],['box','Lots de 3 ou de 10']]},
  packs:{nav:'Formules',icon:'box',cta:'Voir les exemples',points:[['box','Plusieurs familles réunies'],['users','Selon votre public'],['chat','Composition à définir ensemble']]}
 };
 const navItems=[['Textiles','/solutions/textiles/'],['Friandises','/solutions/recompenses/'],['Accessoires','/solutions/accessoires/'],['Pour qui ?','/#pour-qui'],['Personnalisation','/personnalisation/'],['Qui sommes-nous ?','/qui-sommes-nous/']];
@@ -260,5 +262,5 @@ page('/404.html','Page introuvable','Retrouvez les catalogues et univers BBD Off
 fs.writeFileSync(path.join(dist,'robots.txt'),preview?'User-agent: *\nDisallow: /\n':`User-agent: *\nAllow: /\nSitemap: ${config.url.replace(/\/$/,'')}/sitemap.xml\n`);
 const indexable=pages.filter(p=>!['/404.html','/merci/','/apercu/'].includes(p));
 fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${config.url?indexable.map(p=>`<url><loc>${esc(config.url.replace(/\/$/,'')+p)}</loc></url>`).join(''):''}</urlset>`);
-fs.writeFileSync(path.join(dist,'_redirects'),'/a-propos/ /qui-sommes-nous/ 301\n/catalogue/ /solutions/ 301\n/demander-un-devis/ /devis/ 301\n/* /404.html 404\n');
+fs.writeFileSync(path.join(dist,'_redirects'),'/a-propos/ /qui-sommes-nous/ 301\n/produits/bb-bed-100x150/ /solutions/accessoires/ 301\n/catalogue/ /solutions/ 301\n/demander-un-devis/ /devis/ 301\n/* /404.html 404\n');
 console.log(`${pages.length} pages générées (${production?'production':staging?'test de réception':'aperçu sans envoi'}).`);

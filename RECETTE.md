@@ -192,3 +192,10 @@ Ce qui change :
 - Photos reprises : portrait de Hamady, friandises en caisses, chiot sur plaid (originaux dans `sources/qui-sommes-nous/`). Non reprises : sofas et peluches (produits non proposés sur ce site) ; informations de livraison de la boutique BBD Paris (sans objet pour une commande sur devis). Les crédits de photographes incrustés dans deux images sont conservés ; droits de publication à confirmer avant la mise en ligne définitive.
 - Menu à six rubriques : menu repliable entre 781 et 980 px (tablettes), menu resserré entre 981 et 1180 px, sans retour à la ligne. `dist/` est désormais vidé à chaque build (plus de page périmée publiée).
 
+
+## BB Bed : une fiche par motif — 12 octobre 2026
+
+- À la demande du propriétaire, la fiche « BB Bed Confort & Bien-être » est divisée en trois fiches : **BB Bed Camou** (4 coloris, photo de gamme), **BB Bed Double patte** (7 coloris, photo du coloris bleu en premier, faute de photo de gamme) et **BB Bed Tetris** (6 coloris, photo de gamme). Tarifs, textes et rubriques identiques (lot de 3 : 105 € TTC ; lot de 10 : 315 € TTC, 10 pour le prix de 9).
+- Chaque fiche ne présente que les photos et coloris de son motif ; « Dans la même famille » renvoie vers les deux autres motifs. L'ancienne adresse `/produits/bb-bed-100x150/` redirige vers le catalogue Accessoires (301).
+- Test : lot de 10 + dernier coloris = 10 unités · 262,50 € HT · 315 € TTC, coloris transmis au devis, sur les trois fiches. Catalogue Accessoires : 3 références, « 3 motifs, 17 coloris ». 40 pages, 2038 liens et ressources vérifiés.
+

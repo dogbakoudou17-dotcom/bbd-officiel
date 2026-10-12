@@ -476,13 +476,13 @@
     ]
   },
   {
-    "id": "bb-bed-100x150",
-    "name": "BB Bed Confort & Bien-être",
+    "id": "bb-bed-camou",
+    "name": "BB Bed Camou",
     "family": "accessoires",
-    "description": "Offrez à votre compagnon un espace douillet et confortable. Idéal pour les chiens et les chats, le BB Bed 100 × 150 cm apporte chaleur et confort au quotidien, tout en restant pratique à utiliser et à entretenir.",
+    "description": "Offrez à votre compagnon un espace douillet et confortable. Idéal pour les chiens et les chats, le BB Bed 100 × 150 cm motif Camou apporte chaleur et confort au quotidien, tout en restant pratique à utiliser et à entretenir. 4 coloris : bleu, gris, marron, violet.",
     "confirmed": true,
-    "image": "/assets/bb-bed-gamme-tetris.jpg",
-    "alt": "Plusieurs BB Bed motif Tetris empilés en différents coloris, photo fournie par BBD Officiel",
+    "image": "/assets/bb-bed-gamme-camou.jpg",
+    "alt": "Plusieurs BB Bed motif Camou empilés en différents coloris, photo fournie par BBD Officiel",
     "imageSize": [
       1000,
       750
@@ -525,7 +525,7 @@
       "Séchage à l’air libre conseillé",
       "Entretien facile pour une utilisation quotidienne"
     ],
-    "details": "Dimensions : 100 × 150 cm. Trois motifs photographiés : Camou, Double patte et Tetris. Possibilité d’associer plusieurs coloris dans un même lot, composition, disponibilités, transport et délais à préciser dans le devis.",
+    "details": "Dimensions : 100 × 150 cm. Motif Camou, 4 coloris photographiés : bleu, gris, marron, violet. Possibilité d’associer plusieurs coloris ou motifs dans un même lot, composition, disponibilités, transport et délais à préciser dans le devis.",
     "personalization": null,
     "swatches": [
       {
@@ -567,7 +567,63 @@
         "thumb": "/assets/bb-bed-camou-violet-mini.jpg",
         "alt": "BB Bed motif Camou, coloris violet, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
         "range": false
+      }
+    ],
+    "swatchLabel": "Coloris"
+  },
+  {
+    "id": "bb-bed-double-patte",
+    "name": "BB Bed Double patte",
+    "family": "accessoires",
+    "description": "Offrez à votre compagnon un espace douillet et confortable. Idéal pour les chiens et les chats, le BB Bed 100 × 150 cm motif Double patte apporte chaleur et confort au quotidien, tout en restant pratique à utiliser et à entretenir. 7 coloris : bleu, fuchsia, marron, noir et bleu, noir et rose, orange, vert.",
+    "confirmed": true,
+    "image": "/assets/bb-bed-double-patte-bleu.jpg",
+    "alt": "BB Bed motif Double patte, coloris bleu, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
+    "imageSize": [
+      1000,
+      750
+    ],
+    "dimensions": "100 × 150 cm",
+    "unitLabel": [
+      "unité",
+      "unités"
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-3",
+        "label": "Lot de 3",
+        "unit": 35,
+        "pack": 3
       },
+      {
+        "id": "lot-10",
+        "label": "Lot de 10",
+        "unit": 31.5,
+        "pack": 10,
+        "note": "10 pour le prix de 9 : le 10ᵉ est offert."
+      }
+    ],
+    "taxStatus": "TTC",
+    "minimum": "Commande par lot de 3 ou de 10",
+    "highlights": [
+      "Doux et confortable pour votre animal",
+      "Idéal pour le couchage, la caisse de transport ou le panier",
+      "Conserve la chaleur et protège du froid",
+      "Matière conçue pour laisser circuler l’humidité",
+      "Facile à nettoyer et à entretenir",
+      "Peut être découpé selon les dimensions souhaitées",
+      "Convient aux chiens comme aux chats"
+    ],
+    "usage": "Le BB Bed peut être utilisé à la maison, dans un panier, une cage, une caisse de transport ou lors des déplacements. Sa texture douce offre à votre animal un espace agréable pour se reposer.",
+    "care": [
+      "Lavable en machine",
+      "Séchage à l’air libre conseillé",
+      "Entretien facile pour une utilisation quotidienne"
+    ],
+    "details": "Dimensions : 100 × 150 cm. Motif Double patte, 7 coloris photographiés : bleu, fuchsia, marron, noir et bleu, noir et rose, orange, vert. Possibilité d’associer plusieurs coloris ou motifs dans un même lot, composition, disponibilités, transport et délais à préciser dans le devis.",
+    "personalization": null,
+    "swatches": [
       {
         "motif": "Double patte",
         "label": "Double patte bleu",
@@ -623,7 +679,63 @@
         "thumb": "/assets/bb-bed-double-patte-vert-mini.jpg",
         "alt": "BB Bed motif Double patte, coloris vert, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
         "range": false
+      }
+    ],
+    "swatchLabel": "Coloris"
+  },
+  {
+    "id": "bb-bed-tetris",
+    "name": "BB Bed Tetris",
+    "family": "accessoires",
+    "description": "Offrez à votre compagnon un espace douillet et confortable. Idéal pour les chiens et les chats, le BB Bed 100 × 150 cm motif Tetris apporte chaleur et confort au quotidien, tout en restant pratique à utiliser et à entretenir. 6 coloris : bleu, orange, rose, rouge, vert, violet.",
+    "confirmed": true,
+    "image": "/assets/bb-bed-gamme-tetris.jpg",
+    "alt": "Plusieurs BB Bed motif Tetris empilés en différents coloris, photo fournie par BBD Officiel",
+    "imageSize": [
+      1000,
+      750
+    ],
+    "dimensions": "100 × 150 cm",
+    "unitLabel": [
+      "unité",
+      "unités"
+    ],
+    "choiceLabel": "Formule",
+    "offers": [
+      {
+        "id": "lot-3",
+        "label": "Lot de 3",
+        "unit": 35,
+        "pack": 3
       },
+      {
+        "id": "lot-10",
+        "label": "Lot de 10",
+        "unit": 31.5,
+        "pack": 10,
+        "note": "10 pour le prix de 9 : le 10ᵉ est offert."
+      }
+    ],
+    "taxStatus": "TTC",
+    "minimum": "Commande par lot de 3 ou de 10",
+    "highlights": [
+      "Doux et confortable pour votre animal",
+      "Idéal pour le couchage, la caisse de transport ou le panier",
+      "Conserve la chaleur et protège du froid",
+      "Matière conçue pour laisser circuler l’humidité",
+      "Facile à nettoyer et à entretenir",
+      "Peut être découpé selon les dimensions souhaitées",
+      "Convient aux chiens comme aux chats"
+    ],
+    "usage": "Le BB Bed peut être utilisé à la maison, dans un panier, une cage, une caisse de transport ou lors des déplacements. Sa texture douce offre à votre animal un espace agréable pour se reposer.",
+    "care": [
+      "Lavable en machine",
+      "Séchage à l’air libre conseillé",
+      "Entretien facile pour une utilisation quotidienne"
+    ],
+    "details": "Dimensions : 100 × 150 cm. Motif Tetris, 6 coloris photographiés : bleu, orange, rose, rouge, vert, violet. Possibilité d’associer plusieurs coloris ou motifs dans un même lot, composition, disponibilités, transport et délais à préciser dans le devis.",
+    "personalization": null,
+    "swatches": [
       {
         "motif": "Tetris",
         "label": "Gamme Tetris",
@@ -680,7 +792,8 @@
         "alt": "BB Bed motif Tetris, coloris violet, plié sur un tronc en extérieur, photo fournie par BBD Officiel",
         "range": false
       }
-    ]
+    ],
+    "swatchLabel": "Coloris"
   },
   {
     "id": "oreille-de-porc",

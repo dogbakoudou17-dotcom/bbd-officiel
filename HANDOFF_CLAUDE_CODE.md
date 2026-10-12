@@ -40,7 +40,7 @@ Le rendu actuel comprend :
 | Doudoune sans manches Bac | 25 € TTC/pièce | 35 € TTC/pièce | lot de 4, 4 coloris photographiés |
 | Sweat zippé Bourget bleu marine | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 |
 | Sweat zippé Bourget noir | 39 € TTC/pièce | 49 € TTC/pièce | lot de 4 |
-| BB Bed Confort & Bien-être 100 × 150 | 35 € TTC/unité (lot de 3) | 31,50 € TTC/unité (lot de 10) | |
+| BB Bed Camou, Double patte, Tetris (3 fiches) 100 × 150 | 35 € TTC/unité (lot de 3) | 31,50 € TTC/unité (lot de 10) | |
 | Oreille de porc naturelle | 100 € TTC le lot de 100 pièces | — | |
 | Oreille de bœuf naturelle | 90 € TTC le lot de 50 pièces | — | |
 | Oreille de bœuf avec poils | 90 € TTC le lot de 50 pièces | — | |
