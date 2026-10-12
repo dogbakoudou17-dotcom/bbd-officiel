@@ -177,3 +177,8 @@ Ce qui change :
 - Oreille de porc : 100 € TTC le lot de 100 → 83,33 € HT. Oreilles de bœuf : 90 € TTC le lot de 50 → 75 € HT. Sabot de veau : 45 € TTC le lot de 100 → 37,50 € HT. Sabot de bœuf : 35 € TTC le lot de 50 → 29,17 € HT.
 - Calculateur : 2 lots d'oreilles de porc = 200 pièces · 166,67 € HT · 200 € TTC ; 2 lots de sabots de bœuf = 100 pièces · 58,33 € HT · 70 € TTC. Textiles, BB Bed et ventes au kilo inchangés (parka : 2 lots sans logo = 460 € HT · 552 € TTC).
 - 38 pages, 1884 liens et ressources vérifiés ; `check.mjs` contrôle le prix du lot HT et TTC pour ces fiches.
+
+## Correctif d'affichage — 12 octobre 2026
+
+- Signalé par le propriétaire : sur la page Friandises, les cartes produits et le contenu du bandeau d'engagements restaient invisibles. Cause : la règle CSS qui masque ces blocs avant leur apparition était plus spécifique que celle qui les révèle (`.motion-ready .pgrid .pcard` contre `.motion-ready .is-visible`), donc ils ne réapparaissaient jamais quand les animations étaient actives. Corrigé dans `assets/ui.css` ; test animations activées : bloc masqué (opacité 0) puis révélé (opacité 1) pour les cartes produits, le bandeau d'engagements et les tuiles catalogues.
+

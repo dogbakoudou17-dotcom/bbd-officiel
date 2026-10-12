@@ -205,7 +205,8 @@ a.pchip:hover{background:var(--sage-2)}
 
 /* Apparitions : ne concernent que des éléments déjà visibles par défaut (voir app.js) */
 .motion-ready .cat-tile,.motion-ready .who-card,.motion-ready .howto li,.motion-ready .assurance li,.motion-ready .pgrid .pcard{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease) var(--reveal-delay,0ms),transform .6s var(--ease) var(--reveal-delay,0ms),border-color .2s}
-.motion-ready .is-visible{opacity:1;transform:none}
+/* Plus spécifique que la règle de masquage ci-dessus, pour que l'élément réapparaisse toujours. */
+.motion-ready :is(.cat-tile,.who-card,.howto li,.assurance li,.pgrid .pcard).is-visible{opacity:1;transform:none}
 
 @media(max-width:1050px){
  .navlinks{gap:14px}.navlinks a:not(.btn){font-size:.85rem}
