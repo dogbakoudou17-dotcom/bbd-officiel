@@ -199,3 +199,9 @@ Ce qui change :
 - Chaque fiche ne présente que les photos et coloris de son motif ; « Dans la même famille » renvoie vers les deux autres motifs. L'ancienne adresse `/produits/bb-bed-100x150/` redirige vers le catalogue Accessoires (301).
 - Test : lot de 10 + dernier coloris = 10 unités · 262,50 € HT · 315 € TTC, coloris transmis au devis, sur les trois fiches. Catalogue Accessoires : 3 références, « 3 motifs, 17 coloris ». 40 pages, 2038 liens et ressources vérifiés.
 
+
+## Cache navigateur — 12 octobre 2026
+
+- Constat du propriétaire sur la préproduction : cartes produits et bandeau d'engagements toujours vides après le correctif. Cause : le navigateur conservait l'ancienne `ui.css` (Netlify : `Cache-Control: max-age=86400` sur `/assets/*`), alors que le serveur servait bien la version corrigée.
+- Correctif : `build.mjs` ajoute à chaque CSS/JS une empreinte de son contenu (`/assets/ui.css?v=…`). Toute modification change l'adresse : les visiteurs reçoivent la nouvelle version immédiatement, sans Ctrl + F5.
+
