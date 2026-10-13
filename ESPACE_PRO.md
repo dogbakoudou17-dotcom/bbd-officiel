@@ -12,6 +12,19 @@ L’espace pro permet à un client de se connecter **sans mot de passe** (lien r
 
 Les statuts possibles sont : Demande reçue → Devis envoyé → Commande validée → En préparation → Expédiée → Livrée, ou bien Annulée.
 
+## Accès réservé aux professionnels validés
+
+L'espace pro n'est ouvert qu'aux professionnels validés par BBD.
+
+1. À sa première connexion, le professionnel remplit une **demande d'accès** : nom, structure, profil, téléphone, site ou n° d'affixe / SIRET.
+2. Sa demande passe au statut « En attente ».
+   - Une fois le site publié, BBD reçoit aussi une copie par e-mail, via le formulaire Netlify `acces-espace-pro`.
+   - En attendant la validation, le professionnel voit un message d'attente. Il peut déjà envoyer des demandes de devis, mais elles ne s'ajoutent pas à son suivi.
+3. Dans `/espace-pro/admin/`, bloc « Accès à l'espace pro », BBD passe la demande à **Validé** ou **Refusé**. Un message peut l'accompagner, par exemple le motif d'un refus ; le professionnel le voit.
+4. Une fois validé, le professionnel accède à son tableau de bord. Ses demandes de devis s'enregistrent alors automatiquement.
+
+La base de données applique la même règle. Un compte non validé ne peut pas enregistrer de demande dans le suivi : la fonction `est_valide()` le vérifie.
+
 ## Programme de parrainage
 
 Page publique : `/espace-pro/parrainage/`. On y arrive depuis l'espace pro, le pied de page et la case « cagnotte » du devis.
@@ -38,7 +51,7 @@ Suite possible : relier automatiquement les commandes Shopify au crédit de la c
 
 ## Fichiers techniques
 
-- `supabase/schema.sql` : les tables (dont `parrainages` : e-mail, code, statut, cagnotte ; et sur `requests` : `utiliser_cagnotte`, `cagnotte_deduite`), les règles de sécurité (RLS) et l’historique des statuts. Chaque client ne lit que ses propres demandes, sans pouvoir les modifier ni les supprimer. Seules les adresses présentes dans la table `admins` voient tout et modifient.
+- `supabase/schema.sql` : les tables (dont `membres` : demandes d'accès et validation ; `parrainages` : e-mail, code, statut, cagnotte ; et sur `requests` : `utiliser_cagnotte`, `cagnotte_deduite`), les règles de sécurité (RLS) et l’historique des statuts. Chaque client ne lit que ses propres demandes, sans pouvoir les modifier ni les supprimer. Seules les adresses présentes dans la table `admins` voient tout et modifient.
 - `assets/espace.js` : la connexion, le tableau de bord du client, l’administration et l’enregistrement automatique des devis. Il appelle l’API Supabase directement, sans bibliothèque externe.
 - `build.mjs` : les pages `/espace-pro/` et `/espace-pro/admin/`. La configuration est lue dans les variables d’environnement `SUPABASE_URL` et `SUPABASE_ANON_KEY`. **Aucune clé n’est enregistrée dans le dépôt.** Si ces variables sont absentes, l’espace affiche « ouvre très bientôt ».
 - `netlify.toml` : la règle CSP autorise `https://*.supabase.co`.

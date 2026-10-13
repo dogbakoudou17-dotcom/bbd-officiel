@@ -14,6 +14,39 @@ language sql stable security definer set search_path = public as $$
   select exists (select 1 from public.admins where lower(email) = lower(auth.jwt() ->> 'email'));
 $$;
 
+-- Professionnels : l'espace pro est réservé aux comptes validés par BBD.
+-- À la première connexion, le professionnel dépose une demande d'accès (statut « en_attente ») ;
+-- seul un administrateur peut la passer à « valide » ou « refuse ».
+create table if not exists public.membres (
+  user_id     uuid primary key default auth.uid() references auth.users(id) on delete cascade,
+  email       text not null default lower(auth.jwt() ->> 'email'),
+  nom         text not null check (char_length(nom) between 1 and 120),
+  structure   text not null check (char_length(structure) between 1 and 200),
+  profil      text check (char_length(profil) <= 40),
+  telephone   text check (char_length(telephone) <= 40),
+  site        text check (char_length(site) <= 200),
+  statut      text not null default 'en_attente' check (statut in ('en_attente','valide','refuse')),
+  note        text check (char_length(note) <= 1000),   -- message de BBD (motif d'un refus, par exemple)
+  created_at  timestamptz not null default now(),
+  updated_at  timestamptz not null default now()
+);
+alter table public.membres enable row level security;
+drop policy if exists "membre lit sa fiche" on public.membres;
+create policy "membre lit sa fiche" on public.membres
+  for select using (user_id = auth.uid() or public.is_admin());
+drop policy if exists "membre demande l'accès" on public.membres;
+create policy "membre demande l'accès" on public.membres
+  for insert with check (user_id = auth.uid() and statut = 'en_attente' and note is null
+    and email = lower(auth.jwt() ->> 'email'));
+drop policy if exists "admin valide les accès" on public.membres;
+create policy "admin valide les accès" on public.membres
+  for update using (public.is_admin()) with check (public.is_admin());
+
+create or replace function public.est_valide() returns boolean
+language sql stable security definer set search_path = public as $
+  select public.is_admin() or exists (select 1 from public.membres where user_id = auth.uid() and statut = 'valide');
+$;
+
 -- Demandes (devis) et commandes qui en découlent.
 create table if not exists public.requests (
   id          uuid primary key default gen_random_uuid(),
@@ -49,11 +82,11 @@ drop policy if exists "client lit ses demandes" on public.requests;
 create policy "client lit ses demandes" on public.requests
   for select using (user_id = auth.uid() or public.is_admin());
 
--- Le client crée une demande « reçue » ; il ne peut fixer ni statut, ni montant, ni suivi, ni note.
+-- Le client validé crée une demande « reçue » ; il ne peut fixer ni statut, ni montant, ni suivi, ni note.
 drop policy if exists "client crée sa demande" on public.requests;
 create policy "client crée sa demande" on public.requests
   for insert with check (
-    user_id = auth.uid() and status = 'recue'
+    user_id = auth.uid() and public.est_valide() and status = 'recue'
     and amount_ttc is null and tracking is null and note is null and cagnotte_deduite is null
   );
 
@@ -124,6 +157,9 @@ create or replace function public.touch_updated_at() returns trigger
 language plpgsql as $ begin new.updated_at := now(); return new; end $;
 drop trigger if exists parrainages_touch on public.parrainages;
 create trigger parrainages_touch before update on public.parrainages
+  for each row execute function public.touch_updated_at();
+drop trigger if exists membres_touch on public.membres;
+create trigger membres_touch before update on public.membres
   for each row execute function public.touch_updated_at();
 
 -- DERNIÈRE ÉTAPE : remplacer l'adresse ci-dessous par celle de BBD Officiel (compte administrateur), puis exécuter.

@@ -239,3 +239,11 @@ Ce qui change :
 - Devis : case « utiliser ma cagnotte » (préremplie par `?cagnotte=1` depuis l'espace pro), enregistrée avec la demande.
 - Confidentialité : paragraphe « Programme de parrainage ». Schéma : table `parrainages` (RLS : lecture de son propre code, gestion réservée à l'administration).
 - À décider par BBD : taux ou montant crédité, avantage acheteur, validité de la cagnotte. Le crédit de la cagnotte se fait à la main (pas de lien automatique avec la boutique Shopify).
+
+## Espace pro réservé aux professionnels validés — 13 octobre 2026
+
+- Première connexion : formulaire de demande d'accès (nom, structure, profil, téléphone, site ou affixe/SIRET). Le compte passe ensuite « en attente », puis il est validé ou refusé par BBD. Un refus peut être accompagné d'un message.
+- Administration : bloc « Accès à l'espace pro » (demandes en attente en tête), avec le choix Validé / Refusé et un message.
+- Copie de chaque demande d'accès par e-mail à BBD (Netlify Forms `acces-espace-pro`, site publié uniquement).
+- Base de données : table `membres` et fonction `est_valide()`. Un compte non validé n'enregistre aucune demande dans le suivi, et la mention « connecté » n'apparaît pas sur le devis.
+- Testé avec des données simulées : demande d'accès, attente, refus avec message, validation côté administration, absence d'enregistrement pour un compte non validé.

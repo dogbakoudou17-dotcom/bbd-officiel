@@ -35,9 +35,13 @@ const sendLink=email=>fetch(BASE+'/auth/v1/otp?redirect_to='+encodeURIComponent(
 const me=()=>api('/auth/v1/user');
 const logout=async()=>{try{await api('/auth/v1/logout',{method:'POST'});}catch{}write(null);location.reload();};
 
+// Compte validé par BBD (ou administrateur) : seul cas où les devis s'ajoutent au suivi.
+let validCache;
+const validated=()=>validCache??=api('/rest/v1/rpc/est_valide',{method:'POST',body:{}}).then(Boolean).catch(()=>false);
+
 // Enregistrement automatique d'une demande de devis quand le client est connecté (appelé par app.js).
 async function record(form){
- if(!configured||!(await session()))return null;
+ if(!configured||!(await session())||!(await validated()))return null;
  const v=n=>(form.elements.namedItem(n)?.value||'').trim()||null;
  const q=Number(v('quantite'));
  const rows=await api('/rest/v1/requests',{method:'POST',prefer:'return=representation',body:{profil:v('profil'),famille:v('famille'),objet:v('objet'),produit:v('produit'),version:v('version'),coloris:v('coloris'),quantite:Number.isInteger(q)&&q>0?q:null,structure:v('structure'),message:v('message'),utiliser_cagnotte:Boolean(form.elements.namedItem('cagnotte')?.checked)}});
@@ -47,7 +51,7 @@ window.bbdEspace={configured,record,signedIn:async()=>Boolean(configured&&await 
 
 // Formulaire de devis : client connecté → e-mail prérempli et mention du suivi automatique.
 const quote=document.querySelector('#quote-form');
-if(quote&&configured)(async()=>{if(!(await session()))return;try{const u=await me();const mail=quote.elements.namedItem('email');if(mail&&!mail.value)mail.value=u.email;const hint=document.querySelector('.espace-hint');if(hint){hint.querySelector('strong').textContent=u.email;hint.hidden=false;}}catch{}})();
+if(quote&&configured)(async()=>{if(!(await session())||!(await validated()))return;try{const u=await me();const mail=quote.elements.namedItem('email');if(mail&&!mail.value)mail.value=u.email;const hint=document.querySelector('.espace-hint');if(hint){hint.querySelector('strong').textContent=u.email;hint.hidden=false;}}catch{}})();
 
 // ---------------------------------------------------------------------------
 // Pages Espace pro (client et administration)
@@ -109,8 +113,28 @@ async function parrainView(){
   p.note?el('p',{class:'espace-note'},el('strong',{text:'Message de BBD : '}),p.note):null));
  box.hidden=false;
 }
+async function accessGate(user){
+ if(await validated())return true;
+ const rows=await api('/rest/v1/membres?select=statut,note');const m=rows&&rows[0];
+ if(!m){const form=root.querySelector('.espace-access');form.elements.email.value=user.email;show('access');return false;}
+ if(m.statut==='refuse'){const n=root.querySelector('.espace-refused-note');if(m.note){n.textContent='Message de BBD : '+m.note;n.hidden=false;}show('refused');return false;}
+ show('pending');return false;
+}
+const accessForm=root.querySelector('.espace-access');
+accessForm?.addEventListener('submit',async e=>{
+ e.preventDefault();if(!accessForm.reportValidity())return;const btn=accessForm.querySelector('[type=submit]');btn.disabled=true;flash('');
+ const v=n=>accessForm.elements.namedItem(n).value.trim()||null;
+ try{
+  await api('/rest/v1/membres',{method:'POST',prefer:'return=minimal',body:{nom:v('acces-nom'),structure:v('acces-structure'),profil:v('acces-profil'),telephone:v('acces-telephone'),site:v('acces-site')}});
+  // Copie par e-mail à BBD via Netlify Forms (site publié uniquement) ; un échec n'empêche pas la demande.
+  if(accessForm.hasAttribute('data-netlify'))fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(accessForm)).toString()}).catch(()=>{});
+  show('pending');window.scrollTo({top:root.offsetTop-90});
+ }catch(err){flash(/duplicate|unique/i.test(err.message)?'Une demande d’accès existe déjà pour cette adresse.':err.message,'error');}
+ finally{btn.disabled=false;}
+});
 async function clientView(){
  const user=await me();root.querySelectorAll('.espace-user').forEach(n=>n.textContent=user.email);
+ if(!(await accessGate(user)))return;
  const list=await api('/rest/v1/requests?select=*&order=created_at.desc');
  const box=root.querySelector('.espace-list');box.replaceChildren();
  const open=list.filter(r=>!['livree','annulee'].includes(r.status)).length;
@@ -146,6 +170,28 @@ function parrainRow(p){
   catch(err){msg.textContent=err.message;}finally{save.disabled=false;}});
  return el('article',{class:'espace-parrain-row'},el('div',{},el('p',{class:'espace-parrain-code',text:p.code}),el('p',{class:'espace-date',text:p.email})),el('label',{},'Statut',statut),el('label',{},'Cagnotte (€)',pot),el('label',{class:'wide'},'Message',note),el('div',{class:'espace-admin-actions'},save,msg));
 }
+const MEMBRE={en_attente:'En attente',valide:'Validé',refuse:'Refusé'};
+function membreRow(m){
+ const statut=el('select',{'aria-label':'Accès de '+m.email},Object.entries(MEMBRE).map(([k,t])=>{const o=el('option',{value:k,text:t});if(k===m.statut)o.selected=true;return o;}));
+ const note=el('input',{type:'text',maxlength:'1000',value:m.note||'',placeholder:'Message visible par le professionnel (motif d’un refus…)','aria-label':'Message pour '+m.email});
+ const save=el('button',{type:'button',class:'btn',text:'Enregistrer'});const msg=el('span',{class:'espace-saved',role:'status'});
+ const badge=el('span',{class:'espace-badge','data-status':m.statut,text:MEMBRE[m.statut]});
+ save.addEventListener('click',async()=>{save.disabled=true;msg.textContent='';
+  try{await api('/rest/v1/membres?user_id=eq.'+encodeURIComponent(m.user_id),{method:'PATCH',prefer:'return=minimal',body:{statut:statut.value,note:note.value.trim()||null}});m.statut=statut.value;badge.dataset.status=m.statut;badge.textContent=MEMBRE[m.statut];msg.textContent='Enregistré';}
+  catch(err){msg.textContent=err.message;}finally{save.disabled=false;}});
+ const PROFIL={eleveur:'Éleveur',club:'Club',organisateur:'Organisateur',partenaire:'Partenaire',autre:'Autre structure'};
+ const facts=[PROFIL[m.profil]||m.profil,m.telephone,m.site].filter(Boolean).join(' · ');
+ return el('article',{class:'espace-parrain-row espace-membre-row'},
+  el('div',{},el('p',{class:'espace-membre-name',text:m.structure}),el('p',{class:'espace-date',text:m.nom+' · '+m.email}),facts?el('p',{class:'espace-date',text:facts}):null,el('p',{class:'espace-date',text:'Demande du '+date(m.created_at)}),badge),
+  el('label',{},'Accès',statut),el('label',{class:'wide'},'Message',note),el('div',{class:'espace-admin-actions'},save,msg));
+}
+async function adminMembres(){
+ const box=root.querySelector('.espace-membres-admin');if(!box)return;
+ let rows;try{rows=await api('/rest/v1/membres?select=*&order=created_at.desc');}catch{box.replaceChildren(el('p',{class:'espace-flash',text:'Demandes d’accès indisponibles : exécutez la dernière version de supabase/schema.sql.'}));return;}
+ rows.sort((a,b)=>(a.statut==='en_attente'?0:1)-(b.statut==='en_attente'?0:1));
+ const waiting=rows.filter(m=>m.statut==='en_attente').length;
+ box.replaceChildren(el('p',{class:'espace-count',text:waiting?waiting+' demande'+(waiting>1?'s':'')+' en attente de validation':'Aucune demande en attente'}),...rows.map(membreRow));
+}
 async function adminParrains(){
  const box=root.querySelector('.espace-parrain-admin');if(!box)return;
  let rows;try{rows=await api('/rest/v1/parrainages?select=*&order=created_at.desc');}catch{box.replaceChildren(el('p',{class:'espace-flash',text:'Codes de parrainage indisponibles : exécutez la dernière version de supabase/schema.sql.'}));return;}
@@ -168,7 +214,7 @@ async function adminView(){
  const list=await api('/rest/v1/requests?select=*&order=created_at.desc');
  const box=root.querySelector('.espace-list'),filter=root.querySelector('.espace-filter');
  const render=()=>{box.replaceChildren(...list.filter(r=>!filter.value||r.status===filter.value).map(adminRow));root.querySelector('.espace-count').textContent=`${list.length} demande${list.length>1?'s':''} au total`;};
- filter.addEventListener('change',render);render();await adminParrains();show('dashboard');
+ filter.addEventListener('change',render);render();await adminMembres();await adminParrains();show('dashboard');
 }
 
 (async()=>{
