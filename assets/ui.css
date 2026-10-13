@@ -516,3 +516,77 @@ a.pchip:hover{background:var(--sage-2)}
  .espace-how-steps{grid-template-columns:1fr 1fr}
  .form-aside .aside-espace{display:flex}
 }
+
+/* Programme de parrainage : page, promotion dans l'espace pro, code et cagnotte */
+.parrain-card{margin:0;padding:clamp(24px,3.4vw,40px);border-radius:28px;background:var(--ink);color:#fff;box-shadow:0 30px 60px -30px #102d2899;position:relative;overflow:hidden}
+.parrain-card:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;border:1px solid #ffffff22;right:-80px;top:-90px}
+.parrain-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#d5ded5}
+.parrain-ex{padding:5px 10px;border:1px solid #ffffff55;border-radius:999px;letter-spacing:.08em}
+.parrain-code-label{margin-top:34px;font-size:.8rem;color:#d5ded5}
+.parrain-code{margin-top:6px;padding:16px 18px;border:2px dashed var(--lime);border-radius:14px;font-family:ui-monospace,Consolas,monospace;font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:700;letter-spacing:.06em;color:var(--lime);overflow-wrap:anywhere}
+.parrain-flow{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
+.parrain-flow li{display:flex;align-items:center;gap:12px;font-size:.95rem;line-height:1.45}
+.parrain-flow .ico{width:38px;height:38px;padding:9px;border-radius:10px;background:#ffffff14;color:var(--lime)}
+.parrain-flow strong{color:#fff}
+.parrain-duo-section{background:var(--sage)}
+.parrain-duo{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:20px;align-items:stretch}
+.parrain-duo article{padding:30px;border-radius:var(--card);background:#fff}
+.parrain-duo article.parrain-duo-you{background:var(--ink);color:#fff}
+.parrain-duo-you p{color:#d5ded5!important}
+.parrain-duo-you h3{color:#fff}
+.parrain-duo-kicker{margin-top:18px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--leaf)!important}
+.parrain-duo-you .parrain-duo-kicker{color:var(--lime)!important}
+.parrain-duo h3{font-size:1.5rem;margin-top:6px}
+.parrain-duo article>p:last-child{margin-top:10px;color:var(--muted);line-height:1.6}
+.parrain-duo-link{align-self:center;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--lime);color:var(--dark)}
+.parrain-who{grid-template-columns:repeat(4,minmax(0,1fr))}
+.parrain-ideas{margin-top:26px;padding:24px 26px;border:1px solid var(--line);border-radius:var(--card)}
+.parrain-ideas-title{font-weight:700;margin-bottom:14px}
+.parrain-ideas ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.parrain-ideas li{display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:var(--sage);font-size:.88rem;font-weight:600}
+.parrain-ideas .ico{width:18px;height:18px;color:var(--leaf)}
+.parrain-form-col{min-width:0}
+.parrain-ok{max-width:none}
+.parrain-promo{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:48px;padding:clamp(24px,4vw,44px);border-radius:var(--card);background:var(--ink);color:#fff}
+.parrain-promo h2{margin-top:14px;font-size:clamp(1.6rem,2.8vw,2.3rem);color:#fff}
+.parrain-promo h2 em{color:var(--lime)}
+.parrain-promo p{margin-top:12px;max-width:58ch;color:#d5ded5}
+.parrain-promo .parrain-promo-kicker{margin-top:16px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--lime)}
+.parrain-promo .btn{background:var(--lime);border-color:var(--lime);color:var(--dark)}
+.parrain-promo .btn.outline{background:transparent;color:#fff;border-color:#c9d8c2}
+.check-cagnotte{margin:4px 0 0;padding:14px 16px;border-radius:10px;background:var(--sage)}
+.check-cagnotte .ico{width:18px;height:18px;color:var(--leaf);vertical-align:-4px;margin-right:6px}
+.espace-parrain{margin-bottom:22px}
+.espace-parrain-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;padding:22px;border-radius:18px;background:var(--ink);color:#fff}
+.espace-parrain-part{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:20px;border-radius:14px;background:#ffffff10}
+.espace-parrain-card .espace-ref{color:var(--lime)}
+.espace-parrain-card .espace-date{color:#d5ded5}
+.espace-parrain-card .btn{margin-top:6px;min-height:44px;padding:10px 16px}
+.espace-parrain-card .btn.outline{color:#fff;border-color:#c9d8c2}
+.espace-parrain-card .btn:not(.outline){background:var(--lime);border-color:var(--lime);color:var(--dark)}
+.espace-parrain-card .espace-note{grid-column:1/-1;color:var(--ink)}
+.espace-parrain-code{font-family:ui-monospace,Consolas,monospace;font-size:1.5rem;font-weight:700;letter-spacing:.05em;overflow-wrap:anywhere}
+.espace-parrain-amount{font-size:2.2rem;letter-spacing:-.03em;line-height:1.1}
+.espace-parrain-none{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border:1px dashed #aab5a7;border-radius:14px;font-size:.92rem}
+.espace-parrain-none .btn{flex-shrink:0;min-height:44px;padding:10px 16px}
+.espace-amount--pot strong{color:var(--leaf)}
+.espace-flag{display:inline-block;margin-top:14px;padding:6px 12px;border-radius:999px;background:var(--lime);font-size:.82rem;font-weight:700}
+.espace-admin-parrain{margin-bottom:34px;padding:26px;border-radius:18px;background:#fff;border:1px solid var(--line)}
+.espace-admin-parrain h2,.espace-admin-title{font-size:clamp(1.6rem,2.6vw,2.1rem);margin-bottom:12px}
+.espace-admin-help{color:var(--muted);font-size:.9rem;max-width:80ch;margin-bottom:18px}
+.espace-parrain-new{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:18px;border-radius:14px;background:var(--sage);margin-bottom:16px}
+.espace-parrain-new label,.espace-parrain-row label{display:flex;flex-direction:column;gap:6px;font-size:.8rem;font-weight:600;min-width:0}
+.espace-parrain-new input,.espace-parrain-row input,.espace-parrain-row select{width:100%;min-height:44px;border:1px solid #aab5a7;border-radius:7px;background:#fbfcf8;color:var(--ink);padding:10px;font-weight:400}
+.espace-parrain-rows{display:grid;gap:12px}
+.espace-parrain-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.7fr) minmax(0,.7fr) minmax(0,1.6fr) auto;gap:14px;align-items:end;padding:16px 0;border-top:1px solid var(--line)}
+.espace-parrain-row .espace-parrain-code{font-size:1.1rem}
+.espace-parrain-row .espace-admin-actions{grid-column:auto}
+@media(max-width:1100px){.parrain-who{grid-template-columns:repeat(2,minmax(0,1fr))}.espace-parrain-row{grid-template-columns:repeat(3,minmax(0,1fr))}.espace-parrain-row>div:first-child,.espace-parrain-row label.wide{grid-column:1/-1}.espace-parrain-row .espace-admin-actions{grid-column:1/-1}}
+@media(max-width:980px){.parrain-duo{grid-template-columns:1fr}.parrain-duo-link{justify-self:center;transform:rotate(90deg)}.parrain-promo{flex-direction:column;align-items:stretch}}
+@media(max-width:780px){
+ .parrain-who,.espace-parrain-card,.espace-parrain-new,.espace-parrain-row{grid-template-columns:1fr}
+ .parrain-duo article{padding:22px 18px}
+ .parrain-ideas{padding:20px 18px}
+ .espace-parrain-none{flex-direction:column;align-items:stretch}
+ .espace-admin-parrain{padding:20px 16px}
+}

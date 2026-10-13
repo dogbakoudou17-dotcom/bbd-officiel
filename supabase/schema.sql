@@ -34,9 +34,14 @@ create table if not exists public.requests (
   amount_ttc  numeric(10,2) check (amount_ttc >= 0),   -- montant du devis, saisi par BBD
   tracking    text check (char_length(tracking) <= 300), -- numéro ou lien de suivi du colis, saisi par BBD
   note        text check (char_length(note) <= 2000),    -- message de BBD au client
+  utiliser_cagnotte boolean not null default false,     -- le client souhaite utiliser sa cagnotte de parrainage
+  cagnotte_deduite numeric(10,2) check (cagnotte_deduite >= 0), -- montant de cagnotte déduit du devis, saisi par BBD
   created_at  timestamptz not null default now(),
   updated_at  timestamptz not null default now()
 );
+-- Mise à jour d'une base créée avec une version précédente de ce fichier.
+alter table public.requests add column if not exists utiliser_cagnotte boolean not null default false;
+alter table public.requests add column if not exists cagnotte_deduite numeric(10,2) check (cagnotte_deduite >= 0);
 create index if not exists requests_user_idx on public.requests (user_id, created_at desc);
 alter table public.requests enable row level security;
 
@@ -49,7 +54,7 @@ drop policy if exists "client crée sa demande" on public.requests;
 create policy "client crée sa demande" on public.requests
   for insert with check (
     user_id = auth.uid() and status = 'recue'
-    and amount_ttc is null and tracking is null and note is null
+    and amount_ttc is null and tracking is null and note is null and cagnotte_deduite is null
   );
 
 drop policy if exists "admin met à jour" on public.requests;
@@ -89,6 +94,37 @@ create trigger requests_status_update before update on public.requests
   for each row execute function public.log_request_status();
 
 -- Les clients ne modifient ni ne suppriment rien ; aucune règle delete n'est créée.
+
+-- Programme de parrainage : un code par professionnel validé, rattaché à son adresse e-mail,
+-- et sa cagnotte (cumulée sur les achats bbd-officiel.fr réalisés avec le code, déduite de ses devis).
+-- Créé et mis à jour uniquement par BBD (page /espace-pro/admin/) ; le professionnel le lit dans son espace.
+create table if not exists public.parrainages (
+  id          uuid primary key default gen_random_uuid(),
+  email       text not null unique check (email = lower(email) and char_length(email) <= 200),
+  code        text not null unique check (code ~ '^[A-Z0-9-]{3,30}
+
+-- DERNIÈRE ÉTAPE : remplacer l'adresse ci-dessous par celle de BBD Officiel (compte administrateur), puis exécuter.
+-- insert into public.admins (email) values ('adresse-admin@exemple.fr');
+),
+  statut      text not null default 'actif' check (statut in ('actif','suspendu')),
+  cagnotte    numeric(10,2) not null default 0 check (cagnotte >= 0),
+  note        text check (char_length(note) <= 1000),   -- message de BBD au parrain
+  created_at  timestamptz not null default now(),
+  updated_at  timestamptz not null default now()
+);
+alter table public.parrainages enable row level security;
+drop policy if exists "parrain lit son code" on public.parrainages;
+create policy "parrain lit son code" on public.parrainages
+  for select using (email = lower(auth.jwt() ->> 'email') or public.is_admin());
+drop policy if exists "admin gère les codes" on public.parrainages;
+create policy "admin gère les codes" on public.parrainages
+  for all using (public.is_admin()) with check (public.is_admin());
+
+create or replace function public.touch_updated_at() returns trigger
+language plpgsql as $ begin new.updated_at := now(); return new; end $;
+drop trigger if exists parrainages_touch on public.parrainages;
+create trigger parrainages_touch before update on public.parrainages
+  for each row execute function public.touch_updated_at();
 
 -- DERNIÈRE ÉTAPE : remplacer l'adresse ci-dessous par celle de BBD Officiel (compte administrateur), puis exécuter.
 -- insert into public.admins (email) values ('adresse-admin@exemple.fr');

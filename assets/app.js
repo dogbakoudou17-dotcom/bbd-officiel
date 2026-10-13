@@ -14,6 +14,7 @@ if(form){
  form.querySelector('[data-preview-submit]')?.removeAttribute('disabled');
  const set=(key,value)=>{const field=form.elements.namedItem(key);if(field&&value)field.value=value.slice(0,160);};
  set('profil',params.get('profil'));set('objet',params.get('objet'));set('famille',params.get('famille'));set('produit',params.get('produit'));set('campagne',campaign);
+ if(params.get('cagnotte')==='1'&&form.elements.cagnotte)form.elements.cagnotte.checked=true;
  set('quantite',params.get('quantite'));set('version',params.get('version'));set('coloris',params.get('coloris'));
  const choice=(params.get('choix')||'Version').replace(/[^\p{L} -]/gu,'').slice(0,30);
  const lines=[params.get('version')&&choice+' souhaitée : '+params.get('version'),params.get('coloris')&&'Coloris souhaité : '+params.get('coloris')].filter(Boolean);
@@ -30,6 +31,20 @@ if(form){
   const button=form.querySelector('[type=submit]');button.disabled=true;button.textContent='Envoi en cours…';status.textContent='';
   try{const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw new Error('Envoi refusé');const saved=await toEspace();location.assign('/merci/'+(saved?'?ref='+encodeURIComponent(saved.reference):''));}
   catch{status.textContent='Votre demande n’a pas pu être envoyée. Vos champs sont conservés sur cette page. Vérifiez votre connexion, puis réessayez ou utilisez le contact indiqué.';status.focus();button.disabled=false;button.textContent='Envoyer ma demande →';}
+ });
+}
+// Demande de code de parrainage : envoi Netlify, puis message de confirmation sur la page.
+const partner=document.querySelector('#parrainage-form');
+if(partner){
+ partner.querySelector('[data-preview-submit]')?.removeAttribute('disabled');
+ const pStatus=partner.querySelector('.form-status'),ok=document.querySelector('#parrainage-ok');
+ partner.elements.code?.addEventListener('blur',e=>{e.target.value=e.target.value.trim().toUpperCase().replace(/\s+/g,'-');});
+ partner.addEventListener('submit',async e=>{
+  e.preventDefault();if(!partner.reportValidity())return;
+  if(partner.dataset.preview==='true'){pStatus.textContent='Votre demande est correctement renseignée. Cet aperçu ne transmet aucune donnée. L’envoi sera activé après configuration et test de la réception.';pStatus.focus();return;}
+  const button=partner.querySelector('[type=submit]');button.disabled=true;pStatus.textContent='';
+  try{const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(partner)).toString()});if(!response.ok)throw new Error('Envoi refusé');partner.hidden=true;ok.hidden=false;ok.focus();}
+  catch{pStatus.textContent='Votre demande n’a pas pu être envoyée. Vos champs sont conservés. Vérifiez votre connexion, puis réessayez.';pStatus.focus();button.disabled=false;}
  });
 }
 // Page merci : référence de la demande enregistrée dans l'espace pro.

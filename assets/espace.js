@@ -40,7 +40,7 @@ async function record(form){
  if(!configured||!(await session()))return null;
  const v=n=>(form.elements.namedItem(n)?.value||'').trim()||null;
  const q=Number(v('quantite'));
- const rows=await api('/rest/v1/requests',{method:'POST',prefer:'return=representation',body:{profil:v('profil'),famille:v('famille'),objet:v('objet'),produit:v('produit'),version:v('version'),coloris:v('coloris'),quantite:Number.isInteger(q)&&q>0?q:null,structure:v('structure'),message:v('message')}});
+ const rows=await api('/rest/v1/requests',{method:'POST',prefer:'return=representation',body:{profil:v('profil'),famille:v('famille'),objet:v('objet'),produit:v('produit'),version:v('version'),coloris:v('coloris'),quantite:Number.isInteger(q)&&q>0?q:null,structure:v('structure'),message:v('message'),utiliser_cagnotte:Boolean(form.elements.namedItem('cagnotte')?.checked)}});
  return rows&&rows[0];
 }
 window.bbdEspace={configured,record,signedIn:async()=>Boolean(configured&&await session())};
@@ -82,15 +82,33 @@ function trackingNode(t){
  if(!t)return null;const isUrl=/^https:\/\/\S+$/.test(t);
  return el('p',{class:'espace-tracking'},'Suivi du colis : ',isUrl?el('a',{href:t,target:'_blank',rel:'noopener noreferrer',text:'suivre mon colis'}):el('strong',{text:t}));
 }
+function cagnotteNode(r){
+ if(Number(r.cagnotte_deduite)>0)return el('p',{class:'espace-amount espace-amount--pot'},'Cagnotte de parrainage déduite : ',el('strong',{text:money(r.cagnotte_deduite)}));
+ return r.utiliser_cagnotte?el('p',{class:'espace-date',text:'Utilisation de votre cagnotte de parrainage demandée.'}):null;
+}
 function requestCard(r){
  return el('article',{class:'espace-card'},
   el('header',{class:'espace-card-head'},el('div',{},el('p',{class:'espace-ref',text:r.reference}),el('h3',{text:r.objet||r.produit||'Demande de devis'}),el('p',{class:'espace-date',text:'Envoyée le '+date(r.created_at)})),el('span',{class:'espace-badge','data-status':r.status,text:STATUS[r.status]||r.status})),
   timeline(r),details(r),
   r.amount_ttc!=null?el('p',{class:'espace-amount'},'Montant du devis : ',el('strong',{text:money(r.amount_ttc)+' TTC'})):null,
+  cagnotteNode(r),
   r.note?el('p',{class:'espace-note'},el('strong',{text:'Message de BBD : '}),r.note):null,
   trackingNode(r.tracking));
 }
 
+async function parrainView(){
+ const box=root.querySelector('.espace-parrain');if(!box)return;
+ let rows;try{rows=await api('/rest/v1/parrainages?select=code,statut,cagnotte,note');}catch{return;}
+ const p=rows&&rows[0];
+ if(!p){box.replaceChildren(el('div',{class:'espace-parrain-none'},el('p',{},el('strong',{text:'Programme de parrainage. '}),'Partagez un code promo à votre nom : chaque achat de vos contacts sur bbd-officiel.fr alimente une cagnotte déduite de vos devis.'),el('a',{class:'btn outline',href:'/espace-pro/parrainage/#demande',text:'Demander mon code'})));box.hidden=false;return;}
+ const copy=el('button',{type:'button',class:'btn outline',text:'Copier le code'});
+ copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(p.code);copy.textContent='Code copié';}catch{copy.textContent='Sélectionnez le code pour le copier';}setTimeout(()=>{copy.textContent='Copier le code';},2500);});
+ box.replaceChildren(el('div',{class:'espace-parrain-card'},
+  el('div',{class:'espace-parrain-part'},el('p',{class:'espace-ref',text:'Mon code de parrainage'}),el('p',{class:'espace-parrain-code',text:p.code}),p.statut==='suspendu'?el('p',{class:'espace-cancel',text:'Code suspendu : contactez BBD Officiel.'}):el('p',{class:'espace-date',text:'À partager : vos contacts le saisissent sur bbd-officiel.fr.'}),copy),
+  el('div',{class:'espace-parrain-part espace-parrain-pot'},el('p',{class:'espace-ref',text:'Ma cagnotte'}),el('p',{class:'espace-parrain-amount',text:money(p.cagnotte)}),el('p',{class:'espace-date',text:'Déduite de vos devis : cochez « utiliser ma cagnotte » dans votre demande.'}),el('a',{class:'btn',href:'/devis/?cagnotte=1&source=cagnotte',text:'Utiliser ma cagnotte'})),
+  p.note?el('p',{class:'espace-note'},el('strong',{text:'Message de BBD : '}),p.note):null));
+ box.hidden=false;
+}
 async function clientView(){
  const user=await me();root.querySelectorAll('.espace-user').forEach(n=>n.textContent=user.email);
  const list=await api('/rest/v1/requests?select=*&order=created_at.desc');
@@ -99,6 +117,7 @@ async function clientView(){
  root.querySelector('.espace-count').textContent=list.length?`${list.length} demande${list.length>1?'s':''} · ${open} en cours`:'Aucune demande pour le moment';
  root.querySelector('.espace-empty').hidden=list.length>0;
  list.forEach(r=>box.append(requestCard(r)));
+ await parrainView();
  show('dashboard');
 }
 
@@ -107,14 +126,40 @@ function adminRow(r){
  const amount=el('input',{type:'number',min:'0',step:'0.01',value:r.amount_ttc??'','aria-label':'Montant TTC'});
  const tracking=el('input',{type:'text',maxlength:'300',value:r.tracking||'',placeholder:'Numéro ou lien https:// de suivi','aria-label':'Suivi du colis'});
  const note=el('textarea',{maxlength:'2000',rows:'2',placeholder:'Message visible par le client','aria-label':'Message au client'});note.value=r.note||'';
+ const pot=el('input',{type:'number',min:'0',step:'0.01',value:r.cagnotte_deduite??'','aria-label':'Cagnotte déduite'});
  const save=el('button',{type:'button',class:'btn',text:'Enregistrer'});const msg=el('span',{class:'espace-saved',role:'status'});
  save.addEventListener('click',async()=>{save.disabled=true;msg.textContent='';
-  try{await api('/rest/v1/requests?id=eq.'+encodeURIComponent(r.id),{method:'PATCH',prefer:'return=minimal',body:{status:status.value,amount_ttc:amount.value===''?null:Number(amount.value),tracking:tracking.value.trim()||null,note:note.value.trim()||null}});msg.textContent='Enregistré';}
+  try{await api('/rest/v1/requests?id=eq.'+encodeURIComponent(r.id),{method:'PATCH',prefer:'return=minimal',body:{status:status.value,amount_ttc:amount.value===''?null:Number(amount.value),tracking:tracking.value.trim()||null,note:note.value.trim()||null,cagnotte_deduite:pot.value===''?null:Number(pot.value)}});msg.textContent='Enregistré';}
   catch(err){msg.textContent=err.message;}finally{save.disabled=false;}});
  return el('article',{class:'espace-card espace-card--admin','data-status':r.status},
   el('header',{class:'espace-card-head'},el('div',{},el('p',{class:'espace-ref',text:r.reference+' · '+date(r.created_at)}),el('h3',{text:r.objet||r.produit||'Demande de devis'}),el('p',{class:'espace-date',text:r.client_email+(r.structure?' · '+r.structure:'')})),el('span',{class:'espace-badge','data-status':r.status,text:STATUS[r.status]})),
-  details(r),r.message?el('p',{class:'espace-message',text:r.message}):null,
-  el('div',{class:'espace-admin-form'},el('label',{},'Statut',status),el('label',{},'Montant TTC (€)',amount),el('label',{},'Suivi du colis',tracking),el('label',{class:'full'},'Message au client',note),el('div',{class:'espace-admin-actions'},save,msg)));
+  details(r),r.utiliser_cagnotte?el('p',{class:'espace-flag',text:'Souhaite utiliser sa cagnotte de parrainage'}):null,r.message?el('p',{class:'espace-message',text:r.message}):null,
+  el('div',{class:'espace-admin-form'},el('label',{},'Statut',status),el('label',{},'Montant TTC (€)',amount),el('label',{},'Suivi du colis',tracking),el('label',{},'Cagnotte déduite (€)',pot),el('label',{class:'full'},'Message au client',note),el('div',{class:'espace-admin-actions'},save,msg)));
+}
+function parrainRow(p){
+ const statut=el('select',{'aria-label':'Statut du code '+p.code},[['actif','Actif'],['suspendu','Suspendu']].map(([k,t])=>{const o=el('option',{value:k,text:t});if(k===p.statut)o.selected=true;return o;}));
+ const pot=el('input',{type:'number',min:'0',step:'0.01',value:p.cagnotte,'aria-label':'Cagnotte de '+p.code});
+ const note=el('input',{type:'text',maxlength:'1000',value:p.note||'',placeholder:'Message visible par le professionnel','aria-label':'Message pour '+p.code});
+ const save=el('button',{type:'button',class:'btn',text:'Enregistrer'});const msg=el('span',{class:'espace-saved',role:'status'});
+ save.addEventListener('click',async()=>{if(!pot.reportValidity())return;save.disabled=true;msg.textContent='';
+  try{await api('/rest/v1/parrainages?id=eq.'+encodeURIComponent(p.id),{method:'PATCH',prefer:'return=minimal',body:{statut:statut.value,cagnotte:Number(pot.value||0),note:note.value.trim()||null}});msg.textContent='Enregistré';}
+  catch(err){msg.textContent=err.message;}finally{save.disabled=false;}});
+ return el('article',{class:'espace-parrain-row'},el('div',{},el('p',{class:'espace-parrain-code',text:p.code}),el('p',{class:'espace-date',text:p.email})),el('label',{},'Statut',statut),el('label',{},'Cagnotte (€)',pot),el('label',{class:'wide'},'Message',note),el('div',{class:'espace-admin-actions'},save,msg));
+}
+async function adminParrains(){
+ const box=root.querySelector('.espace-parrain-admin');if(!box)return;
+ let rows;try{rows=await api('/rest/v1/parrainages?select=*&order=created_at.desc');}catch{box.replaceChildren(el('p',{class:'espace-flash',text:'Codes de parrainage indisponibles : exécutez la dernière version de supabase/schema.sql.'}));return;}
+ const email=el('input',{type:'email',required:true,maxlength:'200',placeholder:'adresse@exemple.fr'});
+ const code=el('input',{type:'text',required:true,maxlength:'30',pattern:'[A-Za-z0-9\\-]{3,30}',placeholder:'ELEVAGE-DES-PLAINES',title:'3 à 30 caractères : lettres, chiffres et tirets'});
+ const pot=el('input',{type:'number',min:'0',step:'0.01',value:'0'});
+ const add=el('button',{type:'submit',class:'btn',text:'Créer le code'});const msg=el('span',{class:'espace-saved',role:'status'});
+ const form=el('form',{class:'espace-parrain-new'},el('label',{},'E-mail du professionnel',email),el('label',{},'Code',code),el('label',{},'Cagnotte de départ (€)',pot),el('div',{class:'espace-admin-actions'},add,msg));
+ const list=el('div',{class:'espace-parrain-rows'});
+ const render=()=>list.replaceChildren(...(rows.length?rows.map(parrainRow):[el('p',{class:'espace-date',text:'Aucun code pour le moment.'})]));
+ form.addEventListener('submit',async e=>{e.preventDefault();if(!form.reportValidity())return;add.disabled=true;msg.textContent='';
+  try{const created=await api('/rest/v1/parrainages',{method:'POST',prefer:'return=representation',body:{email:email.value.trim().toLowerCase(),code:code.value.trim().toUpperCase(),cagnotte:Number(pot.value||0)}});rows.unshift(created[0]);form.reset();render();msg.textContent='Code créé';}
+  catch(err){msg.textContent=/duplicate|unique/i.test(err.message)?'Ce code ou cette adresse a déjà un code.':err.message;}finally{add.disabled=false;}});
+ box.replaceChildren(form,list);render();
 }
 async function adminView(){
  const user=await me();root.querySelectorAll('.espace-user').forEach(n=>n.textContent=user.email);
@@ -123,7 +168,7 @@ async function adminView(){
  const list=await api('/rest/v1/requests?select=*&order=created_at.desc');
  const box=root.querySelector('.espace-list'),filter=root.querySelector('.espace-filter');
  const render=()=>{box.replaceChildren(...list.filter(r=>!filter.value||r.status===filter.value).map(adminRow));root.querySelector('.espace-count').textContent=`${list.length} demande${list.length>1?'s':''} au total`;};
- filter.addEventListener('change',render);render();show('dashboard');
+ filter.addEventListener('change',render);render();await adminParrains();show('dashboard');
 }
 
 (async()=>{

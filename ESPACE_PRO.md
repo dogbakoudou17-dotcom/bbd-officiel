@@ -12,15 +12,40 @@ L’espace pro permet à un client de se connecter **sans mot de passe** (lien r
 
 Les statuts possibles sont : Demande reçue → Devis envoyé → Commande validée → En préparation → Expédiée → Livrée, ou bien Annulée.
 
+## Programme de parrainage
+
+Page publique : `/espace-pro/parrainage/`. On y arrive depuis l'espace pro, le pied de page et la case « cagnotte » du devis.
+
+1. **La demande.** Un professionnel (éleveur, club, organisateur, partenaire) envoie le formulaire « Demander mon code ». La demande arrive par e-mail via Netlify Forms (formulaire `parrainage-bbd`). Comme le devis, ce formulaire n'envoie rien en aperçu.
+2. **La validation.** BBD étudie la demande. Si elle est acceptée, BBD fait deux choses :
+   - créer le code promo correspondant sur la boutique bbd-officiel.fr, côté Shopify et à la main ;
+   - créer le même code dans `/espace-pro/admin/`, bloc « Codes de parrainage », avec l'adresse e-mail du professionnel.
+3. **Le suivi par le professionnel.** Il se connecte à son espace avec cette adresse. Il y voit son code, avec un bouton « Copier », sa cagnotte et un message éventuel de BBD.
+4. **La cagnotte.** BBD crédite la cagnotte au fil des achats réalisés avec le code sur la boutique. Ce report se fait à la main : rien ne relie automatiquement la boutique Shopify à ce site.
+5. **L'utilisation.** Dans sa demande de devis, le professionnel coche « utiliser ma cagnotte ». BBD saisit alors deux montants :
+   - le montant déduit, dans le champ « Cagnotte déduite » de la demande ;
+   - le nouveau solde de la cagnotte, dans le bloc « Codes de parrainage ».
+
+**À fixer par BBD avant le lancement :**
+- le montant crédité par achat (pourcentage ou somme fixe) ;
+- l'avantage accordé à l'acheteur avec le code ;
+- la durée de validité de la cagnotte ;
+- un éventuel plafond de déduction par devis.
+
+La page n'annonce aucun chiffre : elle indique que ces conditions sont « précisées lors de la validation ». Ces conditions sont à ajouter sur la page et dans des conditions du programme une fois décidées.
+
+Suite possible : relier automatiquement les commandes Shopify au crédit de la cagnotte. Cela demande l'accès API de la boutique et une fonction serveur.
+
 ## Fichiers techniques
 
-- `supabase/schema.sql` : les tables, les règles de sécurité (RLS) et l’historique des statuts. Chaque client ne lit que ses propres demandes, sans pouvoir les modifier ni les supprimer. Seules les adresses présentes dans la table `admins` voient tout et modifient.
+- `supabase/schema.sql` : les tables (dont `parrainages` : e-mail, code, statut, cagnotte ; et sur `requests` : `utiliser_cagnotte`, `cagnotte_deduite`), les règles de sécurité (RLS) et l’historique des statuts. Chaque client ne lit que ses propres demandes, sans pouvoir les modifier ni les supprimer. Seules les adresses présentes dans la table `admins` voient tout et modifient.
 - `assets/espace.js` : la connexion, le tableau de bord du client, l’administration et l’enregistrement automatique des devis. Il appelle l’API Supabase directement, sans bibliothèque externe.
 - `build.mjs` : les pages `/espace-pro/` et `/espace-pro/admin/`. La configuration est lue dans les variables d’environnement `SUPABASE_URL` et `SUPABASE_ANON_KEY`. **Aucune clé n’est enregistrée dans le dépôt.** Si ces variables sont absentes, l’espace affiche « ouvre très bientôt ».
 - `netlify.toml` : la règle CSP autorise `https://*.supabase.co`.
 
 ## Mise en service (une seule fois, environ 15 minutes)
 
+0. Si le schéma a déjà été exécuté avant l'ajout du parrainage, il suffit de le réexécuter en entier : il est conçu pour être relancé sans perte.
 1. **Créer le projet Supabase** (offre gratuite) : sur https://supabase.com, cliquer sur *Start your project*, se connecter, puis *New project*. Choisir la région **Europe (Paris ou Francfort)** et noter le mot de passe de la base dans un gestionnaire de mots de passe.
 2. **Créer les tables** : dans le projet, ouvrir *SQL Editor*, puis *New query*. Coller le contenu de `supabase/schema.sql`. Sur la dernière ligne, retirer les `--` et remplacer l’adresse par celle de BBD Officiel. Cliquer sur *Run*.
 3. **Régler la connexion** : ouvrir *Authentication*, puis *URL Configuration*.

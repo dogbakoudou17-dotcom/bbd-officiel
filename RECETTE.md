@@ -230,3 +230,12 @@ Ce qui change :
 - Le client voit, pour chaque demande, sa référence, l'étape (Demande reçue → Devis envoyé → Commande validée → En préparation → Expédiée → Livrée, ou Annulée), le montant TTC, le message de BBD et le suivi du colis. L'administration modifie ces champs.
 - Sécurité : règles RLS dans `supabase/schema.sql` (chaque client ne lit que ses demandes ; seules les adresses de la table `admins` modifient). La clé publique est fournie par les variables Netlify `SUPABASE_URL` et `SUPABASE_ANON_KEY`, jamais dans le dépôt. Sans ces variables, l'espace affiche « ouvre très bientôt ».
 - À tester une fois Supabase créé : réception du lien, enregistrement d'un devis, changement de statut côté administration, accès refusé à une adresse non autorisée.
+
+## Programme de parrainage — 13 octobre 2026
+
+- Nouvelle page publique `/espace-pro/parrainage/` (indexable) : code promo à son nom, achats des contacts sur bbd-officiel.fr qui alimentent une cagnotte déduite des devis professionnels. Sections : comment ça marche (4 étapes), « un code, deux gagnants », pour qui (éleveurs, clubs, organisateurs, partenaires), où partager son code, suivi dans l'espace pro, FAQ.
+- Formulaire « Demander mon code » (Netlify Forms `parrainage-bbd`, désactivé en aperçu). Demande soumise à validation ; aucun taux ni montant annoncé (« conditions précisées à la validation »).
+- Espace pro : bloc de promotion du programme ; une fois connecté, carte « Mon code » (copie en un clic) et « Ma cagnotte » ; sur chaque demande, la cagnotte déduite. Administration : création et mise à jour des codes (statut, cagnotte, message), champ « Cagnotte déduite » sur chaque demande.
+- Devis : case « utiliser ma cagnotte » (préremplie par `?cagnotte=1` depuis l'espace pro), enregistrée avec la demande.
+- Confidentialité : paragraphe « Programme de parrainage ». Schéma : table `parrainages` (RLS : lecture de son propre code, gestion réservée à l'administration).
+- À décider par BBD : taux ou montant crédité, avantage acheteur, validité de la cagnotte. Le crédit de la cagnotte se fait à la main (pas de lien automatique avec la boutique Shopify).
