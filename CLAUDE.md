@@ -28,9 +28,10 @@ Le projet n’a aucune dépendance npm externe. Node.js suffit. Le site est stat
 - La page « Qui sommes-nous ? » (`/qui-sommes-nous/`, l'ancienne `/a-propos/` y redirige) reprend le récit et les photos de bbd-officiel.fr/pages/qui-sommes-nous avec l'accord du propriétaire. Ne rien ajouter au parcours de Hamady qui ne figure pas dans un texte transmis. Les produits vendus seulement sur la boutique BBD Paris (sofas, peluches, livraisons Mondial Relay/Chronopost) ne sont pas présentés ici.
 - Les engagements affichés (sans engagement, aucun paiement en ligne, prix HT/TTC, logo sur les textiles) sont des faits établis : n’en ajouter aucun (délai, livraison offerte, avis, garantie) sans confirmation du propriétaire.
 - `assets/app.js` contient les interactions progressives, filtres, devis, calculs et animations.
+- Espace pro (`/espace-pro/`, `/espace-pro/admin/`) : `assets/espace.js` + `supabase/schema.sql`, configuration par les variables d’environnement `SUPABASE_URL` et `SUPABASE_ANON_KEY` (jamais dans le dépôt, jamais la clé `service_role`). Voir `ESPACE_PRO.md`. Le DOM de l’espace est construit avec `textContent` : ne jamais y injecter de HTML issu des données.
 - `dist/` est généré par `npm run build`. Ne jamais modifier `dist/` à la main.
 
-Après toute modification, exécuter `npm run build`, `npm run check` et `node --check assets/app.js`.
+Après toute modification, exécuter `npm run build`, `npm run check` et `node --check assets/app.js` (et `node --check assets/espace.js`).
 
 ## Règles métier et éditoriales
 

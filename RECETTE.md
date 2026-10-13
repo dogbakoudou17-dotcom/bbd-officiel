@@ -222,3 +222,11 @@ Ce qui change :
 - Une section par profil (éleveurs, clubs, événements, particuliers) : à qui elle s'adresse, quatre besoins, prix à lire (HT pour les professionnels, TTC pour les particuliers), catalogues utiles, devis prérempli avec le profil, trois suggestions de produits ; FAQ (particuliers, HT/TTC, profil absent, demande mixte).
 - Contrôle : 320, 375, 900 et 1440 px sans débordement, image cassée ni bloc masqué ; 41 pages, 2212 liens vérifiés.
 
+
+## Espace pro : suivi des demandes — 13 octobre 2026
+
+- Nouvelles pages `/espace-pro/` (client, lien « Espace pro » dans le menu et le pied de page) et `/espace-pro/admin/` (BBD Officiel, hors menu), non indexées. Mise en service : `ESPACE_PRO.md`.
+- Connexion sans mot de passe par lien e-mail (Supabase, offre gratuite). Une demande de devis envoyée par un client connecté s'ajoute automatiquement à son suivi ; la page Merci affiche sa référence.
+- Le client voit, pour chaque demande, sa référence, l'étape (Demande reçue → Devis envoyé → Commande validée → En préparation → Expédiée → Livrée, ou Annulée), le montant TTC, le message de BBD et le suivi du colis. L'administration modifie ces champs.
+- Sécurité : règles RLS dans `supabase/schema.sql` (chaque client ne lit que ses demandes ; seules les adresses de la table `admins` modifient). La clé publique est fournie par les variables Netlify `SUPABASE_URL` et `SUPABASE_ANON_KEY`, jamais dans le dépôt. Sans ces variables, l'espace affiche « ouvre très bientôt ».
+- À tester une fois Supabase créé : réception du lien, enregistrement d'un devis, changement de statut côté administration, accès refusé à une adresse non autorisée.

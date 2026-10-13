@@ -24,12 +24,17 @@ if(form){
  const status=document.querySelector('#form-status');
  form.addEventListener('submit',async e=>{
   e.preventDefault();if(!form.reportValidity())return;
-  if(form.dataset.preview==='true'){status.textContent='Votre demande est correctement renseignée. Cet aperçu ne transmet aucune donnée. L’envoi sera activé après configuration et test de la réception.';status.focus();return;}
+  // Client connecté à l'espace pro : la demande s'ajoute aussi à son suivi (espace.js). null = non connecté, false = échec.
+  const toEspace=async()=>{try{return await window.bbdEspace?.record(form)??null;}catch{return false;}};
+  if(form.dataset.preview==='true'){const saved=await toEspace();status.textContent=saved?`Demande enregistrée dans votre espace pro sous la référence ${saved.reference}. Cet aperçu n’envoie pas d’e-mail à BBD Officiel.`:saved===false?'Votre demande est correctement renseignée, mais son enregistrement dans l’espace pro a échoué. Réessayez dans un instant.':'Votre demande est correctement renseignée. Cet aperçu ne transmet aucune donnée. L’envoi sera activé après configuration et test de la réception.';status.focus();return;}
   const button=form.querySelector('[type=submit]');button.disabled=true;button.textContent='Envoi en cours…';status.textContent='';
-  try{const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw new Error('Envoi refusé');location.assign('/merci/');}
+  try{const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw new Error('Envoi refusé');const saved=await toEspace();location.assign('/merci/'+(saved?'?ref='+encodeURIComponent(saved.reference):''));}
   catch{status.textContent='Votre demande n’a pas pu être envoyée. Vos champs sont conservés sur cette page. Vérifiez votre connexion, puis réessayez ou utilisez le contact indiqué.';status.focus();button.disabled=false;button.textContent='Envoyer ma demande →';}
  });
 }
+// Page merci : référence de la demande enregistrée dans l'espace pro.
+const merciRef=document.querySelector('.merci-ref'),ref=(params.get('ref')||'').replace(/[^A-Z0-9-]/g,'').slice(0,30);
+if(merciRef&&ref){merciRef.querySelector('strong').textContent=ref;merciRef.hidden=false;}
 // Prix HT (professionnels) ou TTC (particuliers) : choix mémorisé sur cet appareil uniquement.
 const taxButtons=document.querySelectorAll('.tax-switch [data-prix]');
 let updateTotal=()=>{};
