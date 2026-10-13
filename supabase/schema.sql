@@ -43,9 +43,9 @@ create policy "admin valide les accès" on public.membres
   for update using (public.is_admin()) with check (public.is_admin());
 
 create or replace function public.est_valide() returns boolean
-language sql stable security definer set search_path = public as $
+language sql stable security definer set search_path = public as $$
   select public.is_admin() or exists (select 1 from public.membres where user_id = auth.uid() and statut = 'valide');
-$;
+$$;
 
 -- Demandes (devis) et commandes qui en découlent.
 create table if not exists public.requests (
@@ -134,11 +134,7 @@ create trigger requests_status_update before update on public.requests
 create table if not exists public.parrainages (
   id          uuid primary key default gen_random_uuid(),
   email       text not null unique check (email = lower(email) and char_length(email) <= 200),
-  code        text not null unique check (code ~ '^[A-Z0-9-]{3,30}
-
--- DERNIÈRE ÉTAPE : remplacer l'adresse ci-dessous par celle de BBD Officiel (compte administrateur), puis exécuter.
--- insert into public.admins (email) values ('adresse-admin@exemple.fr');
-),
+  code        text not null unique check (code ~ '^[A-Z0-9-]{3,30}$'),
   statut      text not null default 'actif' check (statut in ('actif','suspendu')),
   cagnotte    numeric(10,2) not null default 0 check (cagnotte >= 0),
   note        text check (char_length(note) <= 1000),   -- message de BBD au parrain
@@ -154,7 +150,7 @@ create policy "admin gère les codes" on public.parrainages
   for all using (public.is_admin()) with check (public.is_admin());
 
 create or replace function public.touch_updated_at() returns trigger
-language plpgsql as $ begin new.updated_at := now(); return new; end $;
+language plpgsql as $$ begin new.updated_at := now(); return new; end $$;
 drop trigger if exists parrainages_touch on public.parrainages;
 create trigger parrainages_touch before update on public.parrainages
   for each row execute function public.touch_updated_at();
